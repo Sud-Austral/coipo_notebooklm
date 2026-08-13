@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Credenciales / sesión NotebookLM (nunca versionar)
+cookies.txt
+cookies.json
+.nlm/
+*.cookies
+
+# Documentos privados con credenciales literales.
+# NO quitar estas líneas: docs/CONEXION-PRIVADA.md contiene cookies de sesión
+# de una cuenta Google real. Duplicado en .git/info/exclude por si alguien
+# edita este archivo.
+# Cualquier extension, no solo .md: el documento se exporta a PDF, DOCX o lo que
+# haga falta, y todas esas copias llevan las mismas cookies dentro.
+docs/CONEXION-PRIVADA.*
+docs/*-PRIVADA.*
+docs/*-PRIVADO.*
+
+# Multimedia pesado descargado desde NotebookLM.
+# Se versiona solo el manifiesto (media/manifest.json), no los binarios.
+media/**/*.m4a
+media/**/*.mp3
+media/**/*.wav
+media/**/*.mp4
+media/**/*.webm
+media/**/*.png
+media/**/*.jpg

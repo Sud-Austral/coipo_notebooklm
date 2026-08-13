@@ -1,0 +1,21 @@
+[
+  {
+    "archivo": "media/audio/coipo_demo.m4a",
+    "tipo": "audio",
+    "bytes": 3204485,
+    "sha256": "caa0287aa4ef1b8ef8f7ae0f97285d450e1337c6a94f7d1430b5355bd9ba8620",
+    "notebook": "COIPO — Demo NotebookLM",
+    "artifact_id": "69b16b0b-c60a-42d1-8183-ae552dc2df79",
+    "ingestado_utc": "2026-08-12T22:50:53+00:00",
+    "metadata": {
+      "formato": "QuickTime / MOV",
+      "duracion_s": 99.54,
+      "bitrate_kbps": 258,
+      "audio": {
+        "codec": "aac",
+        "sample_rate": "44100",
+        "canales": 2
+      }
+    }
+  }
+]

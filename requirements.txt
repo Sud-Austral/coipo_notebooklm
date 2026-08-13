@@ -1,0 +1,6 @@
+# Cliente no oficial de NotebookLM: CLI `nlm` + servidor MCP `notebooklm-mcp`.
+# Instalar en el venv del proyecto:
+#   python -m venv .venv
+#   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
+#   .\.venv\Scripts\nlm.exe login
+notebooklm-mcp-cli==0.9.10
