@@ -28,3 +28,6 @@ media/**/*.mp4
 media/**/*.webm
 media/**/*.png
 media/**/*.jpg
+
+# reglas de COIPO_ERRORES (rutas absolutas, personales)
+.claude/rules/errores-*.md
