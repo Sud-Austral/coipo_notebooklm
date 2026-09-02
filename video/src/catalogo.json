@@ -1,0 +1,249 @@
+{
+ "familias": [
+  {
+   "nombre": "Incendios forestales",
+   "color": "#c1121f",
+   "repos": [
+    {
+     "repo": "COIPO_INCENDIO_DASHBOARD",
+     "titulo": "Tablero de incendios"
+    },
+    {
+     "repo": "COIPO_INCENDIO_PRESUPUESTO",
+     "titulo": "Presupuesto de la temporada"
+    },
+    {
+     "repo": "coipo_prevencion_incendio",
+     "titulo": "Visor de prevención"
+    },
+    {
+     "repo": "coipo_canciones",
+     "titulo": "Cancionero de prevención"
+    },
+    {
+     "repo": "coipo_notebooklm",
+     "titulo": "Meteorología aplicada"
+    }
+   ]
+  },
+  {
+   "nombre": "Fiscalización y normativa",
+   "color": "#e36414",
+   "repos": [
+    {
+     "repo": "COIPO_DASHBOARDSAFF",
+     "titulo": "Tablero de fiscalización SAFF"
+    },
+    {
+     "repo": "COIPO_SAFF_PHP",
+     "titulo": "SAFF heredado"
+    },
+    {
+     "repo": "COIPO_CHATBOTNORMATIVA",
+     "titulo": "Chatbot normativo"
+    },
+    {
+     "repo": "COIPO_LEY_ANALISIS",
+     "titulo": "Análisis de ley"
+    },
+    {
+     "repo": "coipo_criterio_fiscalia",
+     "titulo": "Criterios de fiscalía"
+    },
+    {
+     "repo": "COIPO_EXCEL_PLANMANEJO",
+     "titulo": "Plan de manejo forestal"
+    }
+   ]
+  },
+  {
+   "nombre": "Territorio y catastro",
+   "color": "#2d6a4f",
+   "repos": [
+    {
+     "repo": "COIPO_BID_LOSRIOS",
+     "titulo": "Geoportal de decisiones territoriales"
+    },
+    {
+     "repo": "coipo_vista_catastro",
+     "titulo": "Vista de catastro"
+    },
+    {
+     "repo": "coipo_seguimiento_madera",
+     "titulo": "Seguimiento de madera"
+    },
+    {
+     "repo": "COIPO_DENDROENERGIA",
+     "titulo": "Dendroenergía"
+    }
+   ]
+  },
+  {
+   "nombre": "Arborización y viveros",
+   "color": "#40916c",
+   "repos": [
+    {
+     "repo": "COIPO_ENTREGA_PLANTA",
+     "titulo": "Entrega de plantas"
+    },
+    {
+     "repo": "coipo_entrega_planta_test",
+     "titulo": "Entrega de plantas · pruebas"
+    },
+    {
+     "repo": "COIPO_INVENTARIO_PLANTA",
+     "titulo": "Inventario de viveros"
+    },
+    {
+     "repo": "coipo_web_arbolizacion",
+     "titulo": "Web de arborización"
+    }
+   ]
+  },
+  {
+   "nombre": "Personas y administración",
+   "color": "#0F69C4",
+   "repos": [
+    {
+     "repo": "coipo_contrato2",
+     "titulo": "Gestión de contratos"
+    },
+    {
+     "repo": "coipo_cabania",
+     "titulo": "Reservas de bienestar"
+    },
+    {
+     "repo": "COIPO_USUARIOS",
+     "titulo": "Identidad institucional"
+    },
+    {
+     "repo": "coipo_academia",
+     "titulo": "Academia CONAF"
+    },
+    {
+     "repo": "coipo_moodle",
+     "titulo": "Moodle"
+    },
+    {
+     "repo": "COIPO_DIRECTORIO",
+     "titulo": "Directorio"
+    },
+    {
+     "repo": "COIPO_PDF_EXCEL",
+     "titulo": "Consolidador Previred"
+    },
+    {
+     "repo": "coipo_oficina_virtual",
+     "titulo": "Oficina virtual"
+    }
+   ]
+  },
+  {
+   "nombre": "Plataforma y datos",
+   "color": "#5a6b67",
+   "repos": [
+    {
+     "repo": "COIPO_APPTEST",
+     "titulo": "Plantilla base de aplicaciones"
+    },
+    {
+     "repo": "COIPO_BYPASS",
+     "titulo": "Proxy de base de datos"
+    },
+    {
+     "repo": "COIPO_DESPLIEGUE",
+     "titulo": "Despliegue"
+    },
+    {
+     "repo": "COIPO_NEXE",
+     "titulo": "Nexe"
+    },
+    {
+     "repo": "coipo_etl",
+     "titulo": "ETL"
+    },
+    {
+     "repo": "coipo_monitoreo",
+     "titulo": "Monitoreo"
+    },
+    {
+     "repo": "coipo_n8n",
+     "titulo": "Automatización n8n"
+    },
+    {
+     "repo": "coipo_correo",
+     "titulo": "Servicio de correo"
+    },
+    {
+     "repo": "coipo_repositorio",
+     "titulo": "Repositorio"
+    }
+   ]
+  },
+  {
+   "nombre": "Gestión y evaluación",
+   "color": "#7048e8",
+   "repos": [
+    {
+     "repo": "COIPO_SEGUIMIENTO",
+     "titulo": "Seguimiento de proyectos"
+    },
+    {
+     "repo": "COIPO_SEGUIMIENTOPROYECTO",
+     "titulo": "Seguimiento · variante"
+    },
+    {
+     "repo": "COIPO_SISTEMA_UIA",
+     "titulo": "Sistema de la UIA"
+    },
+    {
+     "repo": "COIPO_TRANSFORMACION_DIGITAL",
+     "titulo": "Transformación digital"
+    },
+    {
+     "repo": "COIPO_EVALUACION_PRIORITARIA",
+     "titulo": "Evaluación prioritaria"
+    },
+    {
+     "repo": "COIPO_SKILL_LICITACION",
+     "titulo": "Evaluación de licitaciones"
+    }
+   ]
+  },
+  {
+   "nombre": "Conocimiento y comunicación",
+   "color": "#b98600",
+   "repos": [
+    {
+     "repo": "COIPO_DOCUMENTO",
+     "titulo": "Documentos"
+    },
+    {
+     "repo": "COIPO_WIKI_APP",
+     "titulo": "Wiki"
+    },
+    {
+     "repo": "COIPO_ERRORES",
+     "titulo": "Bitácora de errores"
+    },
+    {
+     "repo": "COIPO_PRESENTACION_UIA",
+     "titulo": "Presentaciones de la UIA"
+    },
+    {
+     "repo": "COIPO_PRENSA2",
+     "titulo": "Monitor de prensa"
+    },
+    {
+     "repo": "coipo_tv",
+     "titulo": "Señal interna"
+    },
+    {
+     "repo": "coipo_archivo",
+     "titulo": "Archivo"
+    }
+   ]
+  }
+ ],
+ "total": 49
+}

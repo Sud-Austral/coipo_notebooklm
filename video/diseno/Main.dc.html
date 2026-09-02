@@ -1,0 +1,151 @@
+<script src="./support.js"></script>
+<style>
+  :root {
+    --tinta: #0A1C14; --bosque: #12362A; --verde: #2D6A4F; --musgo: #74C69D;
+    --ambar: #FFB700; --arcilla: #E8823C; --crema: #F2EFE6; --suave: #E4DFD2;
+    --texto: #14231C; --atenuado: #5E6E66;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  .hoja {
+    width: 1600px; height: 1360px; background: var(--tinta); color: var(--crema);
+    font-family: var(--sans); padding: 66px 74px; display: flex; flex-direction: column;
+    position: relative; overflow: hidden;
+  }
+  .halo { position: absolute; inset: 0; pointer-events: none;
+          background: radial-gradient(ellipse 46% 62% at 88% 22%, rgba(255,183,0,.13) 0%, rgba(0,0,0,0) 66%); }
+  .rot { display: flex; align-items: center; gap: 15px; font-size: 15px; letter-spacing: 3.4px;
+         font-weight: 700; color: var(--ambar); }
+  .rot i { display: block; height: 2px; width: 38px; background: var(--ambar); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 78px; line-height: 1.02;
+       margin: 22px 0 0; letter-spacing: -1px; max-width: 1180px; }
+  h1 em { font-style: italic; color: var(--ambar); }
+  .bajada { font-size: 21px; line-height: 1.55; color: var(--musgo); max-width: 900px; margin-top: 20px; }
+
+  .rejilla { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 44px; flex-grow: 1; }
+  .caja { border: 1px solid #24503e; border-radius: 5px; padding: 28px 30px; background: rgba(18,54,42,.42);
+          display: flex; flex-direction: column; }
+  .caja h2 { font-family: var(--sans); font-size: 14px; letter-spacing: 2.6px; font-weight: 700;
+             color: var(--arcilla); margin: 0 0 20px; text-transform: uppercase; }
+
+  .paleta { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .tono { border-radius: 4px; overflow: hidden; border: 1px solid rgba(255,255,255,.09); }
+  .tono .sw { height: 62px; }
+  .tono .et { padding: 8px 9px; font-size: 11px; line-height: 1.35; background: rgba(0,0,0,.32); }
+  .tono .et b { display: block; font-size: 12px; color: var(--crema); font-weight: 600; }
+  .tono .et span { color: #8fae9e; font-family: ui-monospace, Consolas, monospace; font-size: 10px; }
+
+  .tipo { display: flex; flex-direction: column; gap: 22px; }
+  .muestra { border-left: 3px solid var(--verde); padding-left: 20px; }
+  .muestra .n { font-size: 12px; letter-spacing: 2px; color: var(--musgo); font-weight: 700; margin-bottom: 8px; }
+  .muestra .s { font-family: var(--serif); font-size: 46px; line-height: 1.06; }
+  .muestra .a { font-size: 20px; line-height: 1.45; color: var(--suave); }
+  .muestra .p { font-size: 15px; color: var(--atenuado); margin-top: 6px; }
+
+  .reglas { display: flex; flex-direction: column; gap: 15px; }
+  .regla { display: flex; gap: 16px; align-items: flex-start; }
+  .regla .k { font-family: var(--serif); font-size: 27px; color: var(--ambar); line-height: 1; width: 34px; flex-shrink: 0; }
+  .regla .v b { display: block; font-size: 17px; color: var(--crema); font-weight: 600; margin-bottom: 3px; }
+  .regla .v span { font-size: 15px; color: #97b7a7; line-height: 1.45; }
+
+  .voces { display: flex; gap: 18px; }
+  .voz { flex: 1; border-radius: 4px; padding: 20px 21px; }
+  .voz.l { background: rgba(45,106,79,.34); border: 1px solid #2d6a4f; }
+  .voz.c { background: rgba(232,130,60,.16); border: 1px solid #8a4d22; }
+  .voz .nom { font-family: var(--serif); font-size: 30px; margin-bottom: 5px; }
+  .voz .id { font-family: ui-monospace, Consolas, monospace; font-size: 12px; color: var(--musgo); margin-bottom: 12px; }
+  .voz .rol { font-size: 15px; line-height: 1.5; color: var(--suave); }
+  .pie { border-top: 1px solid #24503e; margin-top: 30px; padding-top: 20px;
+         font-family: var(--serif); font-size: 26px; color: var(--ambar); }
+</style>
+
+<div class="hoja">
+  <div class="halo"></div>
+
+  <div class="rot"><i></i>CONAF · UNIDAD DE INFORMACIÓN Y ANÁLISIS · DIRECCIÓN DE ARTE v2</div>
+  <h1>Editorial forestal, <em>no plantilla de diapositivas</em></h1>
+  <div class="bajada">
+    El error de la primera versión fue una sola receta repetida ocho veces: antetítulo,
+    título, rejilla de tarjetas iguales. Esta versión define un sistema y siete maneras
+    distintas de ocupar el cuadro, para que ninguna sección se parezca a la anterior.
+  </div>
+
+  <div class="rejilla">
+    <div class="caja">
+      <h2>Paleta</h2>
+      <div class="paleta">
+        <div class="tono"><div class="sw" style="background:#0A1C14"></div><div class="et"><b>Tinta</b><span>#0A1C14</span></div></div>
+        <div class="tono"><div class="sw" style="background:#12362A"></div><div class="et"><b>Bosque</b><span>#12362A</span></div></div>
+        <div class="tono"><div class="sw" style="background:#2D6A4F"></div><div class="et"><b>Verde</b><span>#2D6A4F</span></div></div>
+        <div class="tono"><div class="sw" style="background:#74C69D"></div><div class="et"><b>Musgo</b><span>#74C69D</span></div></div>
+        <div class="tono"><div class="sw" style="background:#FFB700"></div><div class="et"><b>Ámbar</b><span>#FFB700</span></div></div>
+        <div class="tono"><div class="sw" style="background:#E8823C"></div><div class="et"><b>Arcilla</b><span>#E8823C</span></div></div>
+        <div class="tono"><div class="sw" style="background:#F2EFE6"></div><div class="et"><b>Crema</b><span>#F2EFE6</span></div></div>
+        <div class="tono"><div class="sw" style="background:#E4DFD2"></div><div class="et"><b>Crema suave</b><span>#E4DFD2</span></div></div>
+      </div>
+      <div style="margin-top:20px;font-size:15px;line-height:1.5;color:#97b7a7">
+        El blanco es cálido, nunca el blanco frío de la v1. Dos acentos de la misma
+        temperatura — ámbar y arcilla — bastan para jerarquizar sin arcoíris.
+      </div>
+    </div>
+
+    <div class="caja">
+      <h2>Tipografía</h2>
+      <div class="tipo">
+        <div class="muestra">
+          <div class="n">DISPLAY · INSTRUMENT SERIF</div>
+          <div class="s">Cinco estados, y solo cinco</div>
+          <div class="p">Lo que se <b>declara</b>: titulares, cifras, remates. Cursiva para el énfasis.</div>
+        </div>
+        <div class="muestra" style="border-color:var(--arcilla)">
+          <div class="n">TEXTO · ARCHIVO</div>
+          <div class="a">Es el backend quien decide si un cambio de estado es legal, no la interfaz.</div>
+          <div class="p">Lo que se <b>explica</b>: párrafos, listas, antetítulos en versales.</div>
+        </div>
+      </div>
+      <div style="margin-top:auto;padding-top:18px;font-size:15px;line-height:1.5;color:#97b7a7">
+        El contraste entre las dos hace la mitad del trabajo. Una sola familia
+        tipográfica fue lo que hacía monótona la versión anterior.
+      </div>
+    </div>
+
+    <div class="caja">
+      <h2>Reglas de imagen y movimiento</h2>
+      <div class="reglas">
+        <div class="regla"><div class="k">01</div><div class="v"><b>Metraje real, no color plano</b>
+          <span>Vídeo libre de Wikimedia Commons de fondo, teñido y desaturado. Ningún cuadro es un rectángulo de color.</span></div></div>
+        <div class="regla"><div class="k">02</div><div class="v"><b>El fondo no hace zoom</b>
+          <span>El clip corre a su ritmo. Un fondo que deriva compite con el texto y marea.</span></div></div>
+        <div class="regla"><div class="k">03</div><div class="v"><b>Grano y viñeta siempre</b>
+          <span>Quitan el aspecto de vector plano y centran la mirada sin ennegrecer los bordes de golpe.</span></div></div>
+        <div class="regla"><div class="k">04</div><div class="v"><b>El texto se descubre, no aparece</b>
+          <span>Cortina horizontal para los titulares, subida corta para los párrafos, muelle para las listas.</span></div></div>
+        <div class="regla"><div class="k">05</div><div class="v"><b>Corte a negro entre secciones</b>
+          <span>Siete cuadros de entrada y siete de salida. Marca el capítulo sin transición de PowerPoint.</span></div></div>
+      </div>
+    </div>
+
+    <div class="caja">
+      <h2>Dos voces, alternadas por función</h2>
+      <div class="voces">
+        <div class="voz l">
+          <div class="nom">Lorenzo</div>
+          <div class="id">es-CL-LorenzoNeural · −4%</div>
+          <div class="rol">Lleva el hilo. Explica qué es cada cosa, recorre las familias, describe el flujo.</div>
+        </div>
+        <div class="voz c">
+          <div class="nom">Catalina</div>
+          <div class="id">es-CL-CatalinaNeural · −2%</div>
+          <div class="rol">Entra en los ganchos, los remates, las cifras y las advertencias. Es el cambio de tono.</div>
+        </div>
+      </div>
+      <div style="margin-top:20px;font-size:15px;line-height:1.5;color:#97b7a7">
+        No se turnan por párrafo: se turnan por <b style="color:var(--crema)">función</b>.
+        Cuando cambia la voz, el espectador sabe que cambió el tipo de frase.
+      </div>
+    </div>
+  </div>
+
+  <div class="pie">Los primeros 10 segundos no se tocan: Forestín y la música que calla la sala.</div>
+</div>

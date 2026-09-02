@@ -1,0 +1,195 @@
+<script src="./support.js"></script>
+<style>
+  :root {
+    --tinta: #0A1C14; --bosque: #12362A; --verde: #2D6A4F; --musgo: #74C69D;
+    --ambar: #FFB700; --arcilla: #E8823C; --crema: #F2EFE6;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  .hoja { width: 1600px; height: 1040px; background: var(--tinta); color: var(--crema);
+          font-family: var(--sans); padding: 58px 66px; display: flex; flex-direction: column; }
+  .rot { display: flex; align-items: center; gap: 15px; font-size: 14px; letter-spacing: 3.2px;
+         font-weight: 700; color: var(--ambar); }
+  .rot i { display: block; height: 2px; width: 34px; background: var(--ambar); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 62px; line-height: 1.02;
+       margin: 18px 0 8px; letter-spacing: -1px; }
+  .bajada { font-size: 18px; color: var(--musgo); max-width: 1080px; line-height: 1.5; }
+
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px 24px; margin-top: 34px; }
+  .card { display: flex; flex-direction: column; gap: 12px; }
+  .mini { aspect-ratio: 16/9; border-radius: 3px; overflow: hidden; position: relative;
+          border: 1px solid #24503e; }
+  .card h3 { font-family: var(--serif); font-size: 27px; font-weight: 400; margin: 0; line-height: 1.1; }
+  .card h3 span { font-family: var(--sans); font-size: 12px; letter-spacing: 2px; font-weight: 700;
+                  color: var(--arcilla); display: block; margin-bottom: 5px; }
+  .card p { font-size: 14px; line-height: 1.45; color: #97b7a7; margin: 0; }
+
+  /* piezas del wireframe */
+  .osc { background: #10281e; }
+  .clr { background: #EFEBE1; }
+  .b { position: absolute; border-radius: 1px; }
+  .tx { background: rgba(242,239,230,.82); }
+  .txo { background: rgba(20,35,28,.8); }
+  .ap { background: rgba(242,239,230,.34); }
+  .apo { background: rgba(20,35,28,.34); }
+  .am { background: var(--ambar); }
+  .ar { background: var(--arcilla); }
+  .med { background: linear-gradient(135deg, #2c5a45, #17372a); }
+  .pie { border-top: 1px solid #24503e; margin-top: auto; padding-top: 18px;
+         display: flex; gap: 44px; font-size: 15px; color: #97b7a7; }
+  .pie b { color: var(--crema); }
+</style>
+
+<div class="hoja">
+  <div class="rot"><i></i>SIETE MANERAS DE OCUPAR EL CUADRO</div>
+  <h1>Arquetipos de composición</h1>
+  <div class="bajada">
+    Cada sección elige el arquetipo que le toca, y ninguna repite el de al lado. Esa
+    alternancia — de estructura, de fondo claro a oscuro, de lado del ancla — es lo que
+    quita la sensación de pase de diapositivas.
+  </div>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="mini osc">
+        <div class="b am" style="left:8%;top:34%;width:7%;height:2.5%"></div>
+        <div class="b tx" style="left:8%;top:44%;width:74%;height:7%"></div>
+        <div class="b am" style="left:8%;top:55%;width:52%;height:7%"></div>
+        <div class="b ap" style="left:8%;top:70%;width:46%;height:3.5%"></div>
+      </div>
+      <h3><span>01</span>Declaración</h3>
+      <p>Una frase enorme sobre metraje. Para el gancho, los remates y el cierre.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini osc">
+        <div class="b am" style="left:6%;top:24%;width:22%;height:52%;border-radius:2px"></div>
+        <div class="b am" style="left:38%;top:32%;width:9%;height:2.5%"></div>
+        <div class="b tx" style="left:38%;top:41%;width:52%;height:6%"></div>
+        <div class="b ap" style="left:38%;top:56%;width:48%;height:3%"></div>
+        <div class="b ap" style="left:38%;top:63%;width:44%;height:3%"></div>
+      </div>
+      <h3><span>02</span>Numeral</h3>
+      <p>Una cifra gigante que cuenta hacia arriba, con su contexto al lado.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini clr">
+        <div class="b med" style="left:0;top:0;width:36%;height:100%"></div>
+        <div class="b ar" style="left:44%;top:22%;width:12%;height:2.5%"></div>
+        <div class="b txo" style="left:44%;top:31%;width:46%;height:7%"></div>
+        <div class="b apo" style="left:44%;top:48%;width:40%;height:3%"></div>
+        <div class="b apo" style="left:44%;top:57%;width:44%;height:3%"></div>
+        <div class="b apo" style="left:44%;top:66%;width:36%;height:3%"></div>
+      </div>
+      <h3><span>03</span>Partido</h3>
+      <p>Metraje a sangre en un tercio, texto en el resto. Se invierte el lado según la sección.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini osc">
+        <div class="b am" style="left:6%;top:14%;width:9%;height:2.5%"></div>
+        <div class="b tx" style="left:6%;top:23%;width:52%;height:6%"></div>
+        <div class="b am" style="left:7%;top:52%;width:2.2%;height:4%;border-radius:50%"></div>
+        <div class="b am" style="left:25%;top:52%;width:2.2%;height:4%;border-radius:50%"></div>
+        <div class="b am" style="left:43%;top:52%;width:2.2%;height:4%;border-radius:50%"></div>
+        <div class="b am" style="left:61%;top:52%;width:2.2%;height:4%;border-radius:50%"></div>
+        <div class="b am" style="left:79%;top:52%;width:2.2%;height:4%;border-radius:50%"></div>
+        <div class="b am" style="left:11%;top:53.4%;width:13%;height:1.2%;opacity:.6"></div>
+        <div class="b am" style="left:29%;top:53.4%;width:13%;height:1.2%;opacity:.6"></div>
+        <div class="b am" style="left:47%;top:53.4%;width:13%;height:1.2%;opacity:.6"></div>
+        <div class="b am" style="left:65%;top:53.4%;width:13%;height:1.2%;opacity:.6"></div>
+        <div class="b tx" style="left:6%;top:62%;width:14%;height:5%"></div>
+        <div class="b tx" style="left:24%;top:62%;width:14%;height:5%"></div>
+        <div class="b tx" style="left:42%;top:62%;width:14%;height:5%"></div>
+        <div class="b tx" style="left:60%;top:62%;width:14%;height:5%"></div>
+        <div class="b tx" style="left:78%;top:62%;width:14%;height:5%"></div>
+      </div>
+      <h3><span>04</span>Recorrido</h3>
+      <p>Pasos encadenados que se encienden uno a uno, al ritmo de la narración.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini clr">
+        <div class="b med" style="right:0;top:0;width:26%;height:100%"></div>
+        <div class="b ar" style="left:6%;top:13%;width:11%;height:2.5%"></div>
+        <div class="b txo" style="left:6%;top:22%;width:56%;height:6%"></div>
+        <div class="b" style="left:6%;top:38%;width:34%;height:46%;background:#10281e;border-radius:2px"></div>
+        <div class="b am" style="left:9%;top:44%;width:12%;height:2%"></div>
+        <div class="b tx" style="left:9%;top:51%;width:26%;height:5%"></div>
+        <div class="b ap" style="left:9%;top:62%;width:24%;height:2.6%"></div>
+        <div class="b apo" style="left:45%;top:40%;width:1%;height:11%;background:var(--verde)"></div>
+        <div class="b txo" style="left:48%;top:41%;width:20%;height:3.4%"></div>
+        <div class="b apo" style="left:48%;top:47%;width:24%;height:2.4%"></div>
+        <div class="b apo" style="left:45%;top:56%;width:1%;height:11%;background:var(--verde)"></div>
+        <div class="b txo" style="left:48%;top:57%;width:17%;height:3.4%"></div>
+        <div class="b apo" style="left:48%;top:63%;width:22%;height:2.4%"></div>
+        <div class="b apo" style="left:45%;top:72%;width:1%;height:11%;background:var(--verde)"></div>
+        <div class="b txo" style="left:48%;top:73%;width:22%;height:3.4%"></div>
+        <div class="b apo" style="left:48%;top:79%;width:19%;height:2.4%"></div>
+      </div>
+      <h3><span>05</span>Constelación</h3>
+      <p>Una pieza mayor y el resto orbitando. La alternativa a la rejilla de tarjetas iguales.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini osc">
+        <div class="b tx" style="left:5%;top:11%;width:30%;height:6%"></div>
+        <div class="b am" style="left:38%;top:13%;width:16%;height:2.6%"></div>
+        <div class="b ar" style="left:5%;top:26%;width:5%;height:1.4%"></div>
+        <div class="b ap" style="left:5%;top:31%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:5%;top:36%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:5%;top:41%;width:20%;height:3%"></div>
+        <div class="b am" style="left:29%;top:26%;width:5%;height:1.4%"></div>
+        <div class="b ap" style="left:29%;top:31%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:29%;top:36%;width:20%;height:3%"></div>
+        <div class="b" style="left:53%;top:26%;width:5%;height:1.4%;background:#52B788"></div>
+        <div class="b ap" style="left:53%;top:31%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:53%;top:36%;width:20%;height:3%"></div>
+        <div class="b" style="left:77%;top:26%;width:5%;height:1.4%;background:#4CA3F5"></div>
+        <div class="b ap" style="left:77%;top:31%;width:18%;height:3%"></div>
+        <div class="b ap" style="left:77%;top:36%;width:18%;height:3%"></div>
+        <div class="b ap" style="left:5%;top:53%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:29%;top:53%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:53%;top:53%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:77%;top:53%;width:18%;height:3%"></div>
+        <div class="b ap" style="left:5%;top:58%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:29%;top:58%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:53%;top:58%;width:20%;height:3%"></div>
+        <div class="b ap" style="left:77%;top:58%;width:18%;height:3%"></div>
+        <div class="b am" style="left:5%;top:78%;width:52%;height:4%"></div>
+      </div>
+      <h3><span>06</span>Índice</h3>
+      <p>Muchos elementos a la vez, con jerarquía por color y tamaño. El mapa de los 49 repositorios.</p>
+    </div>
+
+    <div class="card">
+      <div class="mini osc">
+        <div class="b" style="left:0;top:0;width:1.4%;height:100%;background:#E5383B"></div>
+        <div class="b" style="left:7%;top:26%;width:12%;height:22%;background:#E5383B;opacity:.9"></div>
+        <div class="b" style="left:23%;top:28%;width:22%;height:2.4%;background:#E5383B"></div>
+        <div class="b tx" style="left:23%;top:35%;width:42%;height:6.5%"></div>
+        <div class="b" style="left:7%;top:60%;width:1.6%;height:2.8%;background:#E5383B"></div>
+        <div class="b ap" style="left:11%;top:60%;width:26%;height:2.8%"></div>
+        <div class="b" style="left:7%;top:68%;width:1.6%;height:2.8%;background:#E5383B"></div>
+        <div class="b ap" style="left:11%;top:68%;width:22%;height:2.8%"></div>
+        <div class="b" style="left:7%;top:76%;width:1.6%;height:2.8%;background:#E5383B"></div>
+        <div class="b ap" style="left:11%;top:76%;width:24%;height:2.8%"></div>
+        <div class="b" style="left:45%;top:60%;width:1.6%;height:2.8%;background:#E5383B"></div>
+        <div class="b ap" style="left:49%;top:60%;width:24%;height:2.8%"></div>
+        <div class="b" style="left:45%;top:68%;width:1.6%;height:2.8%;background:#E5383B"></div>
+        <div class="b ap" style="left:49%;top:68%;width:20%;height:2.8%"></div>
+      </div>
+      <h3><span>07</span>Familia</h3>
+      <p>Capítulo de una familia de repositorios. El color viene del catálogo y el ancla cambia de lado en cada una.</p>
+    </div>
+
+  </div>
+
+  <div class="pie">
+    <div><b>Fondo alterno.</b> Tres arquetipos van sobre crema y cuatro sobre tinta: el salto de luminancia marca el capítulo.</div>
+    <div><b>Nada se estira.</b> Todo bloque se centra en su eje; ninguna composición deja dos tercios del cuadro vacíos.</div>
+  </div>
+</div>

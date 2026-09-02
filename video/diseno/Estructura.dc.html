@@ -1,0 +1,181 @@
+<script src="./support.js"></script>
+<style>
+  :root {
+    --tinta: #0A1C14; --musgo: #74C69D; --ambar: #FFB700; --arcilla: #E8823C; --crema: #F2EFE6;
+    --lorenzo: #2D6A4F; --catalina: #E8823C;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  .hoja { width: 1600px; height: 940px; background: var(--tinta); color: var(--crema);
+          font-family: var(--sans); padding: 56px 66px; display: flex; flex-direction: column; }
+  .rot { display: flex; align-items: center; gap: 15px; font-size: 14px; letter-spacing: 3.2px;
+         font-weight: 700; color: var(--ambar); }
+  .rot i { display: block; height: 2px; width: 34px; background: var(--ambar); }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: 60px; line-height: 1.02;
+       margin: 16px 0 8px; letter-spacing: -1px; }
+  .bajada { font-size: 18px; color: var(--musgo); max-width: 1050px; line-height: 1.5; }
+
+  .pieza { margin-top: 30px; }
+  .cab { display: flex; align-items: baseline; gap: 16px; margin-bottom: 9px; }
+  .cab h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin: 0; }
+  .cab .dur { font-size: 15px; color: var(--musgo); font-family: ui-monospace, Consolas, monospace; }
+
+  .voces { display: flex; height: 9px; gap: 2px; }
+  .voces div { border-radius: 1px; }
+  .linea { display: flex; gap: 2px; margin-top: 3px; }
+  .seg { height: 158px; border-radius: 2px; position: relative; overflow: hidden;
+         padding: 9px 0 10px; display: flex; flex-direction: column; align-items: center; }
+  .seg .n { font-family: var(--serif); font-size: 19px; line-height: 1; opacity: .95; }
+  .seg .t { writing-mode: vertical-rl; transform: rotate(180deg); font-size: 13.5px;
+            font-weight: 600; letter-spacing: .2px; margin-top: 8px; color: var(--crema);
+            white-space: nowrap; overflow: hidden; }
+  .seg.port { background: rgba(242,239,230,.1); border: 1px dashed rgba(242,239,230,.45); }
+  .seg.port .t { color: rgba(242,239,230,.9); }
+
+  .eje { display: flex; gap: 2px; margin-top: 5px; font-size: 11px;
+         font-family: ui-monospace, Consolas, monospace; color: #6f8d7d; }
+  .eje div { overflow: hidden; white-space: nowrap; }
+
+  .leyenda { margin-top: auto; padding-top: 22px; border-top: 1px solid #24503e;
+             display: flex; gap: 46px; align-items: flex-start; }
+  .grupo .h { font-size: 12px; letter-spacing: 2.4px; font-weight: 700; color: var(--arcilla);
+              margin-bottom: 11px; }
+  .items { display: flex; flex-wrap: wrap; gap: 8px 16px; max-width: 780px; }
+  .it { display: flex; align-items: center; gap: 7px; font-size: 14px; color: #b9d2c5; }
+  .it i { display: block; width: 13px; height: 13px; border-radius: 2px; }
+  .nota { font-size: 14.5px; line-height: 1.5; color: #97b7a7; max-width: 400px; }
+  .nota b { color: var(--crema); }
+</style>
+
+<div class="hoja">
+  <div class="rot"><i></i>MONTAJE · QUÉ ARQUETIPO Y QUÉ VOZ EN CADA SEGUNDO</div>
+  <h1>Estructura de los dos vídeos</h1>
+  <div class="bajada">
+    Las duraciones salen de la narración real, no al revés: cada bloque dura exactamente
+    lo que tarda la voz en decirlo. Misma escala en los dos para poder compararlos.
+  </div>
+
+  <!-- ============================= CONTRATOS ============================= -->
+  <div class="pieza">
+    <div class="cab">
+      <h2>Sistema de Gestión de Contratos</h2>
+      <div class="dur">2 min 27 s · 11 secciones</div>
+    </div>
+
+    <div class="voces">
+      <div style="width:94.7px;background:rgba(242,239,230,.3)"></div>
+      <div style="width:61.3px;background:var(--catalina)"></div>
+      <div style="width:169.5px;background:var(--lorenzo)"></div>
+      <div style="width:90.6px;background:var(--lorenzo)"></div>
+      <div style="width:55.2px;background:var(--catalina)"></div>
+      <div style="width:189.0px;background:var(--lorenzo)"></div>
+      <div style="width:92.7px;background:var(--catalina)"></div>
+      <div style="width:137.2px;background:var(--lorenzo)"></div>
+      <div style="width:115.0px;background:var(--lorenzo)"></div>
+      <div style="width:135.2px;background:var(--catalina)"></div>
+      <div style="width:135.8px;background:var(--lorenzo)"></div>
+      <div style="width:112.0px;background:var(--catalina)"></div>
+    </div>
+
+    <div class="linea">
+      <div class="seg port" style="width:94.7px"><div class="n" style="color:#F2EFE6">★</div><div class="t">Forestín · 10 s</div></div>
+      <div class="seg" style="width:61.3px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Gancho</div></div>
+      <div class="seg" style="width:169.5px;background:rgba(157,179,172,.2);border-left:3px solid #9DB3AC"><div class="n" style="color:#9DB3AC">05</div><div class="t">Qué administra</div></div>
+      <div class="seg" style="width:90.6px;background:rgba(116,198,157,.2);border-left:3px solid #74C69D"><div class="n" style="color:#74C69D">03</div><div class="t">El papel circula</div></div>
+      <div class="seg" style="width:55.2px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Remate</div></div>
+      <div class="seg" style="width:189.0px;background:rgba(82,183,136,.2);border-left:3px solid #52B788"><div class="n" style="color:#52B788">04</div><div class="t">Cinco estados</div></div>
+      <div class="seg" style="width:92.7px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Sin atajosno</div></div>
+      <div class="seg" style="width:137.2px;background:rgba(157,179,172,.2);border-left:3px solid #9DB3AC"><div class="n" style="color:#9DB3AC">05</div><div class="t">Plantillas y PDF</div></div>
+      <div class="seg" style="width:115.0px;background:rgba(116,198,157,.2);border-left:3px solid #74C69D"><div class="n" style="color:#74C69D">03</div><div class="t">La bandeja ⇄</div></div>
+      <div class="seg" style="width:135.2px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Seguridad</div></div>
+      <div class="seg" style="width:135.8px;background:rgba(232,130,60,.2);border-left:3px solid #E8823C"><div class="n" style="color:#E8823C">02</div><div class="t">32 procesadores</div></div>
+      <div class="seg" style="width:112.0px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Cierre</div></div>
+    </div>
+
+    <div class="eje">
+      <div style="width:94.7px">0:00</div><div style="width:61.3px">0:10</div>
+      <div style="width:169.5px">0:16</div><div style="width:90.6px">0:34</div>
+      <div style="width:55.2px">0:44</div><div style="width:189.0px">0:50</div>
+      <div style="width:92.7px">1:10</div><div style="width:137.2px">1:19</div>
+      <div style="width:115.0px">1:34</div><div style="width:135.2px">1:46</div>
+      <div style="width:135.8px">2:00</div><div style="width:112.0px">2:15</div>
+    </div>
+  </div>
+
+  <!-- ============================= ECOSISTEMA ============================= -->
+  <div class="pieza">
+    <div class="cab">
+      <h2>El ecosistema COIPO</h2>
+      <div class="dur">2 min 35 s · 12 secciones · 49 repositorios</div>
+    </div>
+
+    <div class="voces">
+      <div style="width:94.7px;background:rgba(242,239,230,.3)"></div>
+      <div style="width:61.3px;background:var(--catalina)"></div>
+      <div style="width:155.5px;background:var(--lorenzo)"></div>
+      <div style="width:131.7px;background:var(--lorenzo)"></div>
+      <div style="width:130.3px;background:var(--lorenzo)"></div>
+      <div style="width:106.5px;background:var(--catalina)"></div>
+      <div style="width:94.7px;background:var(--catalina)"></div>
+      <div style="width:133.7px;background:var(--lorenzo)"></div>
+      <div style="width:129.4px;background:var(--lorenzo)"></div>
+      <div style="width:66.9px;background:var(--catalina)"></div>
+      <div style="width:111.0px;background:var(--lorenzo)"></div>
+      <div style="width:116.0px;background:var(--lorenzo)"></div>
+      <div style="width:138.1px;background:var(--catalina)"></div>
+    </div>
+
+    <div class="linea">
+      <div class="seg port" style="width:94.7px"><div class="n" style="color:#F2EFE6">★</div><div class="t">Forestín · 10 s</div></div>
+      <div class="seg" style="width:61.3px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">49 repos</div></div>
+      <div class="seg" style="width:155.5px;background:rgba(232,130,60,.2);border-left:3px solid #E8823C"><div class="n" style="color:#E8823C">02</div><div class="t">8 familias</div></div>
+      <div class="seg" style="width:131.7px;background:rgba(229,56,59,.22);border-left:3px solid #E5383B"><div class="n" style="color:#E5383B">07</div><div class="t">Incendios ◀</div></div>
+      <div class="seg" style="width:130.3px;background:rgba(244,129,63,.22);border-left:3px solid #F4813F"><div class="n" style="color:#F4813F">07</div><div class="t">Fiscalización ▶</div></div>
+      <div class="seg" style="width:106.5px;background:rgba(82,183,136,.22);border-left:3px solid #52B788"><div class="n" style="color:#52B788">07</div><div class="t">Territorio ◀</div></div>
+      <div class="seg" style="width:94.7px;background:rgba(149,213,178,.22);border-left:3px solid #95D5B2"><div class="n" style="color:#95D5B2">07</div><div class="t">Arborización ▶</div></div>
+      <div class="seg" style="width:133.7px;background:rgba(76,163,245,.22);border-left:3px solid #4CA3F5"><div class="n" style="color:#4CA3F5">07</div><div class="t">Personas ◀</div></div>
+      <div class="seg" style="width:129.4px;background:rgba(157,179,172,.22);border-left:3px solid #9DB3AC"><div class="n" style="color:#9DB3AC">07</div><div class="t">Plataforma ▶</div></div>
+      <div class="seg" style="width:66.9px;background:rgba(255,183,0,.2);border-left:3px solid #FFB700"><div class="n" style="color:#FFB700">01</div><div class="t">Remate</div></div>
+      <div class="seg" style="width:111.0px;background:rgba(167,139,250,.22);border-left:3px solid #A78BFA"><div class="n" style="color:#A78BFA">07</div><div class="t">Gestión ◀</div></div>
+      <div class="seg" style="width:116.0px;background:rgba(255,194,51,.22);border-left:3px solid #FFC233"><div class="n" style="color:#FFC233">07</div><div class="t">Conocimiento ▶</div></div>
+      <div class="seg" style="width:138.1px;background:rgba(167,139,250,.16);border-left:3px solid #A78BFA"><div class="n" style="color:#A78BFA">06</div><div class="t">El mapa completo</div></div>
+    </div>
+
+    <div class="eje">
+      <div style="width:94.7px">0:00</div><div style="width:61.3px">0:10</div>
+      <div style="width:155.5px">0:16</div><div style="width:131.7px">0:33</div>
+      <div style="width:130.3px">0:47</div><div style="width:106.5px">1:01</div>
+      <div style="width:94.7px">1:12</div><div style="width:133.7px">1:22</div>
+      <div style="width:129.4px">1:36</div><div style="width:66.9px">1:50</div>
+      <div style="width:111.0px">1:57</div><div style="width:116.0px">2:08</div>
+      <div style="width:138.1px">2:21</div>
+    </div>
+  </div>
+
+  <div class="leyenda">
+    <div class="grupo">
+      <div class="h">ARQUETIPO</div>
+      <div class="items">
+        <div class="it"><i style="background:#FFB700"></i>01 Declaración</div>
+        <div class="it"><i style="background:#E8823C"></i>02 Numeral</div>
+        <div class="it"><i style="background:#74C69D"></i>03 Partido</div>
+        <div class="it"><i style="background:#52B788"></i>04 Recorrido</div>
+        <div class="it"><i style="background:#9DB3AC"></i>05 Constelación</div>
+        <div class="it"><i style="background:#A78BFA"></i>06 Índice</div>
+        <div class="it"><i style="background:#4CA3F5"></i>07 Familia</div>
+      </div>
+      <div class="h" style="margin-top:16px">VOZ (BANDA SUPERIOR)</div>
+      <div class="items">
+        <div class="it"><i style="background:var(--lorenzo)"></i>Lorenzo · explica y lleva el hilo</div>
+        <div class="it"><i style="background:var(--catalina)"></i>Catalina · ganchos, cifras y remates</div>
+        <div class="it"><i style="background:rgba(242,239,230,.3)"></i>Portadilla · música sin voz</div>
+      </div>
+    </div>
+    <div class="nota">
+      <b>◀ ▶</b> indican de qué lado se ancla la composición. Ninguna familia repite el
+      lado de la anterior, y ningún arquetipo aparece dos veces seguidas salvo la
+      Declaración, que es deliberadamente el latido corto entre bloques largos.
+    </div>
+  </div>
+</div>
