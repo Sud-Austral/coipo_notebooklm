@@ -1,0 +1,29 @@
+{
+  "conaf-01": {
+    "clave": "conaf-01",
+    "orientacion": "portrait",
+    "detalle": "concise",
+    "estado": "descargado",
+    "artifact_id": "024c5ef8-062f-4868-abde-3dcb0fc76959",
+    "archivo": "image\\conaf-01-portrait.png",
+    "bytes": 5316978
+  },
+  "conaf-02": {
+    "clave": "conaf-02",
+    "orientacion": "square",
+    "detalle": "concise",
+    "estado": "descargado",
+    "artifact_id": "14cdff21-c6b8-400c-aa36-7ec796c18212",
+    "archivo": "image\\conaf-02-square.png",
+    "bytes": 5806623
+  },
+  "conaf-03": {
+    "clave": "conaf-03",
+    "orientacion": "landscape",
+    "detalle": "standard",
+    "estado": "descargado",
+    "artifact_id": "afaa7f45-b8bb-4115-b8bd-c257a7d10098",
+    "archivo": "image\\conaf-03-landscape.png",
+    "bytes": 6295143
+  }
+}

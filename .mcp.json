@@ -2,7 +2,7 @@
   "mcpServers": {
     "notebooklm": {
       "type": "stdio",
-      "command": "C:\\Users\\luis.monsalve\\Documents\\GitHub\\coipo_notebooklm\\.venv\\Scripts\\notebooklm-mcp.exe",
+      "command": ".venv\\Scripts\\notebooklm-mcp.exe",
       "args": [],
       "env": {
         "NOTEBOOKLM_HL": "es"
