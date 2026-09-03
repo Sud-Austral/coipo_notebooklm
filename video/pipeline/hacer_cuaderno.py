@@ -49,20 +49,57 @@ cap = torch.cuda.get_device_capability()
 print('capacidad CUDA:', cap)
 
 # flash-attention-2 exige Ampere (8.0+). La T4 gratuita de Colab es Turing (7.5)
-# y revienta al cargar el modelo si se le pide.
-ATTN = 'flash_attention_2' if cap[0] >= 8 else 'sdpa'
-print('attn_implementation ->', ATTN)"""))
+# y revienta al cargar el modelo si se le pide. Se vuelve a calcular en la
+# celda 3 porque el reinicio de la celda 2 borra todo lo de aqui.
+print('attn_implementation ->',
+      'flash_attention_2' if cap[0] >= 8 else 'sdpa')"""))
 
-C.append(md("## 2 · Instalar"))
-C.append(code("""!pip -q install -U qwen-tts soundfile numpy
+C.append(md("""## 2 · Instalar · **reinicia el entorno al terminar**
+
+`qwen-tts` fija `transformers==4.57.3` exacto, y Colab trae preinstalada una v5
+donde `GenerationMixin` ya no vive en `transformers.generation`. Pip instala la
+correcta, pero **el kernel sigue con la vieja cargada en memoria**, así que la
+celda 3 falla con un `ImportError` críptico si no se reinicia.
+
+Esta celda reinicia sola al terminar. Verás «Your session crashed» o
+«El kernel se reinició»: **es lo esperado, no es un error.**
+
+Después del reinicio, **sigue desde la celda 3**. No repitas ésta."""))
+C.append(code("""!pip -q install qwen-tts soundfile numpy
 !apt-get -qq install -y ffmpeg > /dev/null
-print('listo')"""))
+
+import importlib.metadata as md
+for pkg in ('transformers', 'huggingface-hub', 'accelerate', 'qwen-tts'):
+    try:
+        print('%-18s %s' % (pkg, md.version(pkg)))
+    except Exception:
+        print('%-18s NO INSTALADO' % pkg)
+
+# El aviso sobre diffusers es inofensivo: no lo usamos.
+print('
+Reiniciando el entorno. Cuando vuelva, sigue DESDE LA CELDA 3.')
+import IPython
+IPython.Application.instance().kernel.do_shutdown(True)"""))
 
 C.append(md("""## 3 · Cargar el modelo
 
 `VoiceDesign` crea la voz desde una descripción en texto. En bfloat16 ocupa unos
 3,4 GB, así que entra de sobra en los 16 GB de una T4."""))
-C.append(code("""from qwen_tts import Qwen3TTSModel
+C.append(code("""import torch, importlib.metadata as md
+
+# Comprobar ANTES de importar: si la version no es la que qwen-tts fija, el
+# fallo sale aqui y se entiende, en vez de como un ImportError sobre
+# GenerationMixin tres marcos mas abajo.
+v = md.version('transformers')
+print('transformers', v, '| huggingface-hub', md.version('huggingface-hub'))
+assert v.startswith('4.57'), (
+    'transformers %s no sirve: qwen-tts fija la 4.57.3. Ejecuta la celda 2 y '
+    'REINICIA el entorno antes de volver aqui.' % v)
+
+cap = torch.cuda.get_device_capability()
+ATTN = 'flash_attention_2' if cap[0] >= 8 else 'sdpa'
+
+from qwen_tts import Qwen3TTSModel
 
 modelo = Qwen3TTSModel.from_pretrained(
     'Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign',
