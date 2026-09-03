@@ -35,6 +35,12 @@ VOCES = {'l': 'es-CL-LorenzoNeural', 'c': 'es-CL-CatalinaNeural'}
 # Base por voz: Catalina lee un punto más rápido que Lorenzo por naturaleza.
 BASE = {'l': -1, 'c': +1}
 
+# Aceleración global, pedida por Luis tras oír la muestra C. Se suma a TODOS
+# los tonos, incluido el del énfasis: así el trozo marcado sigue estando 16
+# puntos por debajo del resto y el contraste se conserva. Si sólo se acelerara
+# la base, el énfasis dejaría de notarse.
+ACELERACION = +12   # calibrado: da 10,0 % mas rapido medido, no +10 teorico
+
 # Cada tono es una FUNCIÓN en la conversación, no un adorno.
 TONO = {
     'normal': dict(rate=-2,  pitch=0),
@@ -133,7 +139,7 @@ async def principal(modulo, nombre):
     for i, b in enumerate(guion):
         v = b['v']
         cfg = TONO[b.get('tono', 'normal')]
-        rate = cfg['rate'] + BASE[v] + JITTER_RATE[i % len(JITTER_RATE)]
+        rate = cfg['rate'] + BASE[v] + ACELERACION + JITTER_RATE[i % len(JITTER_RATE)]
         pitch = cfg['pitch'] + JITTER_PITCH[i % len(JITTER_PITCH)]
 
         partes = []
