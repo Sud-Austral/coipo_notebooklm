@@ -134,7 +134,7 @@ def recortar(datos, guarda=0.090, umbral=0.006):
 async def principal(modulo, nombre):
     guion = importlib.import_module(modulo).GUION
     tmp = tempfile.mkdtemp(prefix='beats-')
-    trozos, meta, t = [], [], PORTADILLA
+    piezas, meta, t = [], [], PORTADILLA   # 'piezas': 'trozos' es la funcion
 
     for i, b in enumerate(guion):
         v = b['v']
@@ -159,8 +159,8 @@ async def principal(modulo, nombre):
         open(os.path.join(tmp, '%03d.raw' % i), 'wb').write(datos)
         dur = len(datos) / 2.0 / HZ
         pausa = float(b.get('p', 0.3))
-        trozos.append(datos)
-        trozos.append(silencio(pausa))
+        piezas.append(datos)
+        piezas.append(silencio(pausa))
 
         meta.append(dict(i=i, v=v, inicio=round(t, 3), dur=round(dur, 3),
                          foto=b['foto'], z=b.get('z', 'completo'),
@@ -172,7 +172,7 @@ async def principal(modulo, nombre):
         t += dur + pausa
 
     bruto = os.path.join(tmp, 'todo.raw')
-    open(bruto, 'wb').write(b''.join(trozos))
+    open(bruto, 'wb').write(b''.join(piezas))
     salida = os.path.join(PUBLICO, 'narracion_%s.mp3' % nombre)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', str(HZ),
                     '-ac', '1', '-i', bruto,

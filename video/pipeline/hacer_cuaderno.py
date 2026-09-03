@@ -184,7 +184,12 @@ memoria('antes de importar')
 from qwen_tts import Qwen3TTSModel
 memoria('tras importar')
 
-MODELO = 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice'
+# 'preset'  -> las nueve voces fijas de CustomVoice (celda 4)
+# 'clonar'  -> las grabaciones de los actores: masculina.mp3 y femenino.mp3
+MODO = 'clonar'
+
+MODELO = ('Qwen/Qwen3-TTS-12Hz-0.6B-Base' if MODO == 'clonar'
+          else 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice')
 # 0.6B CustomVoice en vez de 1.7B VoiceDesign: el 1.7B tumbaba el kernel en la
 # Colab gratuita, que solo tiene 12,7 GB de RAM de sistema y ya lleva
 # TensorFlow cargado. El precio es que la voz ya no se describe con texto:
@@ -248,7 +253,119 @@ sf.write('casting.wav', audio, sr)
 print('%.0f s de casting' % (audio.size / sr))
 ipd.Audio('casting.wav')"""))
 
-C.append(md("""### 4b · Anota tus dos elegidas
+C.append(md("""## 4c · Clonar las voces de los actores  *(sólo si `MODO = 'clonar'`)*
+
+Sube `masculina.mp3` y `femenino.mp3` con el panel de archivos de Colab (icono
+de carpeta a la izquierda), o móntalos desde Drive.
+
+**La calidad del clon depende casi toda de la referencia, no del modelo.** Esta
+celda mide la grabación y avisa de lo que la estropea, porque es más barato
+volver a grabar que descubrirlo después de sintetizar setenta frases:
+
+| qué | por qué |
+|---|---|
+| 10–30 s de habla limpia | menos no da timbre; más no aporta y añade ruido |
+| sin música ni ambiente | el modelo clona *todo* lo que oye, el ruido incluido |
+| sin saturación | un pico recortado se clona como voz áspera |
+| transcripción **exacta** | si el texto no cuadra con el audio, el clon se degrada |
+
+La transcripción se escribe a mano en `REF`. Tiene que decir literalmente lo que
+se oye, con sus muletillas si las hay."""))
+C.append(code("""import os, subprocess, numpy as np, soundfile as sf, IPython.display as ipd
+
+REF = {
+    'l': dict(mp3='masculina.mp3',
+              texto='ESCRIBE AQUI, LITERAL, LO QUE DICE masculina.mp3'),
+    'c': dict(mp3='femenino.mp3',
+              texto='ESCRIBE AQUI, LITERAL, LO QUE DICE femenino.mp3'),
+}
+
+HZ_REF = 24000
+MIN_S, MAX_S = 8.0, 30.0
+
+
+def preparar(mp3, salida):
+    \"\"\"A wav mono 24 kHz, sin silencio en los extremos y con el pico sano.\"\"\"
+    subprocess.run(['ffmpeg', '-v', 'error', '-y', '-i', mp3,
+                    '-ac', '1', '-ar', str(HZ_REF),
+                    # quita silencio al principio y al final; no toca lo de enmedio
+                    '-af', 'silenceremove=start_periods=1:start_threshold=-45dB:'
+                           'start_silence=0.1,areverse,'
+                           'silenceremove=start_periods=1:start_threshold=-45dB:'
+                           'start_silence=0.1,areverse',
+                    salida], check=True)
+    a, sr = sf.read(salida, dtype='float32')
+    return a, sr
+
+
+def revisar(nombre, a, sr, texto):
+    dur = a.size / sr
+    pico = float(np.abs(a).max())
+    # Porcentaje de muestras pegadas al techo: senal de saturacion.
+    recortadas = float((np.abs(a) > 0.995).mean()) * 100
+    # Ruido de fondo: energia del decil mas silencioso frente al pico.
+    v = np.sort(np.abs(a))
+    suelo = float(v[:max(1, v.size // 10)].mean())
+    snr = 20 * np.log10(pico / suelo) if suelo > 0 else 99
+
+    print('--- %s ---' % nombre)
+    print('  duracion   %.1f s   %s' % (
+        dur, 'ok' if MIN_S <= dur <= MAX_S else
+        ('CORTA, graba mas' if dur < MIN_S else 'LARGA, recorta a 30 s')))
+    print('  pico       %.2f     %s' % (
+        pico, 'ok' if pico < 0.99 else 'SATURA'))
+    print('  recortadas %.3f %%   %s' % (
+        recortadas, 'ok' if recortadas < 0.01 else 'HAY CLIPPING, vuelve a grabar'))
+    print('  senal/ruido %.0f dB  %s' % (
+        snr, 'ok' if snr > 35 else 'RUIDOSA, el clon heredara el ruido'))
+    if 'ESCRIBE AQUI' in texto:
+        print('  transcripcion  FALTA. El clon se degrada sin ella.')
+    else:
+        print('  transcripcion  %d caracteres, %.1f car/s' % (len(texto), len(texto) / dur))
+    print()
+
+
+LISTAS = {}
+if MODO == 'clonar':
+    for quien, d in REF.items():
+        if not os.path.exists(d['mp3']):
+            print('FALTA', d['mp3'], '- subelo con el panel de archivos')
+            continue
+        wav = d['mp3'].replace('.mp3', '_ref.wav')
+        a, sr = preparar(d['mp3'], wav)
+        revisar(d['mp3'], a, sr, d['texto'])
+        LISTAS[quien] = dict(ref=wav, texto=d['texto'])
+    print('listas para clonar:', list(LISTAS))
+else:
+    print(\"MODO no es 'clonar'; esta celda no hace nada.\")"""))
+
+C.append(md("""### 4d · Oír el clon antes de gastar el rato
+
+Las mismas frases de la muestra C, ya con las voces clonadas. Si el timbre no se
+parece, el problema casi siempre está en la referencia y lo dirá la celda
+anterior: corta, ruidosa, saturada, o con la transcripción mal."""))
+C.append(code("""PRUEBA = [
+    ('c', 'Y bosques, dieciocho coma nueve millones. Un veinticinco por ciento del pais.'),
+    ('l', 'Veinticinco por ciento? Eso suena a titular.'),
+    ('c', 'Suena. Y ahi esta justo la trampa.'),
+    ('l', 'Ya decia yo que te traias algo entre manos.'),
+    ('c', 'Me conoces demasiado bien para lo poco que llevamos.'),
+]
+
+piezas = []
+for quien, texto in PRUEBA:
+    r = LISTAS[quien]
+    w, sr = modelo.generate_voice_clone(text=texto, language='Spanish',
+                                        ref_audio=r['ref'], ref_text=r['texto'])
+    piezas.append(np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32))
+    piezas.append(np.zeros(int(0.30 * sr), dtype=np.float32))
+
+audio = np.concatenate(piezas)
+sf.write('prueba_clon.wav', audio, sr)
+print('%.1f s' % (audio.size / sr))
+ipd.Audio('prueba_clon.wav')"""))
+
+C.append(md("""### 4b · Anota tus dos elegidas  *(sólo si `MODO = 'preset'`)*
 
 Pon aquí los nombres y vuelve a escuchar el intercambio completo, ya con las
 mismas frases de la muestra C que oíste con edge-tts. **Compáralo con
@@ -360,15 +477,28 @@ def recortar(a, guarda=0.09, umbral=0.006):
     return a[max(0, idx[0] - g):min(a.size, idx[-1] + g)]
 
 
-def decir(texto, hablante, matiz, enfatico):
-    # En CustomVoice el TIMBRE lo fija `speaker` y el `instruct` solo maneja
-    # tono y enfasis. En VoiceDesign el instruct hacia las dos cosas.
-    ins = 'Tono conversacional de podcast.' + CERCANIA + ' ' + matiz
-    if enfatico:
-        ins += ' Marca esta parte con enfasis claro: mas lenta, mas alta y mas fuerte.'
-    w, sr = modelo.generate_custom_voice(text=texto, language='Spanish',
-                                         speaker=hablante, instruct=ins)
+def decir(texto, quien, matiz, enfatico):
+    if MODO == 'clonar':
+        # generate_voice_clone NO acepta `instruct`: el timbre lo pone la
+        # referencia y no hay palanca de estilo. El enfasis, por tanto, no se
+        # puede pedir; hay que producirlo sobre el audio (ver abajo).
+        r = LISTAS[quien]
+        w, sr = modelo.generate_voice_clone(text=texto, language='Spanish',
+                                            ref_audio=r['ref'], ref_text=r['texto'])
+    else:
+        # En CustomVoice el TIMBRE lo fija `speaker` y el `instruct` solo maneja
+        # tono y enfasis. En VoiceDesign el instruct hacia las dos cosas.
+        ins = 'Tono conversacional de podcast.' + CERCANIA + ' ' + matiz
+        if enfatico:
+            ins += ' Marca esta parte con enfasis: mas lenta, mas alta y mas fuerte.'
+        w, sr = modelo.generate_custom_voice(text=texto, language='Spanish',
+                                             speaker=VOCES[quien], instruct=ins)
     a = np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32)
+    if MODO == 'clonar' and enfatico:
+        # Sin `instruct`, el enfasis se hace en el audio: +2,5 dB sobre el trozo
+        # marcado. Es menos que un enfasis actuado, pero es lo que hay y no
+        # inventa prosodia que el modelo no dio.
+        a = np.clip(a * (10 ** (2.5 / 20)), -1.0, 1.0).astype(np.float32)
     if sr != HZ:
         n = int(round(a.size * HZ / sr))
         a = np.interp(np.linspace(0, a.size - 1, n), np.arange(a.size), a)
