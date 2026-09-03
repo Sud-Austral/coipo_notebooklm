@@ -65,17 +65,43 @@ Esta celda reinicia sola al terminar. Verás «Your session crashed» o
 «El kernel se reinició»: **es lo esperado, no es un error.**
 
 Después del reinicio, **sigue desde la celda 3**. No repitas ésta."""))
-C.append(code("""!pip -q install qwen-tts soundfile numpy
+C.append(code("""# Versiones EXACTAS, comprobadas en PyPI, no dejadas a la resolucion de pip:
+#   qwen-tts 0.1.1  fija  transformers==4.57.3 y accelerate==1.12.0
+#   transformers 4.57.3   exige huggingface-hub<1.0 (la ultima 0.x es 0.36.2)
+#                         y tokenizers>=0.22.0,<=0.23.0
+# Colab trae preinstalados transformers v5 y huggingface-hub 1.x, que es de
+# donde sale el choque. Fijandolo todo, la instalacion es determinista.
+!pip -q install \
+    qwen-tts==0.1.1 \
+    transformers==4.57.3 \
+    huggingface-hub==0.36.2 \
+    tokenizers==0.22.2 \
+    accelerate==1.12.0 \
+    soundfile
 !apt-get -qq install -y ffmpeg > /dev/null
 
-import importlib.metadata as md
-for pkg in ('transformers', 'huggingface-hub', 'accelerate', 'qwen-tts'):
-    try:
-        print('%-18s %s' % (pkg, md.version(pkg)))
-    except Exception:
-        print('%-18s NO INSTALADO' % pkg)
+ESPERADO = {'transformers': '4.57.3', 'huggingface-hub': '0.36.2',
+            'tokenizers': '0.22.2', 'accelerate': '1.12.0', 'qwen-tts': '0.1.1'}
 
-# El aviso sobre diffusers es inofensivo: no lo usamos.
+import importlib.metadata as md
+malas = []
+for pkg, quiero in ESPERADO.items():
+    try:
+        hay = md.version(pkg)
+    except Exception:
+        hay = 'NO INSTALADO'
+    ok = 'ok' if hay == quiero else 'DISTINTA (esperaba %s)' % quiero
+    if hay != quiero:
+        malas.append(pkg)
+    print('%-18s %-12s %s' % (pkg, hay, ok))
+if malas:
+    print('\nOJO, no cuadran:', ', '.join(malas))
+
+for pkg in ():
+    pass
+
+# El aviso de pip sobre diffusers es inofensivo: pide huggingface-hub 1.x pero
+# no lo usamos, y aqui manda transformers.
 print('
 Reiniciando el entorno. Cuando vuelva, sigue DESDE LA CELDA 3.')
 import IPython
@@ -90,11 +116,15 @@ C.append(code("""import torch, importlib.metadata as md
 # Comprobar ANTES de importar: si la version no es la que qwen-tts fija, el
 # fallo sale aqui y se entiende, en vez de como un ImportError sobre
 # GenerationMixin tres marcos mas abajo.
-v = md.version('transformers')
-print('transformers', v, '| huggingface-hub', md.version('huggingface-hub'))
-assert v.startswith('4.57'), (
-    'transformers %s no sirve: qwen-tts fija la 4.57.3. Ejecuta la celda 2 y '
-    'REINICIA el entorno antes de volver aqui.' % v)
+ESPERADO = {'transformers': '4.57.3', 'huggingface-hub': '0.36.2',
+            'tokenizers': '0.22.2', 'accelerate': '1.12.0', 'qwen-tts': '0.1.1'}
+hay = {k: md.version(k) for k in ESPERADO}
+print(' | '.join('%s %s' % (k, v) for k, v in hay.items()))
+malas = [k for k in ESPERADO if hay[k] != ESPERADO[k]]
+assert not malas, (
+    'Versiones equivocadas en %s. Ejecuta la celda 2 y REINICIA el entorno '
+    'antes de volver aqui. Tengo %s, necesito %s.'
+    % (', '.join(malas), {k: hay[k] for k in malas}, {k: ESPERADO[k] for k in malas}))
 
 cap = torch.cuda.get_device_capability()
 ATTN = 'flash_attention_2' if cap[0] >= 8 else 'sdpa'
