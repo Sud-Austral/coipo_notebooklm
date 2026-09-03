@@ -1,0 +1,6500 @@
+{
+  "metadata": {
+    "repository": "target",
+    "generated_at": "2026-09-03T01:38:54.984081",
+    "analyzer": "readme3",
+    "version": "2.0-evidence-first",
+    "file_count": 233
+  },
+  "policy": {
+    "purpose": "Repository evidence extraction for documentation generation.",
+    "important_rule": "Signals do not automatically represent confirmed product capabilities."
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "language": "Other",
+      "size": 886,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": ".gitattributes",
+      "name": ".gitattributes",
+      "ext": "",
+      "language": "Other",
+      "size": 66,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "generacion_optima.md",
+      "name": "generacion_optima.md",
+      "ext": ".md",
+      "language": "Markdown",
+      "size": 16559,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "galeria-estado.json",
+      "name": "galeria-estado.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 28414,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "language": "Markdown",
+      "size": 8630,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "requirements.txt",
+      "name": "requirements.txt",
+      "ext": ".txt",
+      "language": "Text",
+      "size": 267,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": ".mcp.json",
+      "name": ".mcp.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 201,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/Entrega de Plantas CONAF — explicativo.mp4",
+      "name": "Entrega de Plantas CONAF — explicativo.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 15932325,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/COIPO — El ecosistema completo (v2).mp4",
+      "name": "COIPO — El ecosistema completo (v2).mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 68261258,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/.gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "language": "Other",
+      "size": 347,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/remotion.config.js",
+      "name": "remotion.config.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 117,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 449,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "video/package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 138470,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "video/COIPO — El ecosistema completo.mp4",
+      "name": "COIPO — El ecosistema completo.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 15885318,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/COIPO — Sistema de Gestión de Contratos (v2).mp4",
+      "name": "COIPO — Sistema de Gestión de Contratos (v2).mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 62766598,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/COIPO — Sistema de Gestión de Contratos.mp4",
+      "name": "COIPO — Sistema de Gestión de Contratos.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 15916423,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/Catastro de Usos de la Tierra — podcast explicativo (liviano).mp4",
+      "name": "Catastro de Usos de la Tierra — podcast explicativo (liviano).mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 67023271,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/diseno/canvas.json",
+      "name": "canvas.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 530,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/diseno/Main.dc.html",
+      "name": "Main.dc.html",
+      "ext": ".html",
+      "language": "HTML",
+      "size": 9156,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/diseno/Estructura.dc.html",
+      "name": "Estructura.dc.html",
+      "ext": ".html",
+      "language": "HTML",
+      "size": 12744,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/diseno/Arquetipos.dc.html",
+      "name": "Arquetipos.dc.html",
+      "ext": ".html",
+      "language": "HTML",
+      "size": 11624,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/diseno/direccion-de-arte-coipo-video.html",
+      "name": "direccion-de-arte-coipo-video.html",
+      "ext": ".html",
+      "language": "HTML",
+      "size": 2514758,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/public/foto2.jpg",
+      "name": "foto2.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 1080923,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto7.jpg",
+      "name": "foto7.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 2390800,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion_contrato.mp3",
+      "name": "narracion_contrato.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 851085,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion_catastro.mp3",
+      "name": "narracion_catastro.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 6796845,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion_ecosistema2.mp3",
+      "name": "narracion_ecosistema2.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 825165,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto4.png",
+      "name": "foto4.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 48372273,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion.mp3",
+      "name": "narracion.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 857709,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion_ecosistema.mp3",
+      "name": "narracion_ecosistema.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 822957,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto6.jpg",
+      "name": "foto6.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 1563611,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/tipografia.css",
+      "name": "tipografia.css",
+      "ext": ".css",
+      "language": "CSS",
+      "size": 922,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/public/intro.mp3",
+      "name": "intro.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 241389,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/forestin.jpeg",
+      "name": "forestin.jpeg",
+      "ext": ".jpeg",
+      "language": "Other",
+      "size": 155002,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto5.jpg",
+      "name": "foto5.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 3742740,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/narracion_contrato2.mp3",
+      "name": "narracion_contrato2.mp3",
+      "ext": ".mp3",
+      "language": "Other",
+      "size": 790221,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto8.jpg",
+      "name": "foto8.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 4363703,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/foto3.jpg",
+      "name": "foto3.jpg",
+      "ext": ".jpg",
+      "language": "Other",
+      "size": 2800635,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/Archivo-600-normal.woff2",
+      "name": "Archivo-600-normal.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 34928,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/Archivo-400-normal.woff2",
+      "name": "Archivo-400-normal.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 34928,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/InstrumentSerif-400-italic.woff2",
+      "name": "InstrumentSerif-400-italic.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 22128,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/Archivo-700-normal.woff2",
+      "name": "Archivo-700-normal.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 34928,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/InstrumentSerif-400-normal.woff2",
+      "name": "InstrumentSerif-400-normal.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 21032,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/fuentes/Archivo-500-normal.woff2",
+      "name": "Archivo-500-normal.woff2",
+      "ext": ".woff2",
+      "language": "Other",
+      "size": 34928,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/dosel.mp4",
+      "name": "dosel.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 4460881,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/pirocumulo.mp4",
+      "name": "pirocumulo.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 2747998,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/nubes.mp4",
+      "name": "nubes.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 4498823,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/montana.mp4",
+      "name": "montana.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 3247990,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/rio.mp4",
+      "name": "rio.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 7577804,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/clips/bosque_aereo.mp4",
+      "name": "bosque_aereo.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 1518982,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/13_compartir.png",
+      "name": "13_compartir.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 670925,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/05_tipos.png",
+      "name": "05_tipos.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 691722,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/01_nacional.png",
+      "name": "01_nacional.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 706009,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/18_satelite.png",
+      "name": "18_satelite.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 1181601,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/02_clases.png",
+      "name": "02_clases.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 693032,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/15_solo_bosques.png",
+      "name": "15_solo_bosques.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 600400,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/17_losrios_bosque.png",
+      "name": "17_losrios_bosque.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 1658705,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/11_territorio.png",
+      "name": "11_territorio.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 696707,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/16_araucania.png",
+      "name": "16_araucania.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 1181743,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/12_descargar.png",
+      "name": "12_descargar.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 715379,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/06_especies.png",
+      "name": "06_especies.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 674900,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/19_sentinel.png",
+      "name": "19_sentinel.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 5720437,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/04_adentro.png",
+      "name": "04_adentro.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 696026,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/03_bosque.png",
+      "name": "03_bosque.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 704988,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/14_informacion.png",
+      "name": "14_informacion.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 855520,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/08_simef.png",
+      "name": "08_simef.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 749039,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/09_anios.png",
+      "name": "09_anios.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 712218,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/07_snaspe.png",
+      "name": "07_snaspe.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 701992,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/public/catastro/10_especie_modal.png",
+      "name": "10_especie_modal.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 825178,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "video/src/beats_catastro.json",
+      "name": "beats_catastro.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 18872,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/animacion.js",
+      "name": "animacion.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 2025,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/estilo.js",
+      "name": "estilo.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 1189,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/Explicativo.jsx",
+      "name": "Explicativo.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1683,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/secciones2.jsx",
+      "name": "secciones2.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 12995,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/VideoContrato.jsx",
+      "name": "VideoContrato.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2145,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/Root.jsx",
+      "name": "Root.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1599,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/VideoEcosistema.jsx",
+      "name": "VideoEcosistema.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2191,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/catalogo.json",
+      "name": "catalogo.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 4870,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/index.jsx",
+      "name": "index.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 109,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/ecosistema.jsx",
+      "name": "ecosistema.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 6661,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/Portadilla.jsx",
+      "name": "Portadilla.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 4015,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/secciones.jsx",
+      "name": "secciones.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 11753,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/contrato.jsx",
+      "name": "contrato.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 20455,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/v2/base.jsx",
+      "name": "base.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 6789,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/v2/arquetipos.jsx",
+      "name": "arquetipos.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 17271,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/v2/VideoCatastro.jsx",
+      "name": "VideoCatastro.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 10851,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/v2/VideoContrato2.jsx",
+      "name": "VideoContrato2.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 6237,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/src/v2/VideoEcosistema2.jsx",
+      "name": "VideoEcosistema2.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 4009,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/guion_catastro.py",
+      "name": "guion_catastro.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 14332,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/guion_contrato2.py",
+      "name": "guion_contrato2.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3041,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/capturar_todo.py",
+      "name": "capturar_todo.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3882,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/capturar_modales.py",
+      "name": "capturar_modales.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 2137,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/narrar.py",
+      "name": "narrar.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3468,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/capturar.py",
+      "name": "capturar.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 5829,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/catalogo.py",
+      "name": "catalogo.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 4514,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/narrar_beats.py",
+      "name": "narrar_beats.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 5563,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/guion_ecosistema2.py",
+      "name": "guion_ecosistema2.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3103,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "video/pipeline/musica.py",
+      "name": "musica.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3147,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "presentacion/creditos-imagenes-v2.csv",
+      "name": "creditos-imagenes-v2.csv",
+      "ext": ".csv",
+      "language": "Other",
+      "size": 40208,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "presentacion/creditos-imagenes-v4.csv",
+      "name": "creditos-imagenes-v4.csv",
+      "ext": ".csv",
+      "language": "Other",
+      "size": 47146,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "presentacion/creditos-imagenes-v5.csv",
+      "name": "creditos-imagenes-v5.csv",
+      "ext": ".csv",
+      "language": "Other",
+      "size": 49256,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "presentacion/creditos-imagenes-v3.csv",
+      "name": "creditos-imagenes-v3.csv",
+      "ext": ".csv",
+      "language": "Other",
+      "size": 45007,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": ".github/workflows/readme.yml",
+      "name": "readme.yml",
+      "ext": ".yml",
+      "language": "YAML",
+      "size": 223,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": ".github/workflows/deploy.yml",
+      "name": "deploy.yml",
+      "ext": ".yml",
+      "language": "YAML",
+      "size": 1473,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "image/conaf-03-landscape.png",
+      "name": "conaf-03-landscape.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 6084591,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "image/conaf-02-square.png",
+      "name": "conaf-02-square.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 5575787,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "image/estado.json",
+      "name": "estado.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 776,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "image/conaf-01-portrait.png",
+      "name": "conaf-01-portrait.png",
+      "ext": ".png",
+      "language": "Other",
+      "size": 5087696,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "scripts/ingest_media.py",
+      "name": "ingest_media.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 3986,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "scripts/artifact_status.py",
+      "name": "artifact_status.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 2769,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "scripts/gen_private_doc.py",
+      "name": "gen_private_doc.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 11969,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "scripts/gen_galeria.py",
+      "name": "gen_galeria.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 14479,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "scripts/gen_conaf.py",
+      "name": "gen_conaf.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 5657,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "scripts/optimizar_galeria.py",
+      "name": "optimizar_galeria.py",
+      "ext": ".py",
+      "language": "Python",
+      "size": 7535,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "media/.gitkeep",
+      "name": ".gitkeep",
+      "ext": "",
+      "language": "Other",
+      "size": 0,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "media/manifest.json",
+      "name": "manifest.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 551,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/index.html",
+      "name": "index.html",
+      "ext": ".html",
+      "language": "HTML",
+      "size": 842,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/vite.config.js",
+      "name": "vite.config.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 954,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/.gitignore",
+      "name": ".gitignore",
+      "ext": "",
+      "language": "Other",
+      "size": 299,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/package.json",
+      "name": "package.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 514,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "frontend/.oxlintrc.json",
+      "name": ".oxlintrc.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 231,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "name": "package-lock.json",
+      "ext": ".json",
+      "language": "JSON",
+      "size": 39488,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "frontend/README.md",
+      "name": "README.md",
+      "ext": ".md",
+      "language": "Markdown",
+      "size": 1009,
+      "text": true,
+      "important": true
+    },
+    {
+      "path": "frontend/.env.example",
+      "name": ".env.example",
+      "ext": ".example",
+      "language": "Other",
+      "size": 438,
+      "text": false,
+      "important": true
+    },
+    {
+      "path": "frontend/public/favicon.svg",
+      "name": "favicon.svg",
+      "ext": ".svg",
+      "language": "Other",
+      "size": 9314,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-07-conaf-web.mp4",
+      "name": "video-07-conaf-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 3110116,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-00-parques-nacionales-web.mp4",
+      "name": "video-00-parques-nacionales-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 8046416,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-06-conguillio-web.mp4",
+      "name": "video-06-conguillio-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 7566845,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-03-bosque-valdiviano-web.mp4",
+      "name": "video-03-bosque-valdiviano-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 4983213,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-08-amenazas-poster.webp",
+      "name": "video-08-amenazas-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 22518,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-04-bosque-esclerofilo-web.mp4",
+      "name": "video-04-bosque-esclerofilo-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 8924704,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-00-parques-nacionales-poster.webp",
+      "name": "video-00-parques-nacionales-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 22374,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-01-araucaria-poster.webp",
+      "name": "video-01-araucaria-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 8096,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-03-bosque-valdiviano-poster.webp",
+      "name": "video-03-bosque-valdiviano-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 30310,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/extra-video-00-extra-poster.webp",
+      "name": "extra-video-00-extra-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 26042,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-02-alerce-web.mp4",
+      "name": "video-02-alerce-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 8742284,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-05-torres-del-paine-web.mp4",
+      "name": "video-05-torres-del-paine-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 5036528,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-09-fauna-poster.webp",
+      "name": "video-09-fauna-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 26988,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-08-amenazas-web.mp4",
+      "name": "video-08-amenazas-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 11094290,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-01-araucaria-web.mp4",
+      "name": "video-01-araucaria-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 1966758,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-04-bosque-esclerofilo-poster.webp",
+      "name": "video-04-bosque-esclerofilo-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 23662,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-07-conaf-poster.webp",
+      "name": "video-07-conaf-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 17536,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-09-fauna-web.mp4",
+      "name": "video-09-fauna-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 2818506,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-06-conguillio-poster.webp",
+      "name": "video-06-conguillio-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 15870,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-02-alerce-poster.webp",
+      "name": "video-02-alerce-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 24048,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/video-05-torres-del-paine-poster.webp",
+      "name": "video-05-torres-del-paine-poster.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 22714,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/video/extra-video-00-extra-web.mp4",
+      "name": "extra-video-00-extra-web.mp4",
+      "ext": ".mp4",
+      "language": "Other",
+      "size": 4211180,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/audio-00-parques-nacionales-web.m4a",
+      "name": "audio-00-parques-nacionales-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 1282091,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/audio-03-bosque-valdiviano-web.m4a",
+      "name": "audio-03-bosque-valdiviano-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 11914036,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/audio-02-alerce-web.m4a",
+      "name": "audio-02-alerce-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 2966489,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/audio-04-bosque-esclerofilo-web.m4a",
+      "name": "audio-04-bosque-esclerofilo-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 1504035,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/audio-01-araucaria-web.m4a",
+      "name": "audio-01-araucaria-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 17217072,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/audio/extra-audio-00-extra-web.m4a",
+      "name": "extra-audio-00-extra-web.m4a",
+      "ext": ".m4a",
+      "language": "Other",
+      "size": 1112515,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-05-torres-del-paine-thumb.webp",
+      "name": "info-05-torres-del-paine-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 95542,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-12-alerce-thumb.webp",
+      "name": "info-12-alerce-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 54378,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-11-araucaria.webp",
+      "name": "info-11-araucaria.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 211194,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-00-parques-nacionales-thumb.webp",
+      "name": "info-00-parques-nacionales-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 40758,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-06-conguillio-thumb.webp",
+      "name": "info-06-conguillio-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 38138,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-03-bosque-valdiviano.webp",
+      "name": "info-03-bosque-valdiviano.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 235866,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-04-bosque-esclerofilo.webp",
+      "name": "info-04-bosque-esclerofilo.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 305622,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-01-araucaria-thumb.webp",
+      "name": "info-01-araucaria-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 98538,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-03-bosque-valdiviano-thumb.webp",
+      "name": "info-03-bosque-valdiviano-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 52990,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-09-fauna-thumb.webp",
+      "name": "info-09-fauna-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 59104,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-02-alerce.webp",
+      "name": "info-02-alerce.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 348822,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-04-bosque-esclerofilo-thumb.webp",
+      "name": "info-04-bosque-esclerofilo-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 89552,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-08-amenazas.webp",
+      "name": "info-08-amenazas.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 455006,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-07-conaf-thumb.webp",
+      "name": "info-07-conaf-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 82650,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-08-amenazas-thumb.webp",
+      "name": "info-08-amenazas-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 109314,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/extra-infographic-00-extra-thumb.webp",
+      "name": "extra-infographic-00-extra-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 38572,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-02-alerce-thumb.webp",
+      "name": "info-02-alerce-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 72586,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-01-araucaria.webp",
+      "name": "info-01-araucaria.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 371800,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-05-torres-del-paine.webp",
+      "name": "info-05-torres-del-paine.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 410016,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-12-alerce.webp",
+      "name": "info-12-alerce.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 298676,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-10-parques-nacionales.webp",
+      "name": "info-10-parques-nacionales.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 347882,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-09-fauna.webp",
+      "name": "info-09-fauna.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 252800,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-10-parques-nacionales-thumb.webp",
+      "name": "info-10-parques-nacionales-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 100954,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-00-parques-nacionales.webp",
+      "name": "info-00-parques-nacionales.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 171380,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-07-conaf.webp",
+      "name": "info-07-conaf.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 310644,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/extra-infographic-01-extra.webp",
+      "name": "extra-infographic-01-extra.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 430136,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/extra-infographic-01-extra-thumb.webp",
+      "name": "extra-infographic-01-extra-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 106698,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/extra-infographic-00-extra.webp",
+      "name": "extra-infographic-00-extra.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 171568,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-11-araucaria-thumb.webp",
+      "name": "info-11-araucaria-thumb.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 54794,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/public/galeria/infographic/info-06-conguillio.webp",
+      "name": "info-06-conguillio.webp",
+      "ext": ".webp",
+      "language": "Other",
+      "size": 174246,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "frontend/src/index.css",
+      "name": "index.css",
+      "ext": ".css",
+      "language": "CSS",
+      "size": 3533,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/App.jsx",
+      "name": "App.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3864,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/main.jsx",
+      "name": "main.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 318,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/styles/layout.css",
+      "name": "layout.css",
+      "ext": ".css",
+      "language": "CSS",
+      "size": 5249,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/styles/content.css",
+      "name": "content.css",
+      "ext": ".css",
+      "language": "CSS",
+      "size": 5302,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/styles/galeria.css",
+      "name": "galeria.css",
+      "ext": ".css",
+      "language": "CSS",
+      "size": 3416,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/router/useHashRoute.js",
+      "name": "useHashRoute.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 1518,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/VariablesEntorno.jsx",
+      "name": "VariablesEntorno.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2520,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/OtrosProyectos.jsx",
+      "name": "OtrosProyectos.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 5086,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Troubleshooting.jsx",
+      "name": "Troubleshooting.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 7208,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/GaleriaInfografias.jsx",
+      "name": "GaleriaInfografias.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3172,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Instalacion.jsx",
+      "name": "Instalacion.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2421,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Ingesta.jsx",
+      "name": "Ingesta.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2742,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/EstadoYDescarga.jsx",
+      "name": "EstadoYDescarga.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3596,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Multimedia.jsx",
+      "name": "Multimedia.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3713,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/ClientesMcp.jsx",
+      "name": "ClientesMcp.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3467,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Requisitos.jsx",
+      "name": "Requisitos.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2214,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/GaleriaVideos.jsx",
+      "name": "GaleriaVideos.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 2204,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/NotebookYFuentes.jsx",
+      "name": "NotebookYFuentes.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 4096,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/GaleriaAudios.jsx",
+      "name": "GaleriaAudios.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1707,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/sections.js",
+      "name": "sections.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 3072,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/QueEs.jsx",
+      "name": "QueEs.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 3266,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/content/Login.jsx",
+      "name": "Login.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 4033,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/data/envVars.js",
+      "name": "envVars.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 2763,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/data/artifacts.js",
+      "name": "artifacts.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 1514,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/data/galeria.js",
+      "name": "galeria.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 9792,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/data/mcpClients.js",
+      "name": "mcpClients.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 929,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/hooks/useCopyToClipboard.js",
+      "name": "useCopyToClipboard.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 973,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/hooks/useHeadings.js",
+      "name": "useHeadings.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 726,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/hooks/platformContext.js",
+      "name": "platformContext.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 609,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/hooks/useActiveHeading.js",
+      "name": "useActiveHeading.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 1654,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/PagerNav.jsx",
+      "name": "PagerNav.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 556,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Badge.jsx",
+      "name": "Badge.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 156,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/DataTable.jsx",
+      "name": "DataTable.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 830,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/TopBar.jsx",
+      "name": "TopBar.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1781,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/CopyButton.jsx",
+      "name": "CopyButton.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 713,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/CodeBlock.jsx",
+      "name": "CodeBlock.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1166,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Heading.jsx",
+      "name": "Heading.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 630,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Steps.jsx",
+      "name": "Steps.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 242,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/FiltroTemas.jsx",
+      "name": "FiltroTemas.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 549,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/NotFound.jsx",
+      "name": "NotFound.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 385,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Callout.jsx",
+      "name": "Callout.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1158,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Lightbox.jsx",
+      "name": "Lightbox.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1828,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/SectionContext.js",
+      "name": "SectionContext.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 284,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/Sidebar.jsx",
+      "name": "Sidebar.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 1016,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/PlatformProvider.jsx",
+      "name": "PlatformProvider.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 702,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/components/TableOfContents.jsx",
+      "name": "TableOfContents.jsx",
+      "ext": ".jsx",
+      "language": "React",
+      "size": 707,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/src/lib/dedent.js",
+      "name": "dedent.js",
+      "ext": ".js",
+      "language": "JavaScript",
+      "size": 631,
+      "text": true,
+      "important": false
+    },
+    {
+      "path": "frontend/scripts/check-publish.mjs",
+      "name": "check-publish.mjs",
+      "ext": ".mjs",
+      "language": "Other",
+      "size": 2148,
+      "text": false,
+      "important": false
+    },
+    {
+      "path": "forestin/forestin.jpeg",
+      "name": "forestin.jpeg",
+      "ext": ".jpeg",
+      "language": "Other",
+      "size": 155002,
+      "text": false,
+      "important": false
+    }
+  ],
+  "structure": {
+    ".gitignore": 1,
+    ".gitattributes": 1,
+    "generacion_optima.md": 1,
+    "galeria-estado.json": 1,
+    "README.md": 1,
+    "requirements.txt": 1,
+    ".mcp.json": 1,
+    "video": 91,
+    "presentacion": 4,
+    ".github": 2,
+    "image": 4,
+    "scripts": 6,
+    "media": 2,
+    "frontend": 116,
+    "forestin": 1
+  },
+  "important_files": [
+    "frontend/package.json",
+    "requirements.txt",
+    "video/package.json",
+    "README.md",
+    "frontend/.env.example",
+    "frontend/README.md",
+    "frontend/package-lock.json",
+    "video/package-lock.json",
+    ".github/workflows/deploy.yml",
+    "frontend/vite.config.js",
+    ".github/workflows/readme.yml",
+    "frontend/src/content/Login.jsx",
+    "frontend/src/router/useHashRoute.js",
+    "video/remotion.config.js",
+    "video/src/index.jsx"
+  ],
+  "technologies": {
+    "React": {
+      "confidence": "high",
+      "evidence": [
+        {
+          "file": "README.md",
+          "line": 163,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/package.json",
+          "line": 13,
+          "weight": 10,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/package-lock.json",
+          "line": 13,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/diseno/direccion-de-arte-coipo-video.html",
+          "line": 1071,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/Explicativo.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/secciones2.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/VideoContrato.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/Root.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/VideoEcosistema.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/ecosistema.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/Portadilla.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/secciones.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/contrato.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/v2/base.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/v2/arquetipos.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/v2/VideoCatastro.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/v2/VideoContrato2.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "video/src/v2/VideoEcosistema2.jsx",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "scripts/gen_galeria.py",
+          "line": 5,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        },
+        {
+          "file": "frontend/vite.config.js",
+          "line": 2,
+          "weight": 1,
+          "pattern": "\\breact\\b"
+        }
+      ]
+    },
+    "Vite": {
+      "confidence": "high",
+      "evidence": [
+        {
+          "file": "README.md",
+          "line": 163,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "video/src/contrato.jsx",
+          "line": 44,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "video/src/v2/VideoContrato2.jsx",
+          "line": 28,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "scripts/gen_galeria.py",
+          "line": 278,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "scripts/optimizar_galeria.py",
+          "line": 72,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "frontend/vite.config.js",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "frontend/package.json",
+          "line": 7,
+          "weight": 10,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "frontend/package-lock.json",
+          "line": 19,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "frontend/README.md",
+          "line": 1,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        },
+        {
+          "file": "frontend/src/router/useHashRoute.js",
+          "line": 8,
+          "weight": 1,
+          "pattern": "\\bvite\\b"
+        }
+      ]
+    },
+    "Vue": {
+      "confidence": "low",
+      "evidence": [
+        {
+          "file": "video/diseno/direccion-de-arte-coipo-video.html",
+          "line": 1079,
+          "weight": 1,
+          "pattern": "\\bvue\\b"
+        }
+      ]
+    },
+    "FastAPI": {
+      "confidence": "medium",
+      "evidence": [
+        {
+          "file": "video/src/secciones2.jsx",
+          "line": 171,
+          "weight": 1,
+          "pattern": "\\bfastapi\\b"
+        },
+        {
+          "file": "video/src/contrato.jsx",
+          "line": 45,
+          "weight": 1,
+          "pattern": "\\bfastapi\\b"
+        },
+        {
+          "file": "video/src/v2/VideoContrato2.jsx",
+          "line": 29,
+          "weight": 1,
+          "pattern": "\\bfastapi\\b"
+        }
+      ]
+    },
+    "Node.js": {
+      "confidence": "high",
+      "evidence": [
+        {
+          "file": "video/package-lock.json",
+          "line": 29,
+          "weight": 1,
+          "pattern": "\\bnode\\b"
+        },
+        {
+          "file": "video/diseno/direccion-de-arte-coipo-video.html",
+          "line": 1078,
+          "weight": 1,
+          "pattern": "\\bnode\\b"
+        },
+        {
+          "file": ".github/workflows/deploy.yml",
+          "line": 28,
+          "weight": 1,
+          "pattern": "\\bnode\\b"
+        },
+        {
+          "file": "frontend/package.json",
+          "line": 9,
+          "weight": 10,
+          "pattern": "\\bnode\\b"
+        },
+        {
+          "file": "frontend/package-lock.json",
+          "line": 46,
+          "weight": 1,
+          "pattern": "\\bnode\\b"
+        },
+        {
+          "file": "frontend/src/content/Requisitos.jsx",
+          "line": 26,
+          "weight": 1,
+          "pattern": "\\bnode\\b"
+        }
+      ]
+    },
+    "PostgreSQL": {
+      "confidence": "medium",
+      "evidence": [
+        {
+          "file": "video/src/secciones2.jsx",
+          "line": 171,
+          "weight": 1,
+          "pattern": "\\bpostgresql\\b"
+        },
+        {
+          "file": "video/src/contrato.jsx",
+          "line": 46,
+          "weight": 1,
+          "pattern": "\\bpostgresql\\b"
+        },
+        {
+          "file": "video/src/v2/VideoContrato2.jsx",
+          "line": 30,
+          "weight": 1,
+          "pattern": "\\bpostgresql\\b"
+        }
+      ]
+    },
+    "Docker": {
+      "confidence": "low",
+      "evidence": [
+        {
+          "file": "video/package-lock.json",
+          "line": 2700,
+          "weight": 1,
+          "pattern": "\\bdocker\\b"
+        },
+        {
+          "file": "video/src/secciones2.jsx",
+          "line": 171,
+          "weight": 1,
+          "pattern": "\\bdocker\\b"
+        }
+      ]
+    },
+    "Leaflet": {
+      "confidence": "low",
+      "evidence": [
+        {
+          "file": "video/src/beats_catastro.json",
+          "line": 729,
+          "weight": 1,
+          "pattern": "\\bleaflet\\b"
+        },
+        {
+          "file": "video/pipeline/guion_catastro.py",
+          "line": 186,
+          "weight": 1,
+          "pattern": "\\bleaflet\\b"
+        }
+      ]
+    },
+    "Tailwind": {
+      "confidence": "low",
+      "evidence": [
+        {
+          "file": "video/diseno/direccion-de-arte-coipo-video.html",
+          "line": 26,
+          "weight": 1,
+          "pattern": "\\btailwind\\b"
+        }
+      ]
+    },
+    "OpenCV": {
+      "confidence": "low",
+      "evidence": [
+        {
+          "file": "video/diseno/direccion-de-arte-coipo-video.html",
+          "line": 4206,
+          "weight": 1,
+          "pattern": "\\bcv2\\b"
+        }
+      ]
+    }
+  },
+  "dependencies": {
+    "npm": [],
+    "python": [
+      {
+        "value": "notebooklm-mcp-cli==0.9.10",
+        "file": "requirements.txt",
+        "line": 6
+      }
+    ]
+  },
+  "environment_variables": [
+    {
+      "value": "NLM_PROFILE",
+      "file": "scripts/gen_private_doc.py",
+      "line": 282,
+      "type": "python"
+    }
+  ],
+  "api": [],
+  "database_tables": [],
+  "capability_signals": {
+    "Autenticación": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "login",
+          "file": "generacion_optima.md",
+          "line": 225
+        },
+        {
+          "keyword": "login",
+          "file": "README.md",
+          "line": 19
+        },
+        {
+          "keyword": "auth",
+          "file": "README.md",
+          "line": 82
+        },
+        {
+          "keyword": "login",
+          "file": "requirements.txt",
+          "line": 5
+        },
+        {
+          "keyword": "token",
+          "file": "video/package-lock.json",
+          "line": 25
+        },
+        {
+          "keyword": "auth",
+          "file": "video/src/contrato.jsx",
+          "line": 275
+        },
+        {
+          "keyword": "jwt",
+          "file": "video/src/contrato.jsx",
+          "line": 275
+        },
+        {
+          "keyword": "token",
+          "file": "video/src/contrato.jsx",
+          "line": 275
+        },
+        {
+          "keyword": "token",
+          "file": "video/src/v2/VideoContrato2.jsx",
+          "line": 120
+        },
+        {
+          "keyword": "token",
+          "file": "video/pipeline/guion_contrato2.py",
+          "line": 54
+        },
+        {
+          "keyword": "token",
+          "file": ".github/workflows/deploy.yml",
+          "line": 12
+        },
+        {
+          "keyword": "login",
+          "file": "scripts/gen_private_doc.py",
+          "line": 54
+        },
+        {
+          "keyword": "auth",
+          "file": "scripts/gen_private_doc.py",
+          "line": 25
+        },
+        {
+          "keyword": "token",
+          "file": "scripts/gen_private_doc.py",
+          "line": 139
+        },
+        {
+          "keyword": "login",
+          "file": "scripts/gen_conaf.py",
+          "line": 8
+        },
+        {
+          "keyword": "auth",
+          "file": "scripts/gen_conaf.py",
+          "line": 122
+        },
+        {
+          "keyword": "login",
+          "file": "frontend/index.html",
+          "line": 10
+        },
+        {
+          "keyword": "jwt",
+          "file": "frontend/package-lock.json",
+          "line": 307
+        },
+        {
+          "keyword": "login",
+          "file": "frontend/src/content/VariablesEntorno.jsx",
+          "line": 61
+        },
+        {
+          "keyword": "token",
+          "file": "frontend/src/content/VariablesEntorno.jsx",
+          "line": 18
+        }
+      ]
+    },
+    "Mapas / cartografía": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "mapa",
+          "file": "video/diseno/Estructura.dc.html",
+          "line": 142
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/diseno/Arquetipos.dc.html",
+          "line": 165
+        },
+        {
+          "keyword": "leaflet",
+          "file": "video/src/beats_catastro.json",
+          "line": 729
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/src/beats_catastro.json",
+          "line": 14
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/src/ecosistema.jsx",
+          "line": 20
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/src/v2/VideoCatastro.jsx",
+          "line": 24
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/src/v2/VideoEcosistema2.jsx",
+          "line": 61
+        },
+        {
+          "keyword": "leaflet",
+          "file": "video/pipeline/guion_catastro.py",
+          "line": 186
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/pipeline/guion_catastro.py",
+          "line": 15
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/pipeline/capturar.py",
+          "line": 7
+        },
+        {
+          "keyword": "mapa",
+          "file": "video/pipeline/guion_ecosistema2.py",
+          "line": 62
+        },
+        {
+          "keyword": "mapa",
+          "file": "frontend/src/content/QueEs.jsx",
+          "line": 59
+        },
+        {
+          "keyword": "mapa",
+          "file": "frontend/src/data/artifacts.js",
+          "line": 16
+        }
+      ]
+    },
+    "Exportación": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "export",
+          "file": "generacion_optima.md",
+          "line": 353
+        },
+        {
+          "keyword": "csv",
+          "file": "generacion_optima.md",
+          "line": 384
+        },
+        {
+          "keyword": "excel",
+          "file": "generacion_optima.md",
+          "line": 195
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/animacion.js",
+          "line": 6
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/estilo.js",
+          "line": 4
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/Explicativo.jsx",
+          "line": 7
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/secciones2.jsx",
+          "line": 25
+        },
+        {
+          "keyword": "excel",
+          "file": "video/src/secciones2.jsx",
+          "line": 43
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/VideoContrato.jsx",
+          "line": 7
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/Root.jsx",
+          "line": 10
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/VideoEcosistema.jsx",
+          "line": 7
+        },
+        {
+          "keyword": "excel",
+          "file": "video/src/catalogo.json",
+          "line": 54
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/ecosistema.jsx",
+          "line": 21
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/Portadilla.jsx",
+          "line": 6
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/secciones.jsx",
+          "line": 35
+        },
+        {
+          "keyword": "excel",
+          "file": "video/src/secciones.jsx",
+          "line": 161
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/contrato.jsx",
+          "line": 34
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/v2/base.jsx",
+          "line": 17
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/v2/arquetipos.jsx",
+          "line": 12
+        },
+        {
+          "keyword": "export",
+          "file": "video/src/v2/VideoCatastro.jsx",
+          "line": 10
+        }
+      ]
+    },
+    "Carga de archivos": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "archivo",
+          "file": "generacion_optima.md",
+          "line": 35
+        },
+        {
+          "keyword": "file",
+          "file": "generacion_optima.md",
+          "line": 116
+        },
+        {
+          "keyword": "archivo",
+          "file": "galeria-estado.json",
+          "line": 23
+        },
+        {
+          "keyword": "archivo",
+          "file": "README.md",
+          "line": 107
+        },
+        {
+          "keyword": "file",
+          "file": "README.md",
+          "line": 14
+        },
+        {
+          "keyword": "document",
+          "file": "README.md",
+          "line": 13
+        },
+        {
+          "keyword": "file",
+          "file": "video/package-lock.json",
+          "line": 4
+        },
+        {
+          "keyword": "file",
+          "file": "video/diseno/canvas.json",
+          "line": 3
+        },
+        {
+          "keyword": "archivo",
+          "file": "video/diseno/Main.dc.html",
+          "line": 102
+        },
+        {
+          "keyword": "archivo",
+          "file": "video/public/tipografia.css",
+          "line": 1
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/Explicativo.jsx",
+          "line": 2
+        },
+        {
+          "keyword": "archivo",
+          "file": "video/src/secciones2.jsx",
+          "line": 15
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/secciones2.jsx",
+          "line": 2
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/VideoContrato.jsx",
+          "line": 2
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/VideoEcosistema.jsx",
+          "line": 2
+        },
+        {
+          "keyword": "archivo",
+          "file": "video/src/catalogo.json",
+          "line": 242
+        },
+        {
+          "keyword": "document",
+          "file": "video/src/catalogo.json",
+          "line": 218
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/Portadilla.jsx",
+          "line": 2
+        },
+        {
+          "keyword": "archivo",
+          "file": "video/src/secciones.jsx",
+          "line": 17
+        },
+        {
+          "keyword": "file",
+          "file": "video/src/secciones.jsx",
+          "line": 2
+        }
+      ]
+    },
+    "Reportes / analítica": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "report",
+          "file": "README.md",
+          "line": 4
+        },
+        {
+          "keyword": "reporte",
+          "file": "README.md",
+          "line": 4
+        },
+        {
+          "keyword": "dashboard",
+          "file": "video/src/catalogo.json",
+          "line": 8
+        },
+        {
+          "keyword": "dashboard",
+          "file": "video/pipeline/catalogo.py",
+          "line": 14
+        },
+        {
+          "keyword": "report",
+          "file": "frontend/src/content/QueEs.jsx",
+          "line": 10
+        },
+        {
+          "keyword": "reporte",
+          "file": "frontend/src/content/QueEs.jsx",
+          "line": 10
+        },
+        {
+          "keyword": "report",
+          "file": "frontend/src/data/artifacts.js",
+          "line": 13
+        },
+        {
+          "keyword": "reporte",
+          "file": "frontend/src/data/artifacts.js",
+          "line": 13
+        }
+      ]
+    },
+    "Procesamiento de datos": {
+      "confidence": "medium",
+      "signals": [
+        {
+          "keyword": "etl",
+          "file": "video/package-lock.json",
+          "line": 2359
+        },
+        {
+          "keyword": "etl",
+          "file": "video/src/catalogo.json",
+          "line": 162
+        },
+        {
+          "keyword": "etl",
+          "file": "video/pipeline/catalogo.py",
+          "line": 55
+        },
+        {
+          "keyword": "etl",
+          "file": "frontend/vite.config.js",
+          "line": 6
+        }
+      ]
+    }
+  },
+  "analysis": {
+    "video/remotion.config.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "@remotion/cli/config",
+            "line": 1
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/animacion.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "remotion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 6
+          },
+          {
+            "value": "entrar",
+            "line": 9
+          },
+          {
+            "value": "aparecer",
+            "line": 22
+          },
+          {
+            "value": "contar",
+            "line": 35
+          },
+          {
+            "value": "miles",
+            "line": 46
+          },
+          {
+            "value": "trazar",
+            "line": 50
+          },
+          {
+            "value": "fundido",
+            "line": 57
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/estilo.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "C",
+            "line": 4
+          },
+          {
+            "value": "FUENTE",
+            "line": 23
+          },
+          {
+            "value": "FPS",
+            "line": 26
+          },
+          {
+            "value": "Antetitulo",
+            "line": 29
+          }
+        ],
+        "components": [
+          {
+            "value": "C",
+            "line": 4
+          },
+          {
+            "value": "FUENTE",
+            "line": 23
+          },
+          {
+            "value": "FPS",
+            "line": 26
+          },
+          {
+            "value": "Antetitulo",
+            "line": 29
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Explicativo.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./secciones",
+            "line": 3
+          },
+          {
+            "value": "./secciones2",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 21
+          },
+          {
+            "value": "Explicativo",
+            "line": 36
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "SECCIONES",
+            "line": 11
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 20
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 21
+          },
+          {
+            "value": "Velo",
+            "line": 24
+          },
+          {
+            "value": "Explicativo",
+            "line": 36
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/secciones2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Roles",
+            "line": 25
+          },
+          {
+            "value": "Datos",
+            "line": 102
+          },
+          {
+            "value": "Cifras",
+            "line": 158
+          }
+        ],
+        "components": [
+          {
+            "value": "Fondo",
+            "line": 15
+          },
+          {
+            "value": "Roles",
+            "line": 25
+          },
+          {
+            "value": "Datos",
+            "line": 102
+          },
+          {
+            "value": "Cifras",
+            "line": 158
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/VideoContrato.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./contrato",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 23
+          },
+          {
+            "value": "VideoContrato",
+            "line": 35
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "SECCIONES",
+            "line": 11
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 22
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 23
+          },
+          {
+            "value": "Velo",
+            "line": 25
+          },
+          {
+            "value": "VideoContrato",
+            "line": 35
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Root.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Explicativo",
+            "line": 3
+          },
+          {
+            "value": "./VideoContrato",
+            "line": 4
+          },
+          {
+            "value": "./VideoEcosistema",
+            "line": 5
+          },
+          {
+            "value": "./v2/VideoContrato2",
+            "line": 6
+          },
+          {
+            "value": "./v2/VideoEcosistema2",
+            "line": 7
+          },
+          {
+            "value": "./v2/VideoCatastro",
+            "line": 8
+          }
+        ],
+        "exports": [
+          {
+            "value": "RemotionRoot",
+            "line": 10
+          }
+        ],
+        "components": [
+          {
+            "value": "RemotionRoot",
+            "line": 10
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/VideoEcosistema.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./ecosistema",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 24
+          },
+          {
+            "value": "VideoEcosistema",
+            "line": 36
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "LISTA",
+            "line": 10
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 23
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 24
+          },
+          {
+            "value": "Velo",
+            "line": 26
+          },
+          {
+            "value": "VideoEcosistema",
+            "line": 36
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/index.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "remotion",
+            "line": 1
+          },
+          {
+            "value": "./Root",
+            "line": 2
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/ecosistema.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          },
+          {
+            "value": "./catalogo.json",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "Apertura",
+            "line": 21
+          },
+          {
+            "value": "Familia",
+            "line": 59
+          },
+          {
+            "value": "CierreEco",
+            "line": 99
+          }
+        ],
+        "components": [
+          {
+            "value": "FAM",
+            "line": 18
+          },
+          {
+            "value": "Apertura",
+            "line": 21
+          },
+          {
+            "value": "Familia",
+            "line": 59
+          },
+          {
+            "value": "CierreEco",
+            "line": 99
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Portadilla.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "DUR_PORTADILLA",
+            "line": 6
+          },
+          {
+            "value": "Portadilla",
+            "line": 14
+          }
+        ],
+        "components": [
+          {
+            "value": "DUR_PORTADILLA",
+            "line": 6
+          },
+          {
+            "value": "Portadilla",
+            "line": 14
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/secciones.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Portada",
+            "line": 35
+          },
+          {
+            "value": "Problema",
+            "line": 150
+          },
+          {
+            "value": "Flujo",
+            "line": 214
+          }
+        ],
+        "components": [
+          {
+            "value": "Fondo",
+            "line": 17
+          },
+          {
+            "value": "Portada",
+            "line": 35
+          },
+          {
+            "value": "Icono",
+            "line": 143
+          },
+          {
+            "value": "Problema",
+            "line": 150
+          },
+          {
+            "value": "Flujo",
+            "line": 214
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/contrato.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "QueEs",
+            "line": 34
+          },
+          {
+            "value": "Problema",
+            "line": 61
+          },
+          {
+            "value": "Estados",
+            "line": 112
+          },
+          {
+            "value": "Plantillas",
+            "line": 165
+          },
+          {
+            "value": "Bandeja",
+            "line": 209
+          },
+          {
+            "value": "Seguridad",
+            "line": 265
+          },
+          {
+            "value": "Infraestructura",
+            "line": 300
+          },
+          {
+            "value": "Cierre",
+            "line": 346
+          }
+        ],
+        "components": [
+          {
+            "value": "Titulo",
+            "line": 17
+          },
+          {
+            "value": "QueEs",
+            "line": 34
+          },
+          {
+            "value": "Problema",
+            "line": 61
+          },
+          {
+            "value": "ESTADOS",
+            "line": 104
+          },
+          {
+            "value": "Estados",
+            "line": 112
+          },
+          {
+            "value": "Plantillas",
+            "line": 165
+          },
+          {
+            "value": "Bandeja",
+            "line": 209
+          },
+          {
+            "value": "Seguridad",
+            "line": 265
+          },
+          {
+            "value": "Infraestructura",
+            "line": 300
+          },
+          {
+            "value": "Cierre",
+            "line": 346
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/base.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "T",
+            "line": 17
+          },
+          {
+            "value": "SERIF",
+            "line": 32
+          },
+          {
+            "value": "SANS",
+            "line": 33
+          },
+          {
+            "value": "Fuentes",
+            "line": 36
+          },
+          {
+            "value": "Grano",
+            "line": 48
+          },
+          {
+            "value": "Vineta",
+            "line": 61
+          },
+          {
+            "value": "Metraje",
+            "line": 72
+          },
+          {
+            "value": "sube",
+            "line": 92
+          },
+          {
+            "value": "brota",
+            "line": 100
+          },
+          {
+            "value": "cortina",
+            "line": 106
+          },
+          {
+            "value": "numero",
+            "line": 114
+          },
+          {
+            "value": "miles",
+            "line": 121
+          },
+          {
+            "value": "Rotulo",
+            "line": 127
+          },
+          {
+            "value": "Declara",
+            "line": 140
+          },
+          {
+            "value": "Parrafo",
+            "line": 150
+          },
+          {
+            "value": "marco",
+            "line": 159
+          }
+        ],
+        "components": [
+          {
+            "value": "T",
+            "line": 17
+          },
+          {
+            "value": "SERIF",
+            "line": 32
+          },
+          {
+            "value": "SANS",
+            "line": 33
+          },
+          {
+            "value": "Fuentes",
+            "line": 36
+          },
+          {
+            "value": "Grano",
+            "line": 48
+          },
+          {
+            "value": "Vineta",
+            "line": 61
+          },
+          {
+            "value": "Metraje",
+            "line": 72
+          },
+          {
+            "value": "Rotulo",
+            "line": 127
+          },
+          {
+            "value": "Declara",
+            "line": 140
+          },
+          {
+            "value": "Parrafo",
+            "line": 150
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/arquetipos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./base",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "Declaracion",
+            "line": 12
+          },
+          {
+            "value": "Numeral",
+            "line": 30
+          },
+          {
+            "value": "Partido",
+            "line": 61
+          },
+          {
+            "value": "Recorrido",
+            "line": 102
+          },
+          {
+            "value": "Constelacion",
+            "line": 173
+          },
+          {
+            "value": "Indice",
+            "line": 223
+          },
+          {
+            "value": "Familia",
+            "line": 280
+          }
+        ],
+        "components": [
+          {
+            "value": "Declaracion",
+            "line": 12
+          },
+          {
+            "value": "Numeral",
+            "line": 30
+          },
+          {
+            "value": "Partido",
+            "line": 61
+          },
+          {
+            "value": "Recorrido",
+            "line": 102
+          },
+          {
+            "value": "Constelacion",
+            "line": 173
+          },
+          {
+            "value": "Indice",
+            "line": 223
+          },
+          {
+            "value": "Familia",
+            "line": 280
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoCatastro.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 6
+          },
+          {
+            "value": "./base",
+            "line": 7
+          },
+          {
+            "value": "../beats_catastro.json",
+            "line": 8
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 10
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 11
+          },
+          {
+            "value": "VideoCatastro",
+            "line": 256
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 10
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 11
+          },
+          {
+            "value": "BEATS",
+            "line": 13
+          },
+          {
+            "value": "BANDA",
+            "line": 18
+          },
+          {
+            "value": "ALTO_IMAGEN",
+            "line": 19
+          },
+          {
+            "value": "CENTRO_Y",
+            "line": 20
+          },
+          {
+            "value": "ZONAS",
+            "line": 22
+          },
+          {
+            "value": "AJUSTE",
+            "line": 46
+          },
+          {
+            "value": "VOZ",
+            "line": 55
+          },
+          {
+            "value": "Captura",
+            "line": 76
+          },
+          {
+            "value": "Plano",
+            "line": 93
+          },
+          {
+            "value": "Camara",
+            "line": 118
+          },
+          {
+            "value": "Pie",
+            "line": 177
+          },
+          {
+            "value": "Avance",
+            "line": 243
+          },
+          {
+            "value": "VideoCatastro",
+            "line": 256
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoContrato2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./arquetipos",
+            "line": 4
+          },
+          {
+            "value": "./base",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 156
+          },
+          {
+            "value": "VideoContrato2",
+            "line": 166
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "Gancho",
+            "line": 9
+          },
+          {
+            "value": "QueEs",
+            "line": 17
+          },
+          {
+            "value": "Problema",
+            "line": 36
+          },
+          {
+            "value": "Remate1",
+            "line": 49
+          },
+          {
+            "value": "PASOS",
+            "line": 56
+          },
+          {
+            "value": "Estados",
+            "line": 64
+          },
+          {
+            "value": "Remate2",
+            "line": 73
+          },
+          {
+            "value": "Plantillas",
+            "line": 83
+          },
+          {
+            "value": "Bandeja",
+            "line": 102
+          },
+          {
+            "value": "Seguridad",
+            "line": 116
+          },
+          {
+            "value": "Infra",
+            "line": 125
+          },
+          {
+            "value": "Cierre",
+            "line": 135
+          },
+          {
+            "value": "LISTA",
+            "line": 142
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 156
+          },
+          {
+            "value": "Corte",
+            "line": 158
+          },
+          {
+            "value": "VideoContrato2",
+            "line": 166
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoEcosistema2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./arquetipos",
+            "line": 4
+          },
+          {
+            "value": "./base",
+            "line": 5
+          },
+          {
+            "value": "../catalogo.json",
+            "line": 6
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 8
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 83
+          },
+          {
+            "value": "VideoEcosistema2",
+            "line": 93
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 8
+          },
+          {
+            "value": "COLOR",
+            "line": 12
+          },
+          {
+            "value": "F",
+            "line": 15
+          },
+          {
+            "value": "Gancho",
+            "line": 31
+          },
+          {
+            "value": "Apertura",
+            "line": 39
+          },
+          {
+            "value": "Remate",
+            "line": 49
+          },
+          {
+            "value": "Cierre",
+            "line": 58
+          },
+          {
+            "value": "LISTA",
+            "line": 68
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 83
+          },
+          {
+            "value": "Corte",
+            "line": 85
+          },
+          {
+            "value": "VideoEcosistema2",
+            "line": 93
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_catastro.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_contrato2.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar_todo.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "time",
+            "line": 8
+          },
+          {
+            "value": "capturar",
+            "line": 9
+          },
+          {
+            "value": "capturar",
+            "line": 10
+          }
+        ],
+        "functions": [
+          {
+            "name": "preparar",
+            "line": 34
+          },
+          {
+            "name": "cargar",
+            "line": 40
+          },
+          {
+            "name": "plano",
+            "line": 51
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar_modales.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "time",
+            "line": 9
+          },
+          {
+            "value": "capturar",
+            "line": 10
+          },
+          {
+            "value": "capturar_todo",
+            "line": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "escape",
+            "line": 14
+          },
+          {
+            "name": "panel_abierto",
+            "line": 21
+          },
+          {
+            "name": "asegurar_panel",
+            "line": 27
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/narrar.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "asyncio",
+            "line": 11
+          },
+          {
+            "value": "importlib",
+            "line": 11
+          },
+          {
+            "value": "io",
+            "line": 11
+          },
+          {
+            "value": "json",
+            "line": 11
+          },
+          {
+            "value": "os",
+            "line": 11
+          },
+          {
+            "value": "subprocess",
+            "line": 11
+          },
+          {
+            "value": "sys",
+            "line": 11
+          },
+          {
+            "value": "edge_tts",
+            "line": 16
+          }
+        ],
+        "functions": [
+          {
+            "name": "duracion",
+            "line": 27
+          },
+          {
+            "name": "main",
+            "line": 33
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "base64",
+            "line": 9
+          },
+          {
+            "value": "io",
+            "line": 9
+          },
+          {
+            "value": "json",
+            "line": 9
+          },
+          {
+            "value": "os",
+            "line": 9
+          },
+          {
+            "value": "subprocess",
+            "line": 9
+          },
+          {
+            "value": "sys",
+            "line": 9
+          },
+          {
+            "value": "tempfile",
+            "line": 9
+          },
+          {
+            "value": "time",
+            "line": 9
+          },
+          {
+            "value": "requests",
+            "line": 10
+          },
+          {
+            "value": "websocket",
+            "line": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "lanzar",
+            "line": 59
+          },
+          {
+            "name": "esperar_carga",
+            "line": 93
+          },
+          {
+            "name": "inventario",
+            "line": 110
+          },
+          {
+            "name": "__init__",
+            "line": 20
+          },
+          {
+            "name": "enviar",
+            "line": 25
+          },
+          {
+            "name": "js",
+            "line": 35
+          },
+          {
+            "name": "retina",
+            "line": 42
+          },
+          {
+            "name": "foto",
+            "line": 46
+          },
+          {
+            "name": "cerrar",
+            "line": 54
+          }
+        ],
+        "classes": [
+          {
+            "name": "Cdp",
+            "line": 19
+          }
+        ],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/catalogo.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "io",
+            "line": 7
+          },
+          {
+            "value": "json",
+            "line": 7
+          },
+          {
+            "value": "os",
+            "line": 7
+          },
+          {
+            "value": "sys",
+            "line": 7
+          }
+        ],
+        "functions": [
+          {
+            "name": "main",
+            "line": 81
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/narrar_beats.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "asyncio",
+            "line": 23
+          },
+          {
+            "value": "importlib",
+            "line": 23
+          },
+          {
+            "value": "io",
+            "line": 23
+          },
+          {
+            "value": "json",
+            "line": 23
+          },
+          {
+            "value": "os",
+            "line": 23
+          },
+          {
+            "value": "subprocess",
+            "line": 23
+          },
+          {
+            "value": "sys",
+            "line": 23
+          },
+          {
+            "value": "tempfile",
+            "line": 23
+          },
+          {
+            "value": "edge_tts",
+            "line": 28
+          },
+          {
+            "value": "array",
+            "line": 72
+          }
+        ],
+        "functions": [
+          {
+            "name": "pcm",
+            "line": 55
+          },
+          {
+            "name": "silencio",
+            "line": 62
+          },
+          {
+            "name": "recortar",
+            "line": 65
+          },
+          {
+            "name": "principal",
+            "line": 92
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_ecosistema2.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/musica.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "io",
+            "line": 8
+          },
+          {
+            "value": "os",
+            "line": 8
+          },
+          {
+            "value": "subprocess",
+            "line": 8
+          },
+          {
+            "value": "sys",
+            "line": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "main",
+            "line": 21
+          },
+          {
+            "name": "sine",
+            "line": 26
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/ingest_media.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 10
+          },
+          {
+            "value": "hashlib",
+            "line": 11
+          },
+          {
+            "value": "json",
+            "line": 12
+          },
+          {
+            "value": "shutil",
+            "line": 13
+          },
+          {
+            "value": "subprocess",
+            "line": 14
+          },
+          {
+            "value": "sys",
+            "line": 15
+          },
+          {
+            "value": "datetime",
+            "line": 16
+          },
+          {
+            "value": "pathlib",
+            "line": 17
+          }
+        ],
+        "functions": [
+          {
+            "name": "ffprobe",
+            "line": 24
+          },
+          {
+            "name": "sha256",
+            "line": 61
+          },
+          {
+            "name": "main",
+            "line": 69
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/artifact_status.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 11
+          },
+          {
+            "value": "dataclasses",
+            "line": 12
+          },
+          {
+            "value": "json",
+            "line": 13
+          },
+          {
+            "value": "sys",
+            "line": 14
+          },
+          {
+            "value": "time",
+            "line": 15
+          },
+          {
+            "value": "notebooklm_tools.cli.commands.studio",
+            "line": 17
+          },
+          {
+            "value": "notebooklm_tools.services",
+            "line": 18
+          }
+        ],
+        "functions": [
+          {
+            "name": "snapshot",
+            "line": 21
+          },
+          {
+            "name": "main",
+            "line": 29
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/gen_private_doc.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 18
+          },
+          {
+            "value": "json",
+            "line": 19
+          },
+          {
+            "value": "os",
+            "line": 20
+          },
+          {
+            "value": "subprocess",
+            "line": 21
+          },
+          {
+            "value": "sys",
+            "line": 22
+          },
+          {
+            "value": "pathlib",
+            "line": 23
+          },
+          {
+            "value": "notebooklm_tools.core.auth",
+            "line": 25
+          },
+          {
+            "value": "notebooklm_tools.mcp.tools._utils",
+            "line": 26
+          },
+          {
+            "value": "notebooklm_tools.utils.browser",
+            "line": 27
+          },
+          {
+            "value": "notebooklm_tools.utils.config",
+            "line": 28
+          }
+        ],
+        "functions": [
+          {
+            "name": "git_ignores",
+            "line": 34
+          },
+          {
+            "name": "load_profile",
+            "line": 46
+          },
+          {
+            "name": "build_document",
+            "line": 65
+          },
+          {
+            "name": "main",
+            "line": 280
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": [
+          {
+            "value": "NLM_PROFILE",
+            "line": 282,
+            "file": "scripts/gen_private_doc.py"
+          }
+        ]
+      }
+    },
+    "scripts/gen_galeria.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 15
+          },
+          {
+            "value": "json",
+            "line": 16
+          },
+          {
+            "value": "subprocess",
+            "line": 17
+          },
+          {
+            "value": "sys",
+            "line": 18
+          },
+          {
+            "value": "time",
+            "line": 19
+          },
+          {
+            "value": "pathlib",
+            "line": 20
+          },
+          {
+            "value": "notebooklm_tools.cli.commands.studio",
+            "line": 199
+          },
+          {
+            "value": "notebooklm_tools.services",
+            "line": 200
+          },
+          {
+            "value": "dataclasses",
+            "line": 201
+          }
+        ],
+        "functions": [
+          {
+            "name": "plan",
+            "line": 69
+          },
+          {
+            "name": "cargar_estado",
+            "line": 123
+          },
+          {
+            "name": "guardar_estado",
+            "line": 127
+          },
+          {
+            "name": "nlm",
+            "line": 131
+          },
+          {
+            "name": "lanzar",
+            "line": 138
+          },
+          {
+            "name": "crear",
+            "line": 174
+          },
+          {
+            "name": "estado_remoto",
+            "line": 197
+          },
+          {
+            "name": "adoptar",
+            "line": 214
+          },
+          {
+            "name": "revisar_y_descargar",
+            "line": 251
+          },
+          {
+            "name": "ciclo",
+            "line": 305
+          },
+          {
+            "name": "escribir_manifiesto",
+            "line": 340
+          },
+          {
+            "name": "main",
+            "line": 366
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/gen_conaf.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 15
+          },
+          {
+            "value": "json",
+            "line": 16
+          },
+          {
+            "value": "subprocess",
+            "line": 17
+          },
+          {
+            "value": "sys",
+            "line": 18
+          },
+          {
+            "value": "time",
+            "line": 19
+          },
+          {
+            "value": "pathlib",
+            "line": 20
+          }
+        ],
+        "functions": [
+          {
+            "name": "nlm",
+            "line": 43
+          },
+          {
+            "name": "cargar_estado",
+            "line": 49
+          },
+          {
+            "name": "guardar_estado",
+            "line": 55
+          },
+          {
+            "name": "args_de",
+            "line": 60
+          },
+          {
+            "name": "crear",
+            "line": 70
+          },
+          {
+            "name": "descargar",
+            "line": 92
+          },
+          {
+            "name": "main",
+            "line": 100
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/optimizar_galeria.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "json",
+            "line": 12
+          },
+          {
+            "value": "shutil",
+            "line": 13
+          },
+          {
+            "value": "subprocess",
+            "line": 14
+          },
+          {
+            "value": "sys",
+            "line": 15
+          },
+          {
+            "value": "pathlib",
+            "line": 16
+          }
+        ],
+        "functions": [
+          {
+            "name": "ffmpeg",
+            "line": 28
+          },
+          {
+            "name": "a_webp",
+            "line": 36
+          },
+          {
+            "name": "recodificar_video",
+            "line": 48
+          },
+          {
+            "name": "recodificar_audio",
+            "line": 62
+          },
+          {
+            "name": "apartar",
+            "line": 71
+          },
+          {
+            "name": "poster",
+            "line": 80
+          },
+          {
+            "name": "kb",
+            "line": 89
+          },
+          {
+            "name": "main",
+            "line": 93
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/vite.config.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "vite",
+            "line": 1
+          },
+          {
+            "value": "@vitejs/plugin-react",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "defineConfig",
+            "line": 18
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/App.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "./content/sections.js",
+            "line": 2
+          },
+          {
+            "value": "./router/useHashRoute.js",
+            "line": 3
+          },
+          {
+            "value": "./hooks/useActiveHeading.js",
+            "line": 4
+          },
+          {
+            "value": "./hooks/useHeadings.js",
+            "line": 5
+          },
+          {
+            "value": "./components/SectionContext.js",
+            "line": 6
+          },
+          {
+            "value": "./components/PlatformProvider.jsx",
+            "line": 7
+          },
+          {
+            "value": "./components/TopBar.jsx",
+            "line": 8
+          },
+          {
+            "value": "./components/Sidebar.jsx",
+            "line": 9
+          },
+          {
+            "value": "./components/TableOfContents.jsx",
+            "line": 10
+          },
+          {
+            "value": "./components/PagerNav.jsx",
+            "line": 11
+          },
+          {
+            "value": "./components/NotFound.jsx",
+            "line": 12
+          }
+        ],
+        "exports": [
+          {
+            "value": "App",
+            "line": 17
+          }
+        ],
+        "components": [
+          {
+            "value": "NAV_ID",
+            "line": 14
+          },
+          {
+            "value": "SITE",
+            "line": 15
+          },
+          {
+            "value": "App",
+            "line": 17
+          },
+          {
+            "value": "Section",
+            "line": 63
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/main.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "react-dom/client",
+            "line": 2
+          },
+          {
+            "value": "./App.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/router/useHashRoute.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "parseHash",
+            "line": 20
+          },
+          {
+            "value": "useHashRoute",
+            "line": 27
+          },
+          {
+            "value": "to",
+            "line": 38
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/VariablesEntorno.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Badge.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/envVars.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "VariablesEntorno",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "VariablesEntorno",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/OtrosProyectos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "OtrosProyectos",
+            "line": 6
+          },
+          {
+            "value": "NOTEBOOKLM_MCP_CLI_PATH",
+            "line": 32
+          },
+          {
+            "value": "NOTEBOOKLM_COOKIES",
+            "line": 84
+          },
+          {
+            "value": "NOTEBOOKLM_BASE_URL",
+            "line": 84
+          },
+          {
+            "value": "NLM_PROFILE",
+            "line": 116
+          }
+        ],
+        "components": [
+          {
+            "value": "OtrosProyectos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [
+          {
+            "path": "No",
+            "line": 105,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "Sí",
+            "line": 106,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "Sí",
+            "line": 107,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "No, solo una ruta",
+            "line": 108,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          }
+        ],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Troubleshooting.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Troubleshooting",
+            "line": 6
+          },
+          {
+            "value": "PYTHONUTF8",
+            "line": 173
+          }
+        ],
+        "components": [
+          {
+            "value": "Troubleshooting",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaInfografias.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/FiltroTemas.jsx",
+            "line": 4
+          },
+          {
+            "value": "../components/Lightbox.jsx",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaInfografias",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "GaleriaInfografias",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Instalacion.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Steps.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Instalacion",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Instalacion",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Ingesta.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "Ingesta",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "Ingesta",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/EstadoYDescarga.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "EstadoYDescarga",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "EstadoYDescarga",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Multimedia.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/artifacts.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "Multimedia",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "Multimedia",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/ClientesMcp.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/mcpClients.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "ClientesMcp",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "ClientesMcp",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Requisitos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Requisitos",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Requisitos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaVideos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/FiltroTemas.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaVideos",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "GaleriaVideos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/NotebookYFuentes.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Steps.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 4
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "NotebookYFuentes",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "NotebookYFuentes",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaAudios.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaAudios",
+            "line": 12
+          }
+        ],
+        "components": [
+          {
+            "value": "DESCRIPCION",
+            "line": 5
+          },
+          {
+            "value": "GaleriaAudios",
+            "line": 12
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/sections.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "./QueEs.jsx",
+            "line": 1
+          },
+          {
+            "value": "./Requisitos.jsx",
+            "line": 2
+          },
+          {
+            "value": "./Instalacion.jsx",
+            "line": 3
+          },
+          {
+            "value": "./Login.jsx",
+            "line": 4
+          },
+          {
+            "value": "./ClientesMcp.jsx",
+            "line": 5
+          },
+          {
+            "value": "./NotebookYFuentes.jsx",
+            "line": 6
+          },
+          {
+            "value": "./Multimedia.jsx",
+            "line": 7
+          },
+          {
+            "value": "./EstadoYDescarga.jsx",
+            "line": 8
+          },
+          {
+            "value": "./Ingesta.jsx",
+            "line": 9
+          },
+          {
+            "value": "./OtrosProyectos.jsx",
+            "line": 10
+          },
+          {
+            "value": "./Troubleshooting.jsx",
+            "line": 11
+          },
+          {
+            "value": "./VariablesEntorno.jsx",
+            "line": 12
+          },
+          {
+            "value": "./GaleriaInfografias.jsx",
+            "line": 13
+          },
+          {
+            "value": "./GaleriaVideos.jsx",
+            "line": 14
+          },
+          {
+            "value": "./GaleriaAudios.jsx",
+            "line": 15
+          }
+        ],
+        "exports": [
+          {
+            "value": "SECTIONS",
+            "line": 23
+          },
+          {
+            "value": "SLUGS",
+            "line": 46
+          },
+          {
+            "value": "GROUPS",
+            "line": 48
+          },
+          {
+            "value": "bySlug",
+            "line": 54
+          },
+          {
+            "value": "neighbors",
+            "line": 56
+          }
+        ],
+        "components": [
+          {
+            "value": "SECTIONS",
+            "line": 23
+          },
+          {
+            "value": "SLUGS",
+            "line": 46
+          },
+          {
+            "value": "GROUPS",
+            "line": 48
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/QueEs.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "QueEs",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "QueEs",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Login.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Login",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Login",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/envVars.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "ENV_VARS",
+            "line": 2
+          }
+        ],
+        "components": [
+          {
+            "value": "ENV_VARS",
+            "line": 2
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/artifacts.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "AUDIO_FORMATS",
+            "line": 2
+          },
+          {
+            "value": "ARTIFACT_TYPES",
+            "line": 10
+          }
+        ],
+        "components": [
+          {
+            "value": "AUDIO_FORMATS",
+            "line": 2
+          },
+          {
+            "value": "ARTIFACT_TYPES",
+            "line": 10
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/galeria.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "GALERIA",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "GALERIA",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/mcpClients.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "MCP_CLIENTS",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "MCP_CLIENTS",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useCopyToClipboard.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useCopyToClipboard",
+            "line": 10
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useHeadings.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useHeadings",
+            "line": 7
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/platformContext.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "STORAGE_KEY",
+            "line": 3
+          },
+          {
+            "value": "PlatformContext",
+            "line": 6
+          },
+          {
+            "value": "usePlatform",
+            "line": 11
+          },
+          {
+            "value": "readStoredPlatform",
+            "line": 13
+          }
+        ],
+        "components": [
+          {
+            "value": "STORAGE_KEY",
+            "line": 3
+          },
+          {
+            "value": "PlatformContext",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useActiveHeading.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useActiveHeading",
+            "line": 12
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/PagerNav.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "PagerNav",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "PagerNav",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Badge.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Badge",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "Badge",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/DataTable.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "DataTable",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "DataTable",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/TopBar.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 1
+          },
+          {
+            "value": "./Badge.jsx",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "TopBar",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "TopBar",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/CopyButton.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/useCopyToClipboard.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "CopyButton",
+            "line": 9
+          }
+        ],
+        "components": [
+          {
+            "value": "LABELS",
+            "line": 3
+          },
+          {
+            "value": "CopyButton",
+            "line": 9
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/CodeBlock.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 1
+          },
+          {
+            "value": "./CopyButton.jsx",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "CodeBlock",
+            "line": 9
+          }
+        ],
+        "components": [
+          {
+            "value": "CodeBlock",
+            "line": 9
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Heading.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "./SectionContext.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "H2",
+            "line": 12
+          },
+          {
+            "value": "H3",
+            "line": 21
+          }
+        ],
+        "components": [
+          {
+            "value": "Anchor",
+            "line": 3
+          },
+          {
+            "value": "H2",
+            "line": 12
+          },
+          {
+            "value": "H3",
+            "line": 21
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Steps.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Steps",
+            "line": 1
+          },
+          {
+            "value": "Step",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "Steps",
+            "line": 1
+          },
+          {
+            "value": "Step",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/FiltroTemas.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "FiltroTemas",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "FiltroTemas",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/NotFound.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "NotFound",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "NotFound",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Callout.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Callout",
+            "line": 17
+          }
+        ],
+        "components": [
+          {
+            "value": "PREFIX",
+            "line": 1
+          },
+          {
+            "value": "PATH",
+            "line": 9
+          },
+          {
+            "value": "Callout",
+            "line": 17
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Lightbox.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "Lightbox",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "Lightbox",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/SectionContext.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "SectionContext",
+            "line": 5
+          },
+          {
+            "value": "useSectionSlug",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "SectionContext",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Sidebar.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "Sidebar",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "Sidebar",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/PlatformProvider.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "PlatformProvider",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "PlatformProvider",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/TableOfContents.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "TableOfContents",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "TableOfContents",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/lib/dedent.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "dedent",
+            "line": 6
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    }
+  },
+  "existing_readme": {
+    "exists": true,
+    "summary": [
+      "# coipo_notebooklm",
+      "Puente entre **NotebookLM** y este repositorio: generar artefactos multimedia",
+      "(Audio Overview, Video Overview, infografías, reportes) desde el CLI o desde",
+      "Claude Code vía MCP, y traerlos al proyecto con metadata verificable.",
+      "## Estado de la conexión",
+      "| Pieza | Detalle |",
+      "|---|---|",
+      "| Cliente | [`notebooklm-mcp-cli`](https://github.com/jacob-bd/notebooklm-mcp-cli) 0.9.10 (no oficial) |",
+      "| Entorno | `.venv/` del proyecto (no toca tu base de conda) |",
+      "| Cuenta | Cuenta corporativa de Google, perfil `default`. El correo concreto está en el documento privado, no aquí: este repositorio es público. |",
+      "| Credenciales | `~/.notebooklm-mcp-cli/profiles/default` (cookies del navegador — **no** están en el repo) |",
+      "| MCP | `.mcp.json` → servidor `notebooklm` (stdio) |",
+      "> **Advertencia.** No existe API pública oficial de NotebookLM. Este cliente usa",
+      "> interfaces internas de Google (Boq RPC) y autenticación por cookies de sesión.",
+      "> Google puede romperlo o exigir un nuevo login sin aviso. La alternativa oficial",
+      "> es la API *Gemini Notebook Enterprise* en Google Cloud, que requiere licencia",
+      "> enterprise (la creación de audio overviews está en preview Pre-GA).",
+      "## Documentación",
+      "| Documento | Audiencia | Contenido |",
+      "|---|---|---|",
+      "| [frontend/](frontend/) | **Pública** — se publica | Guía paso a paso navegable + galería de artefactos. Sin credenciales de ningún tipo. |",
+      "| `docs/CONEXION-PRIVADA.md` | **Privada** — nunca sale del equipo | Cuenta, rutas del perfil y valores literales de cookies para conectar otros proyectos. |",
+      "## Galería: bosques y áreas protegidas de Chile",
+      "El sitio publica **32 artefactos** generados con NotebookLM desde el notebook",
+      "[Bosques y áreas protegidas de Chile](https://notebooklm.google.com/notebook/585db228-fcfa-46ea-85ca-68f9a8cf6f51)",
+      "(8 fuentes públicas: parques nacionales, CONAF, bosque valdiviano, araucaria,",
+      "alerce, Torres del Paine, Conguillío, bosque esclerófilo).",
+      "| | Cantidad | Peso publicado |",
+      "|---|---|---|",
+      "| Infografías | 15 | 5,4 MB (WebP 1600 px + miniatura 640 px) |",
+      "| Vídeos | 11 | 64 MB (H.264 CRF 30 + póster WebP) |",
+      "| Audios | 6 | 35 MB (AAC 96 kbps) |",
+      "Los originales pesaban **515 MB**; publicados son **103 MB**. Los originales se",
+      "apartan a `media/galeria/`, que git ignora, porque todo lo que hay en",
+      "`frontend/public/` acaba copiado en `dist/`."
+    ]
+  }
+}
