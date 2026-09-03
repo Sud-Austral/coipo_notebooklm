@@ -1,2 +1,8 @@
 node_modules/
 out/
+
+# Renders a calidad completa que pasan de 100 MB (regla de Luis: por encima de
+# ese tamaño, al .gitignore). Del podcast del Catastro se versiona la copia
+# liviana, que es la que se comparte; el original se regenera con
+#   npx remotion render src/index.jsx Catastro
+Catastro de Usos de la Tierra — podcast explicativo.mp4
