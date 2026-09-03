@@ -46,8 +46,9 @@ C = []
 C.append(md("""# Voces con Qwen3-TTS · vídeos CONAF
 
 Genera la narración de un vídeo del pipeline `coipo_notebooklm/video` con
-**Qwen3-TTS Voice Design**: las voces se crean describiéndolas en texto, así que
-no se clona a nadie y se puede pedir acento chileno explícitamente.
+**Qwen3-TTS CustomVoice (0,6 B)**: nueve voces preconstruidas, sin clonar a
+nadie. Se eligen dos de oído en la celda 4 — la que suene menos extranjera
+hablando español.
 
 **Antes de empezar:** *Entorno de ejecución → Cambiar tipo de entorno → GPU (T4)*.
 
@@ -55,8 +56,12 @@ Al final descarga `narracion_<nombre>.mp3` y `beats_<nombre>.json`. **Van
 siempre juntos**: el JSON lleva la duración exacta de cada frase y es lo único
 que sostiene la sincronía del vídeo.
 
+**El orden importa:** la celda 4 es un casting corto y la 4b el intercambio de
+prueba. No pases a la 5 hasta que las voces te gusten — las celdas 5 a 7 tardan
+y sería tirarlas.
+
 > **Sin probar.** La máquina donde se escribió no tiene GPU. Está hecho contra
-> la API publicada de Qwen3-TTS, y la celda 4 sintetiza sólo cinco frases para
+> la API publicada de Qwen3-TTS. Las celdas 4 y 4b son cortas a propósito, para
 > que un fallo salte en un minuto y no en veinte.
 """))
 
@@ -135,8 +140,11 @@ print('=' * 62)"""))
 
 C.append(md("""## 3 · Cargar el modelo
 
-`VoiceDesign` crea la voz desde una descripción en texto. En bfloat16 ocupa unos
-3,4 GB, así que entra de sobra en los 16 GB de una T4."""))
+El **0,6 B** en lugar del 1,7 B: el grande tumbaba el kernel en la Colab
+gratuita, que tiene 12,7 GB de RAM de sistema y ya lleva TensorFlow cargado.
+
+El precio de bajar: `VoiceDesign` —describir la voz con texto— **sólo existe en
+1,7 B**. Con `CustomVoice` hay que elegir entre nueve voces fijas."""))
 C.append(code("""import torch, importlib.metadata as md
 
 # Comprobar ANTES de importar: si las versiones no son las que qwen-tts fija, el
@@ -176,9 +184,12 @@ memoria('antes de importar')
 from qwen_tts import Qwen3TTSModel
 memoria('tras importar')
 
-MODELO = 'Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign'
-# Ojo: VoiceDesign SOLO existe en 1.7B. Las variantes 0.6B son CustomVoice y
-# Base, que no admiten describir la voz con texto.
+MODELO = 'Qwen/Qwen3-TTS-12Hz-0.6B-CustomVoice'
+# 0.6B CustomVoice en vez de 1.7B VoiceDesign: el 1.7B tumbaba el kernel en la
+# Colab gratuita, que solo tiene 12,7 GB de RAM de sistema y ya lleva
+# TensorFlow cargado. El precio es que la voz ya no se describe con texto:
+# CustomVoice trae nueve voces fijas y hay que elegir dos de oido (celda 4).
+# El `instruct` sigue existiendo y sirve para el tono y el enfasis.
 try:
     modelo = Qwen3TTSModel.from_pretrained(
         MODELO, device_map='cuda:0', dtype=torch.bfloat16,
@@ -191,36 +202,71 @@ except Exception as e:
 memoria('modelo cargado')
 print('listo:', MODELO, 'con', ATTN)"""))
 
-C.append(md("""## 4 · Prueba de voz — esto es lo que hay que juzgar
+C.append(md("""## 4 · Casting · **escucha las nueve y elige dos**
 
-Un intercambio corto entre las dos voces, con **las mismas frases** de la
-muestra C que ya oíste con edge-tts: una cifra con énfasis, una reacción rápida
-y dos líneas de complicidad. Tarda un minuto.
+`CustomVoice` no deja describir la voz con texto: trae **nueve voces fijas**, con
+nombres que no dicen nada sobre cómo suenan en español. Cuál se acerca más al
+chileno **sólo se sabe oyéndolas**.
 
-**Escúchalo y compáralo con `video/muestra-voces-C-chilenas-con-coqueteo.mp3`
-del repo.** Si el acento chileno no convence, cambia las descripciones aquí
-mismo y vuelve a ejecutar esta celda: cuesta un minuto por intento. Sólo cuando
-te guste, sigue a la celda 5 — las celdas 5 a 7 tardan bastante y sería tirarlas.
+Esta celda hace decir a las nueve la misma frase en español. Escúchalas y anota
+**una femenina y una masculina** — las que suenen menos extranjeras.
+
+Cada una va precedida de su nombre dicho en voz alta, para no perderse."""))
+C.append(code("""import soundfile as sf, numpy as np, IPython.display as ipd
+
+# Los nueve nombres publicados de CustomVoice. Si alguno no existiera en esta
+# version del modelo, se salta con aviso en vez de tumbar la celda.
+CANDIDATAS = ['Vivian', 'Serena', 'Ono_Anna', 'Sohee',
+              'Dylan', 'Eric', 'Ryan', 'Aiden', 'Uncle_Fu']
+
+FRASE = ('Y bosques, dieciocho coma nueve millones de hectareas. '
+         'Un veinticinco por ciento del pais.')
+
+piezas, sr, sirven = [], 24000, []
+for nombre in CANDIDATAS:
+    try:
+        # Primero el nombre, con la MISMA voz, para saber cual es cual al oirlo.
+        w, sr = modelo.generate_custom_voice(text=nombre.replace('_', ' '),
+                                             language='Spanish', speaker=nombre)
+        piezas.append(np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32))
+        piezas.append(np.zeros(int(0.25 * sr), dtype=np.float32))
+
+        w, sr = modelo.generate_custom_voice(
+            text=FRASE, language='Spanish', speaker=nombre,
+            instruct='Tono conversacional de podcast, natural y cercano.')
+        piezas.append(np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32))
+        piezas.append(np.zeros(int(0.60 * sr), dtype=np.float32))
+        sirven.append(nombre)
+        print('ok  ', nombre)
+    except Exception as e:
+        print('FALLA', nombre, '->', type(e).__name__, e)
+
+print()
+print('voces utilizables:', ', '.join(sirven))
+audio = np.concatenate(piezas)
+sf.write('casting.wav', audio, sr)
+print('%.0f s de casting' % (audio.size / sr))
+ipd.Audio('casting.wav')"""))
+
+C.append(md("""### 4b · Anota tus dos elegidas
+
+Pon aquí los nombres y vuelve a escuchar el intercambio completo, ya con las
+mismas frases de la muestra C que oíste con edge-tts. **Compáralo con
+`video/muestra-voces-C-chilenas-con-coqueteo.mp3` del repo**: si Qwen no gana
+claramente, no vale la pena el cambio.
 
 **Sobre el tono entre las dos voces:** una cercanía cómplice apenas perceptible,
 que se escucha en cómo se escuchan y no en lo que dicen. Techo duro: **nunca
-explícito**, nunca verbalizado, nunca seductor. Profesional y cálido siempre. Si
-notas que se pasa de ahí, quita `CERCANIA` de las descripciones."""))
-C.append(code("""import soundfile as sf, numpy as np, IPython.display as ipd
+explícito**, nunca verbalizado, nunca seductor. Profesional y cálido siempre."""))
+C.append(code("""VOZ_C = 'Serena'      # <- la femenina que elegiste
+VOZ_L = 'Eric'        # <- la masculina que elegiste
+VOCES = {'c': VOZ_C, 'l': VOZ_L}
 
 # El coqueteo va en la ENTREGA, no en las palabras.
 CERCANIA = (' Se dirige a su companero de programa con una cercania complice '
             'apenas perceptible: escucha de verdad y se le nota que disfruta la '
             'conversacion. Nunca coqueto de forma evidente ni seductor; '
             'profesional y calido en todo momento.')
-
-VOZ_C = ('Mujer chilena de unos treinta y cinco anos, voz calida y clara, '
-         'tono conversacional de podcast, diccion natural de Santiago de Chile, '
-         'sin acento espanol ni mexicano, ritmo agil y seguro.' + CERCANIA)
-VOZ_L = ('Hombre chileno de unos cuarenta anos, voz grave y cercana, '
-         'tono conversacional de podcast, diccion natural de Santiago de Chile, '
-         'sin acento espanol ni mexicano, curioso y relajado.' + CERCANIA)
-VOCES = {'c': VOZ_C, 'l': VOZ_L}
 
 PRUEBA = [
     ('c', 'Y bosques, dieciocho coma nueve millones. Un veinticinco por ciento del pais.',
@@ -232,17 +278,17 @@ PRUEBA = [
      ' Mas bajo y calido, con complicidad.'),
 ]
 
-piezas, sr = [], 24000
+piezas = []
 for quien, texto, matiz in PRUEBA:
-    w, sr = modelo.generate_voice_design(text=texto, language='Spanish',
-                                         instruct=VOCES[quien] + matiz)
-    a = np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32)
-    piezas.append(a)
+    w, sr = modelo.generate_custom_voice(
+        text=texto, language='Spanish', speaker=VOCES[quien],
+        instruct='Tono conversacional de podcast.' + CERCANIA + matiz)
+    piezas.append(np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32))
     piezas.append(np.zeros(int(0.30 * sr), dtype=np.float32))
 
 audio = np.concatenate(piezas)
 sf.write('prueba.wav', audio, sr)
-print('%.1f s a %d Hz' % (audio.size / sr, sr))
+print('%s y %s | %.1f s' % (VOZ_C, VOZ_L, audio.size / sr))
 ipd.Audio('prueba.wav')"""))
 
 C.append(md("""## 5 · Traer el guion desde GitHub
@@ -314,11 +360,14 @@ def recortar(a, guarda=0.09, umbral=0.006):
     return a[max(0, idx[0] - g):min(a.size, idx[-1] + g)]
 
 
-def decir(texto, voz, matiz, enfatico):
-    ins = voz + ' ' + matiz
+def decir(texto, hablante, matiz, enfatico):
+    # En CustomVoice el TIMBRE lo fija `speaker` y el `instruct` solo maneja
+    # tono y enfasis. En VoiceDesign el instruct hacia las dos cosas.
+    ins = 'Tono conversacional de podcast.' + CERCANIA + ' ' + matiz
     if enfatico:
         ins += ' Marca esta parte con enfasis claro: mas lenta, mas alta y mas fuerte.'
-    w, sr = modelo.generate_voice_design(text=texto, language='Spanish', instruct=ins)
+    w, sr = modelo.generate_custom_voice(text=texto, language='Spanish',
+                                         speaker=hablante, instruct=ins)
     a = np.asarray(w[0] if np.ndim(w) > 1 else w, dtype=np.float32)
     if sr != HZ:
         n = int(round(a.size * HZ / sr))
