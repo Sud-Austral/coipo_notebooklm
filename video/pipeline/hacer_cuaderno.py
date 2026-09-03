@@ -76,17 +76,20 @@ print('capacidad CUDA:', cap)
 print('attn_implementation sera:',
       'flash_attention_2' if cap[0] >= 8 else 'sdpa')"""))
 
-C.append(md("""## 2 · Instalar · **esta celda reinicia el entorno**
+C.append(md("""## 2 · Instalar · tarda ~2 minutos
 
 `qwen-tts` fija `transformers==4.57.3` exacto, y Colab trae preinstalada una v5
 donde `GenerationMixin` ya no vive en `transformers.generation`. Pip instala la
 correcta, pero **el kernel sigue con la vieja cargada en memoria**, así que la
 celda 3 fallaría con un `ImportError` críptico si no se reinicia.
 
-Al terminar verás **«Your session crashed»** o «el kernel se reinició»: **es lo
-esperado, no es un error.**
+**Cuando esta celda termine, reinicia tú:** *Entorno de ejecución → Reiniciar
+sesión*. Luego sigue **desde la celda 3**, sin repetir ésta.
 
-Después del reinicio, **sigue desde la celda 3.** No repitas ésta."""))
+> Antes esta celda se reiniciaba sola, y era mala idea: en los logs deja la
+> misma firma que una caída de verdad —`restarting kernel (1/5)` y un `atexit`
+> roto— así que era imposible saber si había ido bien. Reiniciando a mano no hay
+> ambigüedad."""))
 
 _pip = ' '.join('%s==%s' % (k, v) for k, v in PINES.items())
 C.append(code("""# Versiones EXACTAS, comprobadas en PyPI, no dejadas a la resolucion de pip.
@@ -117,9 +120,18 @@ if malas:
 
 # El aviso de pip sobre diffusers es inofensivo: pide huggingface-hub 1.x, pero
 # no lo usamos y aqui manda transformers.
-print('Reiniciando el entorno. Cuando vuelva, sigue DESDE LA CELDA 3.')
-import IPython
-IPython.Application.instance().kernel.do_shutdown(True)"""))
+#
+# NO se reinicia solo a proposito. Un reinicio automatico deja en los logs la
+# misma firma que una caida de verdad —«restarting kernel (1/5)» y un atexit
+# roto—, y entonces es imposible saber si fue intencionado o si el proceso se
+# murio. Reiniciando a mano no hay ambiguedad.
+print()
+print('=' * 62)
+print('  INSTALACION TERMINADA.')
+print()
+print('  Ahora, A MANO:  Entorno de ejecucion -> Reiniciar sesion')
+print('  Y despues sigue DESDE LA CELDA 3. No repitas esta.')
+print('=' * 62)"""))
 
 C.append(md("""## 3 · Cargar el modelo
 
