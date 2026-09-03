@@ -20,7 +20,7 @@ que dicen medir, sin el relleno que mete el codificador en cada corte.
 
   python narrar_beats.py guion_catastro catastro
 """
-import asyncio, importlib, io, json, os, subprocess, sys, tempfile
+import array, asyncio, importlib, io, json, os, subprocess, sys, tempfile
 
 # La consola de Windows es cp1252 y el guion está lleno de acentos y flechas.
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
@@ -90,6 +90,43 @@ def trozos(texto):
     return fuera
 
 
+# ------------------------------------------------------------------ ritmo
+# Tres cosas que hacen que una conversacion sintetizada suene a clips pegados,
+# y que no son la voz sino el MONTAJE:
+#
+# 1. El hueco entre turnos es silencio digital exacto. Medido: -180 dB. Ningun
+#    microfono da eso; suena a corte.
+# 2. Nadie se solapa. En una conversacion real la replica rapida empieza ANTES
+#    de que el otro termine, y eso es lo que la hace sonar viva.
+# 3. Las pausas son todas parecidas porque salen de un numero escrito a mano.
+#
+# Aqui la pausa se deduce de la FUNCION del cambio de turno, no del guion.
+SOLAPE = 0.11          # la reaccion rapida pisa el final del otro
+RUIDO_SALA = 0.0016    # ~ -56 dB; suficiente para que el hueco no sea un vacio
+
+
+def hueco(actual, siguiente):
+    """Segundos entre dos latidos. Negativo = se solapan."""
+    if siguiente is None:
+        return 0.6
+    mismo = actual['v'] == siguiente['v']
+    if mismo:
+        return 0.20                      # respirar dentro del propio turno
+    if siguiente.get('tono') == 'vivo':
+        return -SOLAPE                   # le pisa la frase: interrumpe
+    if float(actual.get('p', 0.3)) >= 0.55:
+        return 0.42                      # cambio de tema: si hay aire
+    return 0.13                          # turno normal: casi encadenado
+
+
+def sala(n):
+    """Ruido de sala, para que el silencio no sea un cero perfecto."""
+    import random
+    r = random.Random(7)                 # fijo: el mismo guion da el mismo audio
+    amp = int(RUIDO_SALA * 32767)
+    return array.array('h', [r.randint(-amp, amp) for _ in range(n)]).tobytes()
+
+
 HZ = 24000
 PORTADILLA = 10.0          # los 10 s de Forestín, intocables
 
@@ -134,7 +171,11 @@ def recortar(datos, guarda=0.090, umbral=0.006):
 async def principal(modulo, nombre):
     guion = importlib.import_module(modulo).GUION
     tmp = tempfile.mkdtemp(prefix='beats-')
-    piezas, meta, t = [], [], PORTADILLA   # 'piezas': 'trozos' es la funcion
+    # El silencio de la portadilla va DENTRO del mp3: el primer latido se coloca
+    # en t=PORTADILLA sobre un lienzo que empieza en cero. Sin eso, el audio
+    # arranca en el segundo cero mientras el video aun muestra a Forestin, las
+    # voces se pisan con la musica y todo queda 10 s adelantado. Ya pasó.
+    piezas, meta, t = [], [], PORTADILLA
 
     for i, b in enumerate(guion):
         v = b['v']
@@ -158,9 +199,11 @@ async def principal(modulo, nombre):
         datos = b''.join(partes)
         open(os.path.join(tmp, '%03d.raw' % i), 'wb').write(datos)
         dur = len(datos) / 2.0 / HZ
-        pausa = float(b.get('p', 0.3))
-        piezas.append(datos)
-        piezas.append(silencio(pausa))
+        # El hueco sale de la funcion del cambio de turno, no del guion, y puede
+        # ser NEGATIVO: la reaccion rapida pisa el final de la otra voz. Por eso
+        # esto se mezcla muestra a muestra y no se concatena.
+        pausa = hueco(b, guion[i + 1] if i + 1 < len(guion) else None)
+        piezas.append((t, datos))
 
         meta.append(dict(i=i, v=v, inicio=round(t, 3), dur=round(dur, 3),
                          foto=b['foto'], z=b.get('z', 'completo'),
@@ -171,8 +214,22 @@ async def principal(modulo, nombre):
                  b['t'][:52]))
         t += dur + pausa
 
+    # Montaje por POSICION, no por concatenacion: los latidos que se solapan se
+    # suman muestra a muestra. Y encima va ruido de sala, para que los huecos no
+    # sean el cero perfecto que delata que esto son clips pegados.
+    largo = int((t + 1.0) * HZ)
+    mezcla = array.array('h', sala(largo))
+    for inicio, datos in piezas:
+        m = array.array('h'); m.frombytes(datos)
+        off = int(inicio * HZ)
+        for k in range(len(m)):
+            j = off + k
+            if j < largo:
+                x = mezcla[j] + m[k]
+                mezcla[j] = 32767 if x > 32767 else (-32768 if x < -32768 else x)
+
     bruto = os.path.join(tmp, 'todo.raw')
-    open(bruto, 'wb').write(b''.join(piezas))
+    open(bruto, 'wb').write(mezcla.tobytes())
     salida = os.path.join(PUBLICO, 'narracion_%s.mp3' % nombre)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', str(HZ),
                     '-ac', '1', '-i', bruto,

@@ -1,6 +1,6 @@
 {
  "portadilla": 10.0,
- "total": 238.964,
+ "total": 229.291,
  "beats": [
   {
    "i": 0,
@@ -16,7 +16,7 @@
   {
    "i": 1,
    "v": "l",
-   "inicio": 13.652,
+   "inicio": 13.342,
    "dur": 2.344,
    "foto": "gancho",
    "z": "completo",
@@ -27,7 +27,7 @@
   {
    "i": 2,
    "v": "c",
-   "inicio": 16.146,
+   "inicio": 15.816,
    "dur": 3.886,
    "foto": "gancho",
    "z": "completo",
@@ -38,7 +38,7 @@
   {
    "i": 3,
    "v": "l",
-   "inicio": 20.182,
+   "inicio": 19.832,
    "dur": 1.911,
    "foto": "gancho",
    "z": "completo",
@@ -49,7 +49,7 @@
   {
    "i": 4,
    "v": "c",
-   "inicio": 22.543,
+   "inicio": 21.873,
    "dur": 1.881,
    "foto": "gancho",
    "z": "completo",
@@ -60,7 +60,7 @@
   {
    "i": 5,
    "v": "c",
-   "inicio": 24.674,
+   "inicio": 23.954,
    "dur": 2.312,
    "foto": "coipo",
    "z": "completo",
@@ -71,7 +71,7 @@
   {
    "i": 6,
    "v": "l",
-   "inicio": 27.186,
+   "inicio": 26.156,
    "dur": 1.613,
    "foto": "coipo",
    "z": "completo",
@@ -82,7 +82,7 @@
   {
    "i": 7,
    "v": "c",
-   "inicio": 28.949,
+   "inicio": 27.899,
    "dur": 6.437,
    "foto": "coipo",
    "z": "completo",
@@ -93,7 +93,7 @@
   {
    "i": 8,
    "v": "l",
-   "inicio": 35.587,
+   "inicio": 34.467,
    "dur": 3.101,
    "foto": "coipo",
    "z": "completo",
@@ -104,7 +104,7 @@
   {
    "i": 9,
    "v": "c",
-   "inicio": 39.288,
+   "inicio": 37.988,
    "dur": 3.834,
    "foto": "incendios",
    "z": "completo",
@@ -115,7 +115,7 @@
   {
    "i": 10,
    "v": "c",
-   "inicio": 43.272,
+   "inicio": 42.022,
    "dur": 4.315,
    "foto": "incendios",
    "z": "completo",
@@ -126,7 +126,7 @@
   {
    "i": 11,
    "v": "c",
-   "inicio": 47.787,
+   "inicio": 46.537,
    "dur": 3.854,
    "foto": "incendios",
    "z": "completo",
@@ -137,8 +137,8 @@
   {
    "i": 12,
    "v": "l",
-   "inicio": 51.792,
-   "dur": 1.496,
+   "inicio": 50.281,
+   "dur": 1.491,
    "foto": "incendios",
    "z": "completo",
    "rot": null,
@@ -148,7 +148,7 @@
   {
    "i": 13,
    "v": "c",
-   "inicio": 53.438,
+   "inicio": 51.663,
    "dur": 3.158,
    "foto": "incendios",
    "z": "completo",
@@ -159,7 +159,7 @@
   {
    "i": 14,
    "v": "l",
-   "inicio": 56.796,
+   "inicio": 54.951,
    "dur": 3.705,
    "foto": "incendios",
    "z": "completo",
@@ -170,7 +170,7 @@
   {
    "i": 15,
    "v": "c",
-   "inicio": 61.051,
+   "inicio": 59.076,
    "dur": 3.085,
    "foto": "fiscalizacion",
    "z": "completo",
@@ -181,7 +181,7 @@
   {
    "i": 16,
    "v": "c",
-   "inicio": 64.286,
+   "inicio": 62.362,
    "dur": 8.496,
    "foto": "fiscalizacion",
    "z": "completo",
@@ -192,7 +192,7 @@
   {
    "i": 17,
    "v": "l",
-   "inicio": 72.982,
+   "inicio": 70.988,
    "dur": 1.772,
    "foto": "fiscalizacion",
    "z": "completo",
@@ -203,7 +203,7 @@
   {
    "i": 18,
    "v": "c",
-   "inicio": 74.905,
+   "inicio": 72.65,
    "dur": 1.979,
    "foto": "fiscalizacion",
    "z": "completo",
@@ -214,7 +214,7 @@
   {
    "i": 19,
    "v": "c",
-   "inicio": 77.433,
+   "inicio": 74.828,
    "dur": 2.628,
    "foto": "territorio",
    "z": "completo",
@@ -225,7 +225,7 @@
   {
    "i": 20,
    "v": "c",
-   "inicio": 80.211,
+   "inicio": 77.657,
    "dur": 5.999,
    "foto": "territorio",
    "z": "completo",
@@ -236,7 +236,7 @@
   {
    "i": 21,
    "v": "l",
-   "inicio": 86.41,
+   "inicio": 83.545,
    "dur": 2.101,
    "foto": "territorio",
    "z": "completo",
@@ -247,8 +247,8 @@
   {
    "i": 22,
    "v": "c",
-   "inicio": 88.661,
-   "dur": 3.929,
+   "inicio": 85.776,
+   "dur": 3.926,
    "foto": "territorio",
    "z": "completo",
    "rot": null,
@@ -258,7 +258,7 @@
   {
    "i": 23,
    "v": "c",
-   "inicio": 93.14,
+   "inicio": 89.902,
    "dur": 3.316,
    "foto": "arborizacion",
    "z": "completo",
@@ -269,7 +269,7 @@
   {
    "i": 24,
    "v": "c",
-   "inicio": 96.606,
+   "inicio": 93.418,
    "dur": 4.766,
    "foto": "arborizacion",
    "z": "completo",
@@ -280,7 +280,7 @@
   {
    "i": 25,
    "v": "l",
-   "inicio": 101.572,
+   "inicio": 98.314,
    "dur": 0.738,
    "foto": "arborizacion",
    "z": "completo",
@@ -291,7 +291,7 @@
   {
    "i": 26,
    "v": "c",
-   "inicio": 102.46,
+   "inicio": 98.942,
    "dur": 2.122,
    "foto": "arborizacion",
    "z": "completo",
@@ -302,7 +302,7 @@
   {
    "i": 27,
    "v": "c",
-   "inicio": 105.131,
+   "inicio": 101.264,
    "dur": 2.631,
    "foto": "personas",
    "z": "completo",
@@ -313,8 +313,8 @@
   {
    "i": 28,
    "v": "c",
-   "inicio": 107.912,
-   "dur": 9.423,
+   "inicio": 104.094,
+   "dur": 9.422,
    "foto": "personas",
    "z": "completo",
    "rot": null,
@@ -324,7 +324,7 @@
   {
    "i": 29,
    "v": "l",
-   "inicio": 117.536,
+   "inicio": 113.647,
    "dur": 3.04,
    "foto": "personas",
    "z": "completo",
@@ -335,7 +335,7 @@
   {
    "i": 30,
    "v": "c",
-   "inicio": 121.176,
+   "inicio": 117.107,
    "dur": 4.019,
    "foto": "plataforma",
    "z": "completo",
@@ -346,7 +346,7 @@
   {
    "i": 31,
    "v": "c",
-   "inicio": 125.345,
+   "inicio": 121.326,
    "dur": 8.918,
    "foto": "plataforma",
    "z": "completo",
@@ -357,7 +357,7 @@
   {
    "i": 32,
    "v": "l",
-   "inicio": 134.463,
+   "inicio": 130.134,
    "dur": 2.128,
    "foto": "plataforma",
    "z": "completo",
@@ -368,7 +368,7 @@
   {
    "i": 33,
    "v": "c",
-   "inicio": 136.741,
+   "inicio": 132.392,
    "dur": 4.655,
    "foto": "remate",
    "z": "completo",
@@ -379,7 +379,7 @@
   {
    "i": 34,
    "v": "l",
-   "inicio": 141.596,
+   "inicio": 137.178,
    "dur": 2.819,
    "foto": "remate",
    "z": "completo",
@@ -390,7 +390,7 @@
   {
    "i": 35,
    "v": "c",
-   "inicio": 144.565,
+   "inicio": 140.126,
    "dur": 2.813,
    "foto": "remate",
    "z": "completo",
@@ -401,7 +401,7 @@
   {
    "i": 36,
    "v": "c",
-   "inicio": 147.978,
+   "inicio": 143.14,
    "dur": 2.767,
    "foto": "gestion",
    "z": "completo",
@@ -412,7 +412,7 @@
   {
    "i": 37,
    "v": "c",
-   "inicio": 150.896,
+   "inicio": 146.107,
    "dur": 7.001,
    "foto": "gestion",
    "z": "completo",
@@ -423,8 +423,8 @@
   {
    "i": 38,
    "v": "l",
-   "inicio": 158.096,
-   "dur": 0.836,
+   "inicio": 153.238,
+   "dur": 0.823,
    "foto": "gestion",
    "z": "completo",
    "rot": null,
@@ -434,7 +434,7 @@
   {
    "i": 39,
    "v": "c",
-   "inicio": 159.482,
+   "inicio": 154.481,
    "dur": 3.59,
    "foto": "conocimiento",
    "z": "completo",
@@ -445,7 +445,7 @@
   {
    "i": 40,
    "v": "c",
-   "inicio": 163.222,
+   "inicio": 158.271,
    "dur": 7.099,
    "foto": "conocimiento",
    "z": "completo",
@@ -456,7 +456,7 @@
   {
    "i": 41,
    "v": "l",
-   "inicio": 170.522,
+   "inicio": 165.261,
    "dur": 2.075,
    "foto": "conocimiento",
    "z": "completo",
@@ -467,7 +467,7 @@
   {
    "i": 42,
    "v": "c",
-   "inicio": 172.747,
+   "inicio": 167.226,
    "dur": 0.816,
    "foto": "conocimiento",
    "z": "completo",
@@ -478,7 +478,7 @@
   {
    "i": 43,
    "v": "l",
-   "inicio": 173.763,
+   "inicio": 168.172,
    "dur": 1.342,
    "foto": "conocimiento",
    "z": "completo",
@@ -489,7 +489,7 @@
   {
    "i": 44,
    "v": "c",
-   "inicio": 175.255,
+   "inicio": 169.644,
    "dur": 2.516,
    "foto": "conocimiento",
    "z": "completo",
@@ -500,7 +500,7 @@
   {
    "i": 45,
    "v": "l",
-   "inicio": 178.321,
+   "inicio": 172.049,
    "dur": 2.807,
    "foto": "conocimiento",
    "z": "completo",
@@ -511,8 +511,8 @@
   {
    "i": 46,
    "v": "c",
-   "inicio": 181.278,
-   "dur": 3.448,
+   "inicio": 174.986,
+   "dur": 3.447,
    "foto": "conocimiento",
    "z": "completo",
    "rot": null,
@@ -522,7 +522,7 @@
   {
    "i": 47,
    "v": "l",
-   "inicio": 184.926,
+   "inicio": 178.563,
    "dur": 4.122,
    "foto": "conocimiento",
    "z": "completo",
@@ -533,7 +533,7 @@
   {
    "i": 48,
    "v": "c",
-   "inicio": 189.198,
+   "inicio": 182.815,
    "dur": 2.467,
    "foto": "conocimiento",
    "z": "completo",
@@ -544,7 +544,7 @@
   {
    "i": 49,
    "v": "c",
-   "inicio": 192.265,
+   "inicio": 185.483,
    "dur": 4.164,
    "foto": "mapa",
    "z": "completo",
@@ -555,7 +555,7 @@
   {
    "i": 50,
    "v": "l",
-   "inicio": 196.63,
+   "inicio": 189.777,
    "dur": 1.93,
    "foto": "mapa",
    "z": "completo",
@@ -566,7 +566,7 @@
   {
    "i": 51,
    "v": "c",
-   "inicio": 198.709,
+   "inicio": 191.837,
    "dur": 3.839,
    "foto": "mapa",
    "z": "completo",
@@ -577,7 +577,7 @@
   {
    "i": 52,
    "v": "l",
-   "inicio": 202.749,
+   "inicio": 195.566,
    "dur": 1.484,
    "foto": "mapa",
    "z": "completo",
@@ -588,8 +588,8 @@
   {
    "i": 53,
    "v": "c",
-   "inicio": 204.382,
-   "dur": 2.162,
+   "inicio": 197.18,
+   "dur": 2.158,
    "foto": "mapa",
    "z": "completo",
    "rot": null,
@@ -599,7 +599,7 @@
   {
    "i": 54,
    "v": "c",
-   "inicio": 207.144,
+   "inicio": 199.538,
    "dur": 6.175,
    "foto": "cierre",
    "z": "completo",
@@ -610,7 +610,7 @@
   {
    "i": 55,
    "v": "l",
-   "inicio": 213.519,
+   "inicio": 205.843,
    "dur": 2.678,
    "foto": "cierre",
    "z": "completo",
@@ -621,7 +621,7 @@
   {
    "i": 56,
    "v": "c",
-   "inicio": 216.347,
+   "inicio": 208.411,
    "dur": 2.199,
    "foto": "cierre",
    "z": "completo",
@@ -632,8 +632,8 @@
   {
    "i": 57,
    "v": "l",
-   "inicio": 218.746,
-   "dur": 1.337,
+   "inicio": 210.499,
+   "dur": 1.336,
    "foto": "cierre",
    "z": "completo",
    "rot": null,
@@ -643,8 +643,8 @@
   {
    "i": 58,
    "v": "c",
-   "inicio": 220.333,
-   "dur": 1.656,
+   "inicio": 211.965,
+   "dur": 1.655,
    "foto": "cierre",
    "z": "completo",
    "rot": null,
@@ -654,7 +654,7 @@
   {
    "i": 59,
    "v": "c",
-   "inicio": 222.189,
+   "inicio": 213.82,
    "dur": 3.559,
    "foto": "cierre",
    "z": "completo",
@@ -665,8 +665,8 @@
   {
    "i": 60,
    "v": "c",
-   "inicio": 225.948,
-   "dur": 6.865,
+   "inicio": 217.58,
+   "dur": 6.861,
    "foto": "cierre",
    "z": "completo",
    "rot": "¿A qué familia pertenecería?",
@@ -676,8 +676,8 @@
   {
    "i": 61,
    "v": "l",
-   "inicio": 233.163,
-   "dur": 1.71,
+   "inicio": 224.571,
+   "dur": 1.7,
    "foto": "cierre",
    "z": "completo",
    "rot": null,
@@ -687,7 +687,7 @@
   {
    "i": 62,
    "v": "c",
-   "inicio": 235.073,
+   "inicio": 226.401,
    "dur": 2.29,
    "foto": "cierre",
    "z": "completo",

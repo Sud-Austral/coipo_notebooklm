@@ -1,6 +1,6 @@
 {
  "portadilla": 10.0,
- "total": 228.202,
+ "total": 220.513,
  "beats": [
   {
    "i": 0,
@@ -16,7 +16,7 @@
   {
    "i": 1,
    "v": "l",
-   "inicio": 13.927,
+   "inicio": 13.857,
    "dur": 3.323,
    "foto": "gancho",
    "z": "completo",
@@ -27,7 +27,7 @@
   {
    "i": 2,
    "v": "c",
-   "inicio": 17.401,
+   "inicio": 17.071,
    "dur": 4.469,
    "foto": "gancho",
    "z": "completo",
@@ -38,7 +38,7 @@
   {
    "i": 3,
    "v": "l",
-   "inicio": 22.02,
+   "inicio": 21.67,
    "dur": 1.179,
    "foto": "gancho",
    "z": "completo",
@@ -49,7 +49,7 @@
   {
    "i": 4,
    "v": "c",
-   "inicio": 23.649,
+   "inicio": 22.979,
    "dur": 4.371,
    "foto": "quees",
    "z": "completo",
@@ -60,7 +60,7 @@
   {
    "i": 5,
    "v": "c",
-   "inicio": 28.22,
+   "inicio": 27.55,
    "dur": 4.532,
    "foto": "quees",
    "z": "completo",
@@ -71,7 +71,7 @@
   {
    "i": 6,
    "v": "l",
-   "inicio": 33.003,
+   "inicio": 31.973,
    "dur": 2.606,
    "foto": "quees",
    "z": "completo",
@@ -82,7 +82,7 @@
   {
    "i": 7,
    "v": "c",
-   "inicio": 35.759,
+   "inicio": 34.709,
    "dur": 3.737,
    "foto": "quees",
    "z": "completo",
@@ -93,7 +93,7 @@
   {
    "i": 8,
    "v": "c",
-   "inicio": 40.096,
+   "inicio": 38.646,
    "dur": 3.334,
    "foto": "papel",
    "z": "completo",
@@ -104,7 +104,7 @@
   {
    "i": 9,
    "v": "l",
-   "inicio": 43.58,
+   "inicio": 42.11,
    "dur": 2.556,
    "foto": "papel",
    "z": "completo",
@@ -115,7 +115,7 @@
   {
    "i": 10,
    "v": "c",
-   "inicio": 46.286,
+   "inicio": 44.796,
    "dur": 3.252,
    "foto": "papel",
    "z": "completo",
@@ -126,8 +126,8 @@
   {
    "i": 11,
    "v": "l",
-   "inicio": 49.739,
-   "dur": 2.352,
+   "inicio": 47.938,
+   "dur": 2.346,
    "foto": "papel",
    "z": "completo",
    "rot": null,
@@ -137,7 +137,7 @@
   {
    "i": 12,
    "v": "c",
-   "inicio": 52.24,
+   "inicio": 50.174,
    "dur": 1.453,
    "foto": "papel",
    "z": "completo",
@@ -148,7 +148,7 @@
   {
    "i": 13,
    "v": "l",
-   "inicio": 53.993,
+   "inicio": 51.757,
    "dur": 2.334,
    "foto": "papel",
    "z": "completo",
@@ -159,8 +159,8 @@
   {
    "i": 14,
    "v": "c",
-   "inicio": 56.477,
-   "dur": 4.434,
+   "inicio": 54.22,
+   "dur": 4.433,
    "foto": "remate1",
    "z": "completo",
    "rot": "No elimina el papel. Le pone seguimiento.",
@@ -170,8 +170,8 @@
   {
    "i": 15,
    "v": "c",
-   "inicio": 61.111,
-   "dur": 1.177,
+   "inicio": 58.853,
+   "dur": 1.175,
    "foto": "remate1",
    "z": "completo",
    "rot": null,
@@ -181,7 +181,7 @@
   {
    "i": 16,
    "v": "l",
-   "inicio": 62.438,
+   "inicio": 60.158,
    "dur": 3.771,
    "foto": "remate1",
    "z": "completo",
@@ -192,7 +192,7 @@
   {
    "i": 17,
    "v": "c",
-   "inicio": 66.809,
+   "inicio": 64.349,
    "dur": 3.942,
    "foto": "estados",
    "z": "completo",
@@ -203,7 +203,7 @@
   {
    "i": 18,
    "v": "c",
-   "inicio": 70.951,
+   "inicio": 68.491,
    "dur": 2.154,
    "foto": "estados",
    "z": "completo",
@@ -214,7 +214,7 @@
   {
    "i": 19,
    "v": "c",
-   "inicio": 73.255,
+   "inicio": 70.845,
    "dur": 1.994,
    "foto": "estados",
    "z": "completo",
@@ -225,7 +225,7 @@
   {
    "i": 20,
    "v": "c",
-   "inicio": 75.398,
+   "inicio": 73.039,
    "dur": 2.22,
    "foto": "estados",
    "z": "completo",
@@ -236,7 +236,7 @@
   {
    "i": 21,
    "v": "c",
-   "inicio": 77.768,
+   "inicio": 75.459,
    "dur": 2.696,
    "foto": "estados",
    "z": "completo",
@@ -247,7 +247,7 @@
   {
    "i": 22,
    "v": "c",
-   "inicio": 80.614,
+   "inicio": 78.355,
    "dur": 3.006,
    "foto": "estados",
    "z": "completo",
@@ -258,7 +258,7 @@
   {
    "i": 23,
    "v": "l",
-   "inicio": 83.82,
+   "inicio": 81.251,
    "dur": 3.023,
    "foto": "estados",
    "z": "completo",
@@ -269,7 +269,7 @@
   {
    "i": 24,
    "v": "c",
-   "inicio": 86.993,
+   "inicio": 84.164,
    "dur": 2.661,
    "foto": "salto",
    "z": "completo",
@@ -280,7 +280,7 @@
   {
    "i": 25,
    "v": "c",
-   "inicio": 89.855,
+   "inicio": 87.025,
    "dur": 6.078,
    "foto": "salto",
    "z": "completo",
@@ -291,7 +291,7 @@
   {
    "i": 26,
    "v": "l",
-   "inicio": 96.133,
+   "inicio": 93.234,
    "dur": 2.531,
    "foto": "salto",
    "z": "completo",
@@ -302,8 +302,8 @@
   {
    "i": 27,
    "v": "c",
-   "inicio": 98.814,
-   "dur": 6.212,
+   "inicio": 95.895,
+   "dur": 6.217,
    "foto": "salto",
    "z": "completo",
    "rot": null,
@@ -313,7 +313,7 @@
   {
    "i": 28,
    "v": "l",
-   "inicio": 105.227,
+   "inicio": 102.242,
    "dur": 2.657,
    "foto": "salto",
    "z": "completo",
@@ -324,7 +324,7 @@
   {
    "i": 29,
    "v": "c",
-   "inicio": 108.483,
+   "inicio": 105.318,
    "dur": 5.31,
    "foto": "plantillas",
    "z": "completo",
@@ -335,7 +335,7 @@
   {
    "i": 30,
    "v": "l",
-   "inicio": 113.944,
+   "inicio": 110.519,
    "dur": 2.408,
    "foto": "plantillas",
    "z": "completo",
@@ -346,8 +346,8 @@
   {
    "i": 31,
    "v": "c",
-   "inicio": 116.502,
-   "dur": 5.874,
+   "inicio": 113.057,
+   "dur": 5.865,
    "foto": "plantillas",
    "z": "completo",
    "rot": "Campos en JSON, no columnas fijas",
@@ -357,7 +357,7 @@
   {
    "i": 32,
    "v": "l",
-   "inicio": 122.576,
+   "inicio": 119.052,
    "dur": 3.508,
    "foto": "plantillas",
    "z": "completo",
@@ -368,7 +368,7 @@
   {
    "i": 33,
    "v": "c",
-   "inicio": 126.233,
+   "inicio": 122.45,
    "dur": 2.161,
    "foto": "plantillas",
    "z": "completo",
@@ -379,7 +379,7 @@
   {
    "i": 34,
    "v": "c",
-   "inicio": 128.695,
+   "inicio": 124.811,
    "dur": 4.908,
    "foto": "plantillas",
    "z": "completo",
@@ -390,7 +390,7 @@
   {
    "i": 35,
    "v": "c",
-   "inicio": 134.153,
+   "inicio": 129.919,
    "dur": 2.927,
    "foto": "bandeja",
    "z": "completo",
@@ -401,7 +401,7 @@
   {
    "i": 36,
    "v": "c",
-   "inicio": 137.229,
+   "inicio": 133.046,
    "dur": 3.603,
    "foto": "bandeja",
    "z": "completo",
@@ -412,7 +412,7 @@
   {
    "i": 37,
    "v": "c",
-   "inicio": 140.982,
+   "inicio": 136.849,
    "dur": 3.747,
    "foto": "bandeja",
    "z": "completo",
@@ -423,8 +423,8 @@
   {
    "i": 38,
    "v": "l",
-   "inicio": 144.93,
-   "dur": 3.619,
+   "inicio": 140.726,
+   "dur": 3.618,
    "foto": "bandeja",
    "z": "completo",
    "rot": null,
@@ -434,7 +434,7 @@
   {
    "i": 39,
    "v": "c",
-   "inicio": 149.149,
+   "inicio": 144.764,
    "dur": 2.911,
    "foto": "seguridad",
    "z": "completo",
@@ -445,7 +445,7 @@
   {
    "i": 40,
    "v": "c",
-   "inicio": 152.21,
+   "inicio": 147.876,
    "dur": 2.977,
    "foto": "seguridad",
    "z": "completo",
@@ -456,7 +456,7 @@
   {
    "i": 41,
    "v": "l",
-   "inicio": 155.387,
+   "inicio": 150.742,
    "dur": 1.88,
    "foto": "seguridad",
    "z": "completo",
@@ -467,8 +467,8 @@
   {
    "i": 42,
    "v": "c",
-   "inicio": 157.417,
-   "dur": 3.697,
+   "inicio": 152.752,
+   "dur": 3.695,
    "foto": "seguridad",
    "z": "completo",
    "rot": null,
@@ -478,7 +478,7 @@
   {
    "i": 43,
    "v": "c",
-   "inicio": 161.314,
+   "inicio": 156.647,
    "dur": 2.648,
    "foto": "seguridad",
    "z": "completo",
@@ -489,7 +489,7 @@
   {
    "i": 44,
    "v": "l",
-   "inicio": 164.111,
+   "inicio": 159.425,
    "dur": 2.926,
    "foto": "seguridad",
    "z": "completo",
@@ -500,7 +500,7 @@
   {
    "i": 45,
    "v": "l",
-   "inicio": 167.637,
+   "inicio": 162.55,
    "dur": 3.107,
    "foto": "infra",
    "z": "completo",
@@ -511,7 +511,7 @@
   {
    "i": 46,
    "v": "c",
-   "inicio": 170.894,
+   "inicio": 165.787,
    "dur": 1.949,
    "foto": "infra",
    "z": "completo",
@@ -522,8 +522,8 @@
   {
    "i": 47,
    "v": "c",
-   "inicio": 173.093,
-   "dur": 5.248,
+   "inicio": 167.936,
+   "dur": 5.253,
    "foto": "infra",
    "z": "completo",
    "rot": "32 procesadores en cuatro máquinas",
@@ -533,7 +533,7 @@
   {
    "i": 48,
    "v": "c",
-   "inicio": 178.541,
+   "inicio": 173.39,
    "dur": 1.754,
    "foto": "infra",
    "z": "completo",
@@ -544,7 +544,7 @@
   {
    "i": 49,
    "v": "l",
-   "inicio": 180.445,
+   "inicio": 175.033,
    "dur": 1.84,
    "foto": "infra",
    "z": "completo",
@@ -555,7 +555,7 @@
   {
    "i": 50,
    "v": "c",
-   "inicio": 182.435,
+   "inicio": 177.003,
    "dur": 5.579,
    "foto": "infra",
    "z": "completo",
@@ -566,7 +566,7 @@
   {
    "i": 51,
    "v": "c",
-   "inicio": 188.214,
+   "inicio": 182.782,
    "dur": 5.519,
    "foto": "infra",
    "z": "completo",
@@ -577,7 +577,7 @@
   {
    "i": 52,
    "v": "c",
-   "inicio": 194.333,
+   "inicio": 188.501,
    "dur": 5.862,
    "foto": "cierre",
    "z": "completo",
@@ -588,7 +588,7 @@
   {
    "i": 53,
    "v": "l",
-   "inicio": 200.395,
+   "inicio": 194.494,
    "dur": 2.601,
    "foto": "cierre",
    "z": "completo",
@@ -599,7 +599,7 @@
   {
    "i": 54,
    "v": "c",
-   "inicio": 203.147,
+   "inicio": 197.225,
    "dur": 6.984,
    "foto": "cierre",
    "z": "completo",
@@ -610,7 +610,7 @@
   {
    "i": 55,
    "v": "l",
-   "inicio": 210.33,
+   "inicio": 204.099,
    "dur": 3.3,
    "foto": "cierre",
    "z": "completo",
@@ -621,8 +621,8 @@
   {
    "i": 56,
    "v": "c",
-   "inicio": 213.78,
-   "dur": 3.189,
+   "inicio": 207.288,
+   "dur": 3.187,
    "foto": "cierre",
    "z": "completo",
    "rot": null,
@@ -632,7 +632,7 @@
   {
    "i": 57,
    "v": "l",
-   "inicio": 217.169,
+   "inicio": 210.605,
    "dur": 2.658,
    "foto": "cierre",
    "z": "completo",
@@ -643,8 +643,8 @@
   {
    "i": 58,
    "v": "c",
-   "inicio": 220.027,
-   "dur": 1.759,
+   "inicio": 213.393,
+   "dur": 1.754,
    "foto": "cierre",
    "z": "completo",
    "rot": null,
@@ -654,7 +654,7 @@
   {
    "i": 59,
    "v": "c",
-   "inicio": 222.036,
+   "inicio": 215.347,
    "dur": 4.566,
    "foto": "cierre",
    "z": "completo",
