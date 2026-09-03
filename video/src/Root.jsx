@@ -6,6 +6,8 @@ import { VideoEcosistema, DURACION_FRAMES as DUR_ECO } from './VideoEcosistema';
 import { VideoContrato2, DURACION_FRAMES as DUR_C2 } from './v2/VideoContrato2';
 import { VideoEcosistema2, DURACION_FRAMES as DUR_E2 } from './v2/VideoEcosistema2';
 import { VideoCatastro, DURACION_FRAMES as DUR_CAT } from './v2/VideoCatastro';
+import { VideoContratoPod, DURACION_FRAMES as DUR_CP } from './v2/VideoContratoPod';
+import { VideoEcosistemaPod, DURACION_FRAMES as DUR_EP } from './v2/VideoEcosistemaPod';
 
 export const RemotionRoot = () => (
   <>
@@ -57,5 +59,9 @@ export const RemotionRoot = () => (
       width={1920}
       height={1080}
     />
+    <Composition id="ContratoPod" component={VideoContratoPod}
+      durationInFrames={DUR_CP} fps={30} width={1920} height={1080} />
+    <Composition id="EcosistemaPod" component={VideoEcosistemaPod}
+      durationInFrames={DUR_EP} fps={30} width={1920} height={1080} />
 </>
 );

@@ -6,3 +6,9 @@ out/
 # liviana, que es la que se comparte; el original se regenera con
 #   npx remotion render src/index.jsx Catastro
 Catastro de Usos de la Tierra — podcast explicativo.mp4
+
+# Renders a calidad completa por encima de 100 MB (regla de Luis). Se versiona
+# la copia liviana; el original se regenera con
+#   npx remotion render src/index.jsx <Catastro|ContratoPod|EcosistemaPod>
+Catastro de Usos de la Tierra — podcast.mp4
+versiones anteriores/
