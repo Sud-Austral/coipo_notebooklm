@@ -48,6 +48,42 @@ TONO = {
 JITTER_RATE = [0, +4, -2, +2, -4, +3, -1, -3]
 JITTER_PITCH = [0, -1, +1, 0, +1, -1, 0, +1]
 
+# ---------------------------------------------------------------- énfasis
+# edge-tts no admite <emphasis>: Microsoft sólo deja UN <prosody> por locución.
+# La vía documentada es trocear la frase y dar su propia prosodia a cada trozo.
+# En el guion el énfasis se marca con *asteriscos*.
+#
+# El trozo enfatizado va más lento, un poco más agudo y más fuerte —volume, que
+# hasta ahora no se usaba— porque así es como un hablante real destaca algo:
+# no sólo sube el tono, también se demora y aprieta.
+ENFASIS = dict(rate=-16, pitch=+2, vol=+14)
+COSTURA = 0.055        # micro-pausa entre trozos, en el punto donde la voz ya respiraría
+
+
+def trozos(texto):
+    """Parte en (texto, ¿enfatizado?) por los marcadores *…*.
+
+    Un trozo sin letras ni cifras —el «¿» que queda suelto al marcar
+    «¿*Veinticinco por ciento*?»— hace que edge-tts devuelva CERO audio, sin
+    error hasta que revienta el guardado. Esos trozos se pegan al vecino.
+    """
+    crudos = [(t, i % 2 == 1) for i, t in enumerate(texto.split('*')) if t]
+    if not crudos:
+        return [(texto, False)]
+    fuera = []
+    for t, marcado in crudos:
+        tiene_voz = any(c.isalnum() for c in t)
+        if not tiene_voz and fuera:
+            fuera[-1] = (fuera[-1][0] + t, fuera[-1][1])
+        elif not tiene_voz:
+            fuera.append((t, marcado))          # se fusiona con el siguiente
+        elif fuera and not any(c.isalnum() for c in fuera[-1][0]):
+            fuera[-1] = (fuera[-1][0] + t, marcado)
+        else:
+            fuera.append((t, marcado))
+    return fuera
+
+
 HZ = 24000
 PORTADILLA = 10.0          # los 10 s de Forestín, intocables
 
@@ -100,12 +136,20 @@ async def principal(modulo, nombre):
         rate = cfg['rate'] + BASE[v] + JITTER_RATE[i % len(JITTER_RATE)]
         pitch = cfg['pitch'] + JITTER_PITCH[i % len(JITTER_PITCH)]
 
-        crudo = os.path.join(tmp, '%03d.mp3' % i)
-        await edge_tts.Communicate(
-            b['t'], VOCES[v],
-            rate='%+d%%' % rate, pitch='%+dHz' % pitch).save(crudo)
+        partes = []
+        for j, (txt, marcado) in enumerate(trozos(b['t'])):
+            r = rate + (ENFASIS['rate'] if marcado else 0)
+            pi = pitch + (ENFASIS['pitch'] if marcado else 0)
+            vol = ENFASIS['vol'] if marcado else 0
+            crudo = os.path.join(tmp, '%03d_%d.mp3' % (i, j))
+            await edge_tts.Communicate(
+                txt.strip(), VOCES[v], rate='%+d%%' % r,
+                pitch='%+dHz' % pi, volume='%+d%%' % vol).save(crudo)
+            partes.append(recortar(pcm(crudo)))
+            if j:
+                partes.insert(-1, silencio(COSTURA))
 
-        datos = recortar(pcm(crudo))
+        datos = b''.join(partes)
         open(os.path.join(tmp, '%03d.raw' % i), 'wb').write(datos)
         dur = len(datos) / 2.0 / HZ
         pausa = float(b.get('p', 0.3))
@@ -115,7 +159,7 @@ async def principal(modulo, nombre):
         meta.append(dict(i=i, v=v, inicio=round(t, 3), dur=round(dur, 3),
                          foto=b['foto'], z=b.get('z', 'completo'),
                          rot=b.get('rot'), tono=b.get('tono', 'normal'),
-                         texto=b['t']))
+                         texto=b['t'].replace('*', '')))
         print('%3d %s %-6s %6.2f +%5.2fs r%+3d p%+2d  %s'
               % (i, VOCES[v][6], b.get('tono', 'normal'), t, dur, rate, pitch,
                  b['t'][:52]))
