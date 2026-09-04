@@ -1,0 +1,3495 @@
+{
+  "repository": "target",
+  "generated_at": "2026-09-03T01:38:54.991254",
+  "analysis": {
+    "video/remotion.config.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "@remotion/cli/config",
+            "line": 1
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/animacion.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "remotion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 6
+          },
+          {
+            "value": "entrar",
+            "line": 9
+          },
+          {
+            "value": "aparecer",
+            "line": 22
+          },
+          {
+            "value": "contar",
+            "line": 35
+          },
+          {
+            "value": "miles",
+            "line": 46
+          },
+          {
+            "value": "trazar",
+            "line": 50
+          },
+          {
+            "value": "fundido",
+            "line": 57
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/estilo.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "C",
+            "line": 4
+          },
+          {
+            "value": "FUENTE",
+            "line": 23
+          },
+          {
+            "value": "FPS",
+            "line": 26
+          },
+          {
+            "value": "Antetitulo",
+            "line": 29
+          }
+        ],
+        "components": [
+          {
+            "value": "C",
+            "line": 4
+          },
+          {
+            "value": "FUENTE",
+            "line": 23
+          },
+          {
+            "value": "FPS",
+            "line": 26
+          },
+          {
+            "value": "Antetitulo",
+            "line": 29
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Explicativo.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./secciones",
+            "line": 3
+          },
+          {
+            "value": "./secciones2",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 21
+          },
+          {
+            "value": "Explicativo",
+            "line": 36
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "SECCIONES",
+            "line": 11
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 20
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 21
+          },
+          {
+            "value": "Velo",
+            "line": 24
+          },
+          {
+            "value": "Explicativo",
+            "line": 36
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/secciones2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Roles",
+            "line": 25
+          },
+          {
+            "value": "Datos",
+            "line": 102
+          },
+          {
+            "value": "Cifras",
+            "line": 158
+          }
+        ],
+        "components": [
+          {
+            "value": "Fondo",
+            "line": 15
+          },
+          {
+            "value": "Roles",
+            "line": 25
+          },
+          {
+            "value": "Datos",
+            "line": 102
+          },
+          {
+            "value": "Cifras",
+            "line": 158
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/VideoContrato.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./contrato",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 23
+          },
+          {
+            "value": "VideoContrato",
+            "line": 35
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "SECCIONES",
+            "line": 11
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 22
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 23
+          },
+          {
+            "value": "Velo",
+            "line": 25
+          },
+          {
+            "value": "VideoContrato",
+            "line": 35
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Root.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Explicativo",
+            "line": 3
+          },
+          {
+            "value": "./VideoContrato",
+            "line": 4
+          },
+          {
+            "value": "./VideoEcosistema",
+            "line": 5
+          },
+          {
+            "value": "./v2/VideoContrato2",
+            "line": 6
+          },
+          {
+            "value": "./v2/VideoEcosistema2",
+            "line": 7
+          },
+          {
+            "value": "./v2/VideoCatastro",
+            "line": 8
+          }
+        ],
+        "exports": [
+          {
+            "value": "RemotionRoot",
+            "line": 10
+          }
+        ],
+        "components": [
+          {
+            "value": "RemotionRoot",
+            "line": 10
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/VideoEcosistema.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./ecosistema",
+            "line": 4
+          },
+          {
+            "value": "./estilo",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 24
+          },
+          {
+            "value": "VideoEcosistema",
+            "line": 36
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "LISTA",
+            "line": 10
+          },
+          {
+            "value": "TOTAL_S",
+            "line": 23
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 24
+          },
+          {
+            "value": "Velo",
+            "line": 26
+          },
+          {
+            "value": "VideoEcosistema",
+            "line": 36
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/index.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "remotion",
+            "line": 1
+          },
+          {
+            "value": "./Root",
+            "line": 2
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/ecosistema.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          },
+          {
+            "value": "./catalogo.json",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "Apertura",
+            "line": 21
+          },
+          {
+            "value": "Familia",
+            "line": 59
+          },
+          {
+            "value": "CierreEco",
+            "line": 99
+          }
+        ],
+        "components": [
+          {
+            "value": "FAM",
+            "line": 18
+          },
+          {
+            "value": "Apertura",
+            "line": 21
+          },
+          {
+            "value": "Familia",
+            "line": 59
+          },
+          {
+            "value": "CierreEco",
+            "line": 99
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/Portadilla.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "DUR_PORTADILLA",
+            "line": 6
+          },
+          {
+            "value": "Portadilla",
+            "line": 14
+          }
+        ],
+        "components": [
+          {
+            "value": "DUR_PORTADILLA",
+            "line": 6
+          },
+          {
+            "value": "Portadilla",
+            "line": 14
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/secciones.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Portada",
+            "line": 35
+          },
+          {
+            "value": "Problema",
+            "line": 150
+          },
+          {
+            "value": "Flujo",
+            "line": 214
+          }
+        ],
+        "components": [
+          {
+            "value": "Fondo",
+            "line": 17
+          },
+          {
+            "value": "Portada",
+            "line": 35
+          },
+          {
+            "value": "Icono",
+            "line": 143
+          },
+          {
+            "value": "Problema",
+            "line": 150
+          },
+          {
+            "value": "Flujo",
+            "line": 214
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/contrato.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./estilo",
+            "line": 3
+          },
+          {
+            "value": "./animacion",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "QueEs",
+            "line": 34
+          },
+          {
+            "value": "Problema",
+            "line": 61
+          },
+          {
+            "value": "Estados",
+            "line": 112
+          },
+          {
+            "value": "Plantillas",
+            "line": 165
+          },
+          {
+            "value": "Bandeja",
+            "line": 209
+          },
+          {
+            "value": "Seguridad",
+            "line": 265
+          },
+          {
+            "value": "Infraestructura",
+            "line": 300
+          },
+          {
+            "value": "Cierre",
+            "line": 346
+          }
+        ],
+        "components": [
+          {
+            "value": "Titulo",
+            "line": 17
+          },
+          {
+            "value": "QueEs",
+            "line": 34
+          },
+          {
+            "value": "Problema",
+            "line": 61
+          },
+          {
+            "value": "ESTADOS",
+            "line": 104
+          },
+          {
+            "value": "Estados",
+            "line": 112
+          },
+          {
+            "value": "Plantillas",
+            "line": 165
+          },
+          {
+            "value": "Bandeja",
+            "line": 209
+          },
+          {
+            "value": "Seguridad",
+            "line": 265
+          },
+          {
+            "value": "Infraestructura",
+            "line": 300
+          },
+          {
+            "value": "Cierre",
+            "line": 346
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/base.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "T",
+            "line": 17
+          },
+          {
+            "value": "SERIF",
+            "line": 32
+          },
+          {
+            "value": "SANS",
+            "line": 33
+          },
+          {
+            "value": "Fuentes",
+            "line": 36
+          },
+          {
+            "value": "Grano",
+            "line": 48
+          },
+          {
+            "value": "Vineta",
+            "line": 61
+          },
+          {
+            "value": "Metraje",
+            "line": 72
+          },
+          {
+            "value": "sube",
+            "line": 92
+          },
+          {
+            "value": "brota",
+            "line": 100
+          },
+          {
+            "value": "cortina",
+            "line": 106
+          },
+          {
+            "value": "numero",
+            "line": 114
+          },
+          {
+            "value": "miles",
+            "line": 121
+          },
+          {
+            "value": "Rotulo",
+            "line": 127
+          },
+          {
+            "value": "Declara",
+            "line": 140
+          },
+          {
+            "value": "Parrafo",
+            "line": 150
+          },
+          {
+            "value": "marco",
+            "line": 159
+          }
+        ],
+        "components": [
+          {
+            "value": "T",
+            "line": 17
+          },
+          {
+            "value": "SERIF",
+            "line": 32
+          },
+          {
+            "value": "SANS",
+            "line": 33
+          },
+          {
+            "value": "Fuentes",
+            "line": 36
+          },
+          {
+            "value": "Grano",
+            "line": 48
+          },
+          {
+            "value": "Vineta",
+            "line": 61
+          },
+          {
+            "value": "Metraje",
+            "line": 72
+          },
+          {
+            "value": "Rotulo",
+            "line": 127
+          },
+          {
+            "value": "Declara",
+            "line": 140
+          },
+          {
+            "value": "Parrafo",
+            "line": 150
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/arquetipos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "./base",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "Declaracion",
+            "line": 12
+          },
+          {
+            "value": "Numeral",
+            "line": 30
+          },
+          {
+            "value": "Partido",
+            "line": 61
+          },
+          {
+            "value": "Recorrido",
+            "line": 102
+          },
+          {
+            "value": "Constelacion",
+            "line": 173
+          },
+          {
+            "value": "Indice",
+            "line": 223
+          },
+          {
+            "value": "Familia",
+            "line": 280
+          }
+        ],
+        "components": [
+          {
+            "value": "Declaracion",
+            "line": 12
+          },
+          {
+            "value": "Numeral",
+            "line": 30
+          },
+          {
+            "value": "Partido",
+            "line": 61
+          },
+          {
+            "value": "Recorrido",
+            "line": 102
+          },
+          {
+            "value": "Constelacion",
+            "line": 173
+          },
+          {
+            "value": "Indice",
+            "line": 223
+          },
+          {
+            "value": "Familia",
+            "line": 280
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoCatastro.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 6
+          },
+          {
+            "value": "./base",
+            "line": 7
+          },
+          {
+            "value": "../beats_catastro.json",
+            "line": 8
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 10
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 11
+          },
+          {
+            "value": "VideoCatastro",
+            "line": 256
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 10
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 11
+          },
+          {
+            "value": "BEATS",
+            "line": 13
+          },
+          {
+            "value": "BANDA",
+            "line": 18
+          },
+          {
+            "value": "ALTO_IMAGEN",
+            "line": 19
+          },
+          {
+            "value": "CENTRO_Y",
+            "line": 20
+          },
+          {
+            "value": "ZONAS",
+            "line": 22
+          },
+          {
+            "value": "AJUSTE",
+            "line": 46
+          },
+          {
+            "value": "VOZ",
+            "line": 55
+          },
+          {
+            "value": "Captura",
+            "line": 76
+          },
+          {
+            "value": "Plano",
+            "line": 93
+          },
+          {
+            "value": "Camara",
+            "line": 118
+          },
+          {
+            "value": "Pie",
+            "line": 177
+          },
+          {
+            "value": "Avance",
+            "line": 243
+          },
+          {
+            "value": "VideoCatastro",
+            "line": 256
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoContrato2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./arquetipos",
+            "line": 4
+          },
+          {
+            "value": "./base",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 156
+          },
+          {
+            "value": "VideoContrato2",
+            "line": 166
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 7
+          },
+          {
+            "value": "Gancho",
+            "line": 9
+          },
+          {
+            "value": "QueEs",
+            "line": 17
+          },
+          {
+            "value": "Problema",
+            "line": 36
+          },
+          {
+            "value": "Remate1",
+            "line": 49
+          },
+          {
+            "value": "PASOS",
+            "line": 56
+          },
+          {
+            "value": "Estados",
+            "line": 64
+          },
+          {
+            "value": "Remate2",
+            "line": 73
+          },
+          {
+            "value": "Plantillas",
+            "line": 83
+          },
+          {
+            "value": "Bandeja",
+            "line": 102
+          },
+          {
+            "value": "Seguridad",
+            "line": 116
+          },
+          {
+            "value": "Infra",
+            "line": 125
+          },
+          {
+            "value": "Cierre",
+            "line": 135
+          },
+          {
+            "value": "LISTA",
+            "line": 142
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 156
+          },
+          {
+            "value": "Corte",
+            "line": 158
+          },
+          {
+            "value": "VideoContrato2",
+            "line": 166
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/src/v2/VideoEcosistema2.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "remotion",
+            "line": 2
+          },
+          {
+            "value": "../Portadilla",
+            "line": 3
+          },
+          {
+            "value": "./arquetipos",
+            "line": 4
+          },
+          {
+            "value": "./base",
+            "line": 5
+          },
+          {
+            "value": "../catalogo.json",
+            "line": 6
+          }
+        ],
+        "exports": [
+          {
+            "value": "FPS",
+            "line": 8
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 83
+          },
+          {
+            "value": "VideoEcosistema2",
+            "line": 93
+          }
+        ],
+        "components": [
+          {
+            "value": "FPS",
+            "line": 8
+          },
+          {
+            "value": "COLOR",
+            "line": 12
+          },
+          {
+            "value": "F",
+            "line": 15
+          },
+          {
+            "value": "Gancho",
+            "line": 31
+          },
+          {
+            "value": "Apertura",
+            "line": 39
+          },
+          {
+            "value": "Remate",
+            "line": 49
+          },
+          {
+            "value": "Cierre",
+            "line": 58
+          },
+          {
+            "value": "LISTA",
+            "line": 68
+          },
+          {
+            "value": "DURACION_FRAMES",
+            "line": 83
+          },
+          {
+            "value": "Corte",
+            "line": 85
+          },
+          {
+            "value": "VideoEcosistema2",
+            "line": 93
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_catastro.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_contrato2.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar_todo.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "time",
+            "line": 8
+          },
+          {
+            "value": "capturar",
+            "line": 9
+          },
+          {
+            "value": "capturar",
+            "line": 10
+          }
+        ],
+        "functions": [
+          {
+            "name": "preparar",
+            "line": 34
+          },
+          {
+            "name": "cargar",
+            "line": 40
+          },
+          {
+            "name": "plano",
+            "line": 51
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar_modales.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "time",
+            "line": 9
+          },
+          {
+            "value": "capturar",
+            "line": 10
+          },
+          {
+            "value": "capturar_todo",
+            "line": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "escape",
+            "line": 14
+          },
+          {
+            "name": "panel_abierto",
+            "line": 21
+          },
+          {
+            "name": "asegurar_panel",
+            "line": 27
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/narrar.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "asyncio",
+            "line": 11
+          },
+          {
+            "value": "importlib",
+            "line": 11
+          },
+          {
+            "value": "io",
+            "line": 11
+          },
+          {
+            "value": "json",
+            "line": 11
+          },
+          {
+            "value": "os",
+            "line": 11
+          },
+          {
+            "value": "subprocess",
+            "line": 11
+          },
+          {
+            "value": "sys",
+            "line": 11
+          },
+          {
+            "value": "edge_tts",
+            "line": 16
+          }
+        ],
+        "functions": [
+          {
+            "name": "duracion",
+            "line": 27
+          },
+          {
+            "name": "main",
+            "line": 33
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/capturar.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "base64",
+            "line": 9
+          },
+          {
+            "value": "io",
+            "line": 9
+          },
+          {
+            "value": "json",
+            "line": 9
+          },
+          {
+            "value": "os",
+            "line": 9
+          },
+          {
+            "value": "subprocess",
+            "line": 9
+          },
+          {
+            "value": "sys",
+            "line": 9
+          },
+          {
+            "value": "tempfile",
+            "line": 9
+          },
+          {
+            "value": "time",
+            "line": 9
+          },
+          {
+            "value": "requests",
+            "line": 10
+          },
+          {
+            "value": "websocket",
+            "line": 11
+          }
+        ],
+        "functions": [
+          {
+            "name": "lanzar",
+            "line": 59
+          },
+          {
+            "name": "esperar_carga",
+            "line": 93
+          },
+          {
+            "name": "inventario",
+            "line": 110
+          },
+          {
+            "name": "__init__",
+            "line": 20
+          },
+          {
+            "name": "enviar",
+            "line": 25
+          },
+          {
+            "name": "js",
+            "line": 35
+          },
+          {
+            "name": "retina",
+            "line": 42
+          },
+          {
+            "name": "foto",
+            "line": 46
+          },
+          {
+            "name": "cerrar",
+            "line": 54
+          }
+        ],
+        "classes": [
+          {
+            "name": "Cdp",
+            "line": 19
+          }
+        ],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/catalogo.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "io",
+            "line": 7
+          },
+          {
+            "value": "json",
+            "line": 7
+          },
+          {
+            "value": "os",
+            "line": 7
+          },
+          {
+            "value": "sys",
+            "line": 7
+          }
+        ],
+        "functions": [
+          {
+            "name": "main",
+            "line": 81
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/narrar_beats.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "asyncio",
+            "line": 23
+          },
+          {
+            "value": "importlib",
+            "line": 23
+          },
+          {
+            "value": "io",
+            "line": 23
+          },
+          {
+            "value": "json",
+            "line": 23
+          },
+          {
+            "value": "os",
+            "line": 23
+          },
+          {
+            "value": "subprocess",
+            "line": 23
+          },
+          {
+            "value": "sys",
+            "line": 23
+          },
+          {
+            "value": "tempfile",
+            "line": 23
+          },
+          {
+            "value": "edge_tts",
+            "line": 28
+          },
+          {
+            "value": "array",
+            "line": 72
+          }
+        ],
+        "functions": [
+          {
+            "name": "pcm",
+            "line": 55
+          },
+          {
+            "name": "silencio",
+            "line": 62
+          },
+          {
+            "name": "recortar",
+            "line": 65
+          },
+          {
+            "name": "principal",
+            "line": 92
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/guion_ecosistema2.py": {
+      "python": {
+        "imports": [],
+        "functions": [],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "video/pipeline/musica.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "io",
+            "line": 8
+          },
+          {
+            "value": "os",
+            "line": 8
+          },
+          {
+            "value": "subprocess",
+            "line": 8
+          },
+          {
+            "value": "sys",
+            "line": 8
+          }
+        ],
+        "functions": [
+          {
+            "name": "main",
+            "line": 21
+          },
+          {
+            "name": "sine",
+            "line": 26
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/ingest_media.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 10
+          },
+          {
+            "value": "hashlib",
+            "line": 11
+          },
+          {
+            "value": "json",
+            "line": 12
+          },
+          {
+            "value": "shutil",
+            "line": 13
+          },
+          {
+            "value": "subprocess",
+            "line": 14
+          },
+          {
+            "value": "sys",
+            "line": 15
+          },
+          {
+            "value": "datetime",
+            "line": 16
+          },
+          {
+            "value": "pathlib",
+            "line": 17
+          }
+        ],
+        "functions": [
+          {
+            "name": "ffprobe",
+            "line": 24
+          },
+          {
+            "name": "sha256",
+            "line": 61
+          },
+          {
+            "name": "main",
+            "line": 69
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/artifact_status.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 11
+          },
+          {
+            "value": "dataclasses",
+            "line": 12
+          },
+          {
+            "value": "json",
+            "line": 13
+          },
+          {
+            "value": "sys",
+            "line": 14
+          },
+          {
+            "value": "time",
+            "line": 15
+          },
+          {
+            "value": "notebooklm_tools.cli.commands.studio",
+            "line": 17
+          },
+          {
+            "value": "notebooklm_tools.services",
+            "line": 18
+          }
+        ],
+        "functions": [
+          {
+            "name": "snapshot",
+            "line": 21
+          },
+          {
+            "name": "main",
+            "line": 29
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/gen_private_doc.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 18
+          },
+          {
+            "value": "json",
+            "line": 19
+          },
+          {
+            "value": "os",
+            "line": 20
+          },
+          {
+            "value": "subprocess",
+            "line": 21
+          },
+          {
+            "value": "sys",
+            "line": 22
+          },
+          {
+            "value": "pathlib",
+            "line": 23
+          },
+          {
+            "value": "notebooklm_tools.core.auth",
+            "line": 25
+          },
+          {
+            "value": "notebooklm_tools.mcp.tools._utils",
+            "line": 26
+          },
+          {
+            "value": "notebooklm_tools.utils.browser",
+            "line": 27
+          },
+          {
+            "value": "notebooklm_tools.utils.config",
+            "line": 28
+          }
+        ],
+        "functions": [
+          {
+            "name": "git_ignores",
+            "line": 34
+          },
+          {
+            "name": "load_profile",
+            "line": 46
+          },
+          {
+            "name": "build_document",
+            "line": 65
+          },
+          {
+            "name": "main",
+            "line": 280
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": [
+          {
+            "value": "NLM_PROFILE",
+            "line": 282,
+            "file": "scripts/gen_private_doc.py"
+          }
+        ]
+      }
+    },
+    "scripts/gen_galeria.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 15
+          },
+          {
+            "value": "json",
+            "line": 16
+          },
+          {
+            "value": "subprocess",
+            "line": 17
+          },
+          {
+            "value": "sys",
+            "line": 18
+          },
+          {
+            "value": "time",
+            "line": 19
+          },
+          {
+            "value": "pathlib",
+            "line": 20
+          },
+          {
+            "value": "notebooklm_tools.cli.commands.studio",
+            "line": 199
+          },
+          {
+            "value": "notebooklm_tools.services",
+            "line": 200
+          },
+          {
+            "value": "dataclasses",
+            "line": 201
+          }
+        ],
+        "functions": [
+          {
+            "name": "plan",
+            "line": 69
+          },
+          {
+            "name": "cargar_estado",
+            "line": 123
+          },
+          {
+            "name": "guardar_estado",
+            "line": 127
+          },
+          {
+            "name": "nlm",
+            "line": 131
+          },
+          {
+            "name": "lanzar",
+            "line": 138
+          },
+          {
+            "name": "crear",
+            "line": 174
+          },
+          {
+            "name": "estado_remoto",
+            "line": 197
+          },
+          {
+            "name": "adoptar",
+            "line": 214
+          },
+          {
+            "name": "revisar_y_descargar",
+            "line": 251
+          },
+          {
+            "name": "ciclo",
+            "line": 305
+          },
+          {
+            "name": "escribir_manifiesto",
+            "line": 340
+          },
+          {
+            "name": "main",
+            "line": 366
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/gen_conaf.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "argparse",
+            "line": 15
+          },
+          {
+            "value": "json",
+            "line": 16
+          },
+          {
+            "value": "subprocess",
+            "line": 17
+          },
+          {
+            "value": "sys",
+            "line": 18
+          },
+          {
+            "value": "time",
+            "line": 19
+          },
+          {
+            "value": "pathlib",
+            "line": 20
+          }
+        ],
+        "functions": [
+          {
+            "name": "nlm",
+            "line": 43
+          },
+          {
+            "name": "cargar_estado",
+            "line": 49
+          },
+          {
+            "name": "guardar_estado",
+            "line": 55
+          },
+          {
+            "name": "args_de",
+            "line": 60
+          },
+          {
+            "name": "crear",
+            "line": 70
+          },
+          {
+            "name": "descargar",
+            "line": 92
+          },
+          {
+            "name": "main",
+            "line": 100
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "scripts/optimizar_galeria.py": {
+      "python": {
+        "imports": [
+          {
+            "value": "json",
+            "line": 12
+          },
+          {
+            "value": "shutil",
+            "line": 13
+          },
+          {
+            "value": "subprocess",
+            "line": 14
+          },
+          {
+            "value": "sys",
+            "line": 15
+          },
+          {
+            "value": "pathlib",
+            "line": 16
+          }
+        ],
+        "functions": [
+          {
+            "name": "ffmpeg",
+            "line": 28
+          },
+          {
+            "name": "a_webp",
+            "line": 36
+          },
+          {
+            "name": "recodificar_video",
+            "line": 48
+          },
+          {
+            "name": "recodificar_audio",
+            "line": 62
+          },
+          {
+            "name": "apartar",
+            "line": 71
+          },
+          {
+            "name": "poster",
+            "line": 80
+          },
+          {
+            "name": "kb",
+            "line": 89
+          },
+          {
+            "name": "main",
+            "line": 93
+          }
+        ],
+        "classes": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/vite.config.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "vite",
+            "line": 1
+          },
+          {
+            "value": "@vitejs/plugin-react",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "defineConfig",
+            "line": 18
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/App.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "./content/sections.js",
+            "line": 2
+          },
+          {
+            "value": "./router/useHashRoute.js",
+            "line": 3
+          },
+          {
+            "value": "./hooks/useActiveHeading.js",
+            "line": 4
+          },
+          {
+            "value": "./hooks/useHeadings.js",
+            "line": 5
+          },
+          {
+            "value": "./components/SectionContext.js",
+            "line": 6
+          },
+          {
+            "value": "./components/PlatformProvider.jsx",
+            "line": 7
+          },
+          {
+            "value": "./components/TopBar.jsx",
+            "line": 8
+          },
+          {
+            "value": "./components/Sidebar.jsx",
+            "line": 9
+          },
+          {
+            "value": "./components/TableOfContents.jsx",
+            "line": 10
+          },
+          {
+            "value": "./components/PagerNav.jsx",
+            "line": 11
+          },
+          {
+            "value": "./components/NotFound.jsx",
+            "line": 12
+          }
+        ],
+        "exports": [
+          {
+            "value": "App",
+            "line": 17
+          }
+        ],
+        "components": [
+          {
+            "value": "NAV_ID",
+            "line": 14
+          },
+          {
+            "value": "SITE",
+            "line": 15
+          },
+          {
+            "value": "App",
+            "line": 17
+          },
+          {
+            "value": "Section",
+            "line": 63
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/main.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "react-dom/client",
+            "line": 2
+          },
+          {
+            "value": "./App.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/router/useHashRoute.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "parseHash",
+            "line": 20
+          },
+          {
+            "value": "useHashRoute",
+            "line": 27
+          },
+          {
+            "value": "to",
+            "line": 38
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/VariablesEntorno.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Badge.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/envVars.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "VariablesEntorno",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "VariablesEntorno",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/OtrosProyectos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "OtrosProyectos",
+            "line": 6
+          },
+          {
+            "value": "NOTEBOOKLM_MCP_CLI_PATH",
+            "line": 32
+          },
+          {
+            "value": "NOTEBOOKLM_COOKIES",
+            "line": 84
+          },
+          {
+            "value": "NOTEBOOKLM_BASE_URL",
+            "line": 84
+          },
+          {
+            "value": "NLM_PROFILE",
+            "line": 116
+          }
+        ],
+        "components": [
+          {
+            "value": "OtrosProyectos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [
+          {
+            "path": "No",
+            "line": 105,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "Sí",
+            "line": 106,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "Sí",
+            "line": 107,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          },
+          {
+            "path": "No, solo una ruta",
+            "line": 108,
+            "file": "frontend/src/content/OtrosProyectos.jsx"
+          }
+        ],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Troubleshooting.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Troubleshooting",
+            "line": 6
+          },
+          {
+            "value": "PYTHONUTF8",
+            "line": 173
+          }
+        ],
+        "components": [
+          {
+            "value": "Troubleshooting",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaInfografias.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/FiltroTemas.jsx",
+            "line": 4
+          },
+          {
+            "value": "../components/Lightbox.jsx",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaInfografias",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "GaleriaInfografias",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Instalacion.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Steps.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Instalacion",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Instalacion",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Ingesta.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "Ingesta",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "Ingesta",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/EstadoYDescarga.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "EstadoYDescarga",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "EstadoYDescarga",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Multimedia.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/artifacts.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "Multimedia",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "Multimedia",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/ClientesMcp.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          },
+          {
+            "value": "../data/mcpClients.js",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "ClientesMcp",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "ClientesMcp",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Requisitos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Requisitos",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Requisitos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaVideos.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/FiltroTemas.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaVideos",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "GaleriaVideos",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/NotebookYFuentes.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Steps.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 4
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 5
+          }
+        ],
+        "exports": [
+          {
+            "value": "NotebookYFuentes",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "NotebookYFuentes",
+            "line": 7
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/GaleriaAudios.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../data/galeria.js",
+            "line": 2
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "GaleriaAudios",
+            "line": 12
+          }
+        ],
+        "components": [
+          {
+            "value": "DESCRIPCION",
+            "line": 5
+          },
+          {
+            "value": "GaleriaAudios",
+            "line": 12
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/sections.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "./QueEs.jsx",
+            "line": 1
+          },
+          {
+            "value": "./Requisitos.jsx",
+            "line": 2
+          },
+          {
+            "value": "./Instalacion.jsx",
+            "line": 3
+          },
+          {
+            "value": "./Login.jsx",
+            "line": 4
+          },
+          {
+            "value": "./ClientesMcp.jsx",
+            "line": 5
+          },
+          {
+            "value": "./NotebookYFuentes.jsx",
+            "line": 6
+          },
+          {
+            "value": "./Multimedia.jsx",
+            "line": 7
+          },
+          {
+            "value": "./EstadoYDescarga.jsx",
+            "line": 8
+          },
+          {
+            "value": "./Ingesta.jsx",
+            "line": 9
+          },
+          {
+            "value": "./OtrosProyectos.jsx",
+            "line": 10
+          },
+          {
+            "value": "./Troubleshooting.jsx",
+            "line": 11
+          },
+          {
+            "value": "./VariablesEntorno.jsx",
+            "line": 12
+          },
+          {
+            "value": "./GaleriaInfografias.jsx",
+            "line": 13
+          },
+          {
+            "value": "./GaleriaVideos.jsx",
+            "line": 14
+          },
+          {
+            "value": "./GaleriaAudios.jsx",
+            "line": 15
+          }
+        ],
+        "exports": [
+          {
+            "value": "SECTIONS",
+            "line": 23
+          },
+          {
+            "value": "SLUGS",
+            "line": 46
+          },
+          {
+            "value": "GROUPS",
+            "line": 48
+          },
+          {
+            "value": "bySlug",
+            "line": 54
+          },
+          {
+            "value": "neighbors",
+            "line": 56
+          }
+        ],
+        "components": [
+          {
+            "value": "SECTIONS",
+            "line": 23
+          },
+          {
+            "value": "SLUGS",
+            "line": 46
+          },
+          {
+            "value": "GROUPS",
+            "line": 48
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/QueEs.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 3
+          }
+        ],
+        "exports": [
+          {
+            "value": "QueEs",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "QueEs",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/content/Login.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../components/Heading.jsx",
+            "line": 1
+          },
+          {
+            "value": "../components/Callout.jsx",
+            "line": 2
+          },
+          {
+            "value": "../components/CodeBlock.jsx",
+            "line": 3
+          },
+          {
+            "value": "../components/DataTable.jsx",
+            "line": 4
+          }
+        ],
+        "exports": [
+          {
+            "value": "Login",
+            "line": 6
+          }
+        ],
+        "components": [
+          {
+            "value": "Login",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/envVars.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "ENV_VARS",
+            "line": 2
+          }
+        ],
+        "components": [
+          {
+            "value": "ENV_VARS",
+            "line": 2
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/artifacts.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "AUDIO_FORMATS",
+            "line": 2
+          },
+          {
+            "value": "ARTIFACT_TYPES",
+            "line": 10
+          }
+        ],
+        "components": [
+          {
+            "value": "AUDIO_FORMATS",
+            "line": 2
+          },
+          {
+            "value": "ARTIFACT_TYPES",
+            "line": 10
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/galeria.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "GALERIA",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "GALERIA",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/data/mcpClients.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "MCP_CLIENTS",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "MCP_CLIENTS",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useCopyToClipboard.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useCopyToClipboard",
+            "line": 10
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useHeadings.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useHeadings",
+            "line": 7
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/platformContext.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "STORAGE_KEY",
+            "line": 3
+          },
+          {
+            "value": "PlatformContext",
+            "line": 6
+          },
+          {
+            "value": "usePlatform",
+            "line": 11
+          },
+          {
+            "value": "readStoredPlatform",
+            "line": 13
+          }
+        ],
+        "components": [
+          {
+            "value": "STORAGE_KEY",
+            "line": 3
+          },
+          {
+            "value": "PlatformContext",
+            "line": 6
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/hooks/useActiveHeading.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "useActiveHeading",
+            "line": 12
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/PagerNav.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "PagerNav",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "PagerNav",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Badge.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Badge",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "Badge",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/DataTable.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "DataTable",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "DataTable",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/TopBar.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 1
+          },
+          {
+            "value": "./Badge.jsx",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "TopBar",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "TopBar",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/CopyButton.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/useCopyToClipboard.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "CopyButton",
+            "line": 9
+          }
+        ],
+        "components": [
+          {
+            "value": "LABELS",
+            "line": 3
+          },
+          {
+            "value": "CopyButton",
+            "line": 9
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/CodeBlock.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 1
+          },
+          {
+            "value": "./CopyButton.jsx",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "CodeBlock",
+            "line": 9
+          }
+        ],
+        "components": [
+          {
+            "value": "CodeBlock",
+            "line": 9
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Heading.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "./SectionContext.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "H2",
+            "line": 12
+          },
+          {
+            "value": "H3",
+            "line": 21
+          }
+        ],
+        "components": [
+          {
+            "value": "Anchor",
+            "line": 3
+          },
+          {
+            "value": "H2",
+            "line": 12
+          },
+          {
+            "value": "H3",
+            "line": 21
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Steps.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Steps",
+            "line": 1
+          },
+          {
+            "value": "Step",
+            "line": 5
+          }
+        ],
+        "components": [
+          {
+            "value": "Steps",
+            "line": 1
+          },
+          {
+            "value": "Step",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/FiltroTemas.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "FiltroTemas",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "FiltroTemas",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/NotFound.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "NotFound",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "NotFound",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Callout.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "Callout",
+            "line": 17
+          }
+        ],
+        "components": [
+          {
+            "value": "PREFIX",
+            "line": 1
+          },
+          {
+            "value": "PATH",
+            "line": 9
+          },
+          {
+            "value": "Callout",
+            "line": 17
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Lightbox.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "Lightbox",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "Lightbox",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/SectionContext.js": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "SectionContext",
+            "line": 5
+          },
+          {
+            "value": "useSectionSlug",
+            "line": 7
+          }
+        ],
+        "components": [
+          {
+            "value": "SectionContext",
+            "line": 5
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/Sidebar.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "../router/useHashRoute.js",
+            "line": 1
+          }
+        ],
+        "exports": [
+          {
+            "value": "Sidebar",
+            "line": 3
+          }
+        ],
+        "components": [
+          {
+            "value": "Sidebar",
+            "line": 3
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/PlatformProvider.jsx": {
+      "javascript": {
+        "imports": [
+          {
+            "value": "react",
+            "line": 1
+          },
+          {
+            "value": "../hooks/platformContext.js",
+            "line": 2
+          }
+        ],
+        "exports": [
+          {
+            "value": "PlatformProvider",
+            "line": 4
+          }
+        ],
+        "components": [
+          {
+            "value": "PlatformProvider",
+            "line": 4
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/components/TableOfContents.jsx": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "TableOfContents",
+            "line": 1
+          }
+        ],
+        "components": [
+          {
+            "value": "TableOfContents",
+            "line": 1
+          }
+        ],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    },
+    "frontend/src/lib/dedent.js": {
+      "javascript": {
+        "imports": [],
+        "exports": [
+          {
+            "value": "dedent",
+            "line": 6
+          }
+        ],
+        "components": [],
+        "api_calls": [],
+        "routes": [],
+        "env_vars": []
+      }
+    }
+  }
+}
