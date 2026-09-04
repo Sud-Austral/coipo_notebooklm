@@ -21,35 +21,20 @@ const CENTRO_Y = ALTO_IMAGEN / 2;
 
 const ZONAS = {
   completo:    { x: 960,  y: 470, k: 1.00 },
-  mapa:        { x: 1080, y: 500, k: 1.25 },
+  mapa:        { x: 1075, y: 560, k: 1.25 },
   panel:       { x: 285,  y: 300, k: 2.10 },
   filtros:     { x: 285,  y: 470, k: 2.00 },
   // El panel de indicadores está pegado al borde derecho de la captura, así que
   // CUALQUIER acercamiento sobre él arrastra el océano que tiene al lado: medido,
   // dos tercios del cuadro en blanco. Por eso este encuadre es partido — el mapa
   // a la izquierda y el panel a la derecha, cada uno con su propia escala.
-  // izq: Chile NO está en el centro del mapa de la captura, está a la izquierda
-  // (x≈855). Centrar en 1090 lo dejaba en la esquina. k=0,80 para que el país
-  // entre completo de norte a sur en los 846 px de alto.
-  // der: y=268 coloca el borde superior del panel casi a ras del cuadro; con
-  // y=330 se comía la cabecera.
+  // El sujeto llega centrado en el área de mapa (x 565–1585) porque la captura
+  // se pide con el lat/lon/z calculado del bbox oficial. Ya no hay que buscarlo.
   indicadores: { partido: true, anchoIzq: 880,
-                 izq: { x: 1090, y: 540, k: 0.85 },
+                 izq: { x: 1075, y: 560, k: 0.85 },
                  der: { x: 1752, y: 268, k: 2.60 } },
   cifra:       { x: 1700, y: 230, k: 2.40 },
   cabecera:    { x: 690,  y: 140, k: 2.20 },
-};
-
-/* Correcciones por captura. En 16_araucania el visor NO reajustó el mapa al
- * filtrar por región: los puntos quedaron en el cuadrante inferior izquierdo,
- * así que el encuadre 'mapa' genérico los deja en una esquina. */
-const AJUSTE = {
-  '16_araucania':      { mapa: { x: 403, y: 830, k: 2.40 },
-                         izq:  { x: 403, y: 830, k: 1.60 } },
-  '18_satelite':       { mapa: { x: 403, y: 830, k: 2.40 },
-                         izq:  { x: 403, y: 830, k: 1.60 } },
-  '17_losrios_bosque': { mapa: { x: 400, y: 835, k: 2.40 },
-                         izq:  { x: 400, y: 835, k: 1.60 } },
 };
 
 const VOZ = {
@@ -90,13 +75,13 @@ const Captura = ({ foto, e, opacidad = 1, izquierda = 0, ancho = 1920 }) => (
 );
 
 /** Un plano en su encuadre, sea entero o partido. */
-const Plano = ({ foto, zona, deriva, opacidad = 1, ajusteIzq }) => {
+const Plano = ({ foto, zona, deriva, opacidad = 1 }) => {
   if (!zona.partido) {
     const e = encuadre(zona);
     return <Captura foto={foto} e={{ ...e, k: e.k * deriva }} opacidad={opacidad} />;
   }
   const a = zona.anchoIzq, b = 1920 - a;
-  const ei = encuadre(ajusteIzq || zona.izq, a);
+  const ei = encuadre(zona.izq, a);
   const ed = encuadre(zona.der, b);
   return (
     <>
@@ -125,9 +110,8 @@ const Camara = () => {
   const b = BEATS[i];
   const anterior = i > 0 ? BEATS[i - 1] : null;
 
-  const zonaDe = (x) => (AJUSTE[x.foto] && AJUSTE[x.foto][x.z]) || ZONAS[x.z] || ZONAS.completo;
-  const zona = zonaDe(b);
-  const zonaPrev = anterior ? zonaDe(anterior) : zona;
+  const zona = ZONAS[b.z] || ZONAS.completo;
+  const zonaPrev = anterior ? (ZONAS[anterior.z] || ZONAS.completo) : zona;
   const dentro = t - b.inicio;
   const mismaFoto = anterior && anterior.foto === b.foto;
 
@@ -157,10 +141,10 @@ const Camara = () => {
     <AbsoluteFill style={{ background: T.tinta }}>
       {!mismaFoto && anterior && fundido < 1 ? (
         <Plano foto={anterior.foto} zona={zonaPrev} deriva={1}
-               ajusteIzq={AJUSTE[anterior.foto] && AJUSTE[anterior.foto].izq} />
+ />
       ) : null}
       <Plano foto={b.foto} zona={zona} deriva={deriva} opacidad={fundido}
-             ajusteIzq={AJUSTE[b.foto] && AJUSTE[b.foto].izq} />
+ />
     </AbsoluteFill>
   );
 };

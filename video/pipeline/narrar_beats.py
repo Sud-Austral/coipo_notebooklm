@@ -20,7 +20,7 @@ que dicen medir, sin el relleno que mete el codificador en cada corte.
 
   python narrar_beats.py guion_catastro catastro
 """
-import asyncio, importlib, io, json, os, subprocess, sys, tempfile
+import array, asyncio, importlib, io, json, os, subprocess, sys, tempfile
 
 # La consola de Windows es cp1252 y el guion está lleno de acentos y flechas.
 sys.stdout.reconfigure(encoding='utf-8', errors='replace')
@@ -35,6 +35,12 @@ VOCES = {'l': 'es-CL-LorenzoNeural', 'c': 'es-CL-CatalinaNeural'}
 # Base por voz: Catalina lee un punto más rápido que Lorenzo por naturaleza.
 BASE = {'l': -1, 'c': +1}
 
+# Aceleración global, pedida por Luis tras oír la muestra C. Se suma a TODOS
+# los tonos, incluido el del énfasis: así el trozo marcado sigue estando 16
+# puntos por debajo del resto y el contraste se conserva. Si sólo se acelerara
+# la base, el énfasis dejaría de notarse.
+ACELERACION = +12   # calibrado: da 10,0 % mas rapido medido, no +10 teorico
+
 # Cada tono es una FUNCIÓN en la conversación, no un adorno.
 TONO = {
     'normal': dict(rate=-2,  pitch=0),
@@ -47,6 +53,79 @@ TONO = {
 # tono sin volverse aleatorio (el mismo guion da siempre el mismo audio).
 JITTER_RATE = [0, +4, -2, +2, -4, +3, -1, -3]
 JITTER_PITCH = [0, -1, +1, 0, +1, -1, 0, +1]
+
+# ---------------------------------------------------------------- énfasis
+# edge-tts no admite <emphasis>: Microsoft sólo deja UN <prosody> por locución.
+# La vía documentada es trocear la frase y dar su propia prosodia a cada trozo.
+# En el guion el énfasis se marca con *asteriscos*.
+#
+# El trozo enfatizado va más lento, un poco más agudo y más fuerte —volume, que
+# hasta ahora no se usaba— porque así es como un hablante real destaca algo:
+# no sólo sube el tono, también se demora y aprieta.
+ENFASIS = dict(rate=-16, pitch=+2, vol=+14)
+COSTURA = 0.055        # micro-pausa entre trozos, en el punto donde la voz ya respiraría
+
+
+def trozos(texto):
+    """Parte en (texto, ¿enfatizado?) por los marcadores *…*.
+
+    Un trozo sin letras ni cifras —el «¿» que queda suelto al marcar
+    «¿*Veinticinco por ciento*?»— hace que edge-tts devuelva CERO audio, sin
+    error hasta que revienta el guardado. Esos trozos se pegan al vecino.
+    """
+    crudos = [(t, i % 2 == 1) for i, t in enumerate(texto.split('*')) if t]
+    if not crudos:
+        return [(texto, False)]
+    fuera = []
+    for t, marcado in crudos:
+        tiene_voz = any(c.isalnum() for c in t)
+        if not tiene_voz and fuera:
+            fuera[-1] = (fuera[-1][0] + t, fuera[-1][1])
+        elif not tiene_voz:
+            fuera.append((t, marcado))          # se fusiona con el siguiente
+        elif fuera and not any(c.isalnum() for c in fuera[-1][0]):
+            fuera[-1] = (fuera[-1][0] + t, marcado)
+        else:
+            fuera.append((t, marcado))
+    return fuera
+
+
+# ------------------------------------------------------------------ ritmo
+# Tres cosas que hacen que una conversacion sintetizada suene a clips pegados,
+# y que no son la voz sino el MONTAJE:
+#
+# 1. El hueco entre turnos es silencio digital exacto. Medido: -180 dB. Ningun
+#    microfono da eso; suena a corte.
+# 2. Nadie se solapa. En una conversacion real la replica rapida empieza ANTES
+#    de que el otro termine, y eso es lo que la hace sonar viva.
+# 3. Las pausas son todas parecidas porque salen de un numero escrito a mano.
+#
+# Aqui la pausa se deduce de la FUNCION del cambio de turno, no del guion.
+SOLAPE = 0.11          # la reaccion rapida pisa el final del otro
+RUIDO_SALA = 0.0016    # ~ -56 dB; suficiente para que el hueco no sea un vacio
+
+
+def hueco(actual, siguiente):
+    """Segundos entre dos latidos. Negativo = se solapan."""
+    if siguiente is None:
+        return 0.6
+    mismo = actual['v'] == siguiente['v']
+    if mismo:
+        return 0.20                      # respirar dentro del propio turno
+    if siguiente.get('tono') == 'vivo':
+        return -SOLAPE                   # le pisa la frase: interrumpe
+    if float(actual.get('p', 0.3)) >= 0.55:
+        return 0.42                      # cambio de tema: si hay aire
+    return 0.13                          # turno normal: casi encadenado
+
+
+def sala(n):
+    """Ruido de sala, para que el silencio no sea un cero perfecto."""
+    import random
+    r = random.Random(7)                 # fijo: el mismo guion da el mismo audio
+    amp = int(RUIDO_SALA * 32767)
+    return array.array('h', [r.randint(-amp, amp) for _ in range(n)]).tobytes()
+
 
 HZ = 24000
 PORTADILLA = 10.0          # los 10 s de Forestín, intocables
@@ -92,37 +171,65 @@ def recortar(datos, guarda=0.090, umbral=0.006):
 async def principal(modulo, nombre):
     guion = importlib.import_module(modulo).GUION
     tmp = tempfile.mkdtemp(prefix='beats-')
-    trozos, meta, t = [], [], PORTADILLA
+    # El silencio de la portadilla va DENTRO del mp3: el primer latido se coloca
+    # en t=PORTADILLA sobre un lienzo que empieza en cero. Sin eso, el audio
+    # arranca en el segundo cero mientras el video aun muestra a Forestin, las
+    # voces se pisan con la musica y todo queda 10 s adelantado. Ya pasó.
+    piezas, meta, t = [], [], PORTADILLA
 
     for i, b in enumerate(guion):
         v = b['v']
         cfg = TONO[b.get('tono', 'normal')]
-        rate = cfg['rate'] + BASE[v] + JITTER_RATE[i % len(JITTER_RATE)]
+        rate = cfg['rate'] + BASE[v] + ACELERACION + JITTER_RATE[i % len(JITTER_RATE)]
         pitch = cfg['pitch'] + JITTER_PITCH[i % len(JITTER_PITCH)]
 
-        crudo = os.path.join(tmp, '%03d.mp3' % i)
-        await edge_tts.Communicate(
-            b['t'], VOCES[v],
-            rate='%+d%%' % rate, pitch='%+dHz' % pitch).save(crudo)
+        partes = []
+        for j, (txt, marcado) in enumerate(trozos(b['t'])):
+            r = rate + (ENFASIS['rate'] if marcado else 0)
+            pi = pitch + (ENFASIS['pitch'] if marcado else 0)
+            vol = ENFASIS['vol'] if marcado else 0
+            crudo = os.path.join(tmp, '%03d_%d.mp3' % (i, j))
+            await edge_tts.Communicate(
+                txt.strip(), VOCES[v], rate='%+d%%' % r,
+                pitch='%+dHz' % pi, volume='%+d%%' % vol).save(crudo)
+            partes.append(recortar(pcm(crudo)))
+            if j:
+                partes.insert(-1, silencio(COSTURA))
 
-        datos = recortar(pcm(crudo))
+        datos = b''.join(partes)
         open(os.path.join(tmp, '%03d.raw' % i), 'wb').write(datos)
         dur = len(datos) / 2.0 / HZ
-        pausa = float(b.get('p', 0.3))
-        trozos.append(datos)
-        trozos.append(silencio(pausa))
+        # El hueco sale de la funcion del cambio de turno, no del guion, y puede
+        # ser NEGATIVO: la reaccion rapida pisa el final de la otra voz. Por eso
+        # esto se mezcla muestra a muestra y no se concatena.
+        pausa = hueco(b, guion[i + 1] if i + 1 < len(guion) else None)
+        piezas.append((t, datos))
 
         meta.append(dict(i=i, v=v, inicio=round(t, 3), dur=round(dur, 3),
                          foto=b['foto'], z=b.get('z', 'completo'),
                          rot=b.get('rot'), tono=b.get('tono', 'normal'),
-                         texto=b['t']))
+                         texto=b['t'].replace('*', '')))
         print('%3d %s %-6s %6.2f +%5.2fs r%+3d p%+2d  %s'
               % (i, VOCES[v][6], b.get('tono', 'normal'), t, dur, rate, pitch,
                  b['t'][:52]))
         t += dur + pausa
 
+    # Montaje por POSICION, no por concatenacion: los latidos que se solapan se
+    # suman muestra a muestra. Y encima va ruido de sala, para que los huecos no
+    # sean el cero perfecto que delata que esto son clips pegados.
+    largo = int((t + 1.0) * HZ)
+    mezcla = array.array('h', sala(largo))
+    for inicio, datos in piezas:
+        m = array.array('h'); m.frombytes(datos)
+        off = int(inicio * HZ)
+        for k in range(len(m)):
+            j = off + k
+            if j < largo:
+                x = mezcla[j] + m[k]
+                mezcla[j] = 32767 if x > 32767 else (-32768 if x < -32768 else x)
+
     bruto = os.path.join(tmp, 'todo.raw')
-    open(bruto, 'wb').write(b''.join(trozos))
+    open(bruto, 'wb').write(mezcla.tobytes())
     salida = os.path.join(PUBLICO, 'narracion_%s.mp3' % nombre)
     subprocess.run(['ffmpeg', '-v', 'error', '-y', '-f', 's16le', '-ar', str(HZ),
                     '-ac', '1', '-i', bruto,

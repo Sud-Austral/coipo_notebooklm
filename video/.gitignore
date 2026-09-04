@@ -1,8 +1,16 @@
 node_modules/
-out/
 
-# Renders a calidad completa que pasan de 100 MB (regla de Luis: por encima de
-# ese tamaño, al .gitignore). Del podcast del Catastro se versiona la copia
-# liviana, que es la que se comparte; el original se regenera con
-#   npx remotion render src/index.jsx Catastro
-Catastro de Usos de la Tierra — podcast explicativo.mp4
+# ---------------------------------------------------------------- SALIDAS
+# Todo lo de aqui se REGENERA con un comando y no debe viajar en el repo.
+# Son 1,8 GB frente a 137 MB de entradas, y GitHub rechaza cualquier archivo
+# por encima de 100 MB.
+out/                       # renders crudos de Remotion
+versiones anteriores/      # entregas superadas
+pipeline/capturas/         # capturas intermedias (duplican public/catastro/)
+
+# Los MP4 de entrega. Se regeneran con:
+#   cd video && npx remotion render src/index.jsx <Catastro|ContratoPod|EcosistemaPod>
+*.mp4
+
+# ...MENOS el metraje de fondo, que es ENTRADA y sin el no se puede rendear.
+!public/clips/*.mp4

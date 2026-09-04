@@ -32,3 +32,10 @@ media/**/*.jpg
 # reglas de COIPO_ERRORES (rutas absolutas, personales)
 .claude/rules/errores-*.md
 *.pptx
+
+# Skills instaladas con `npx skills add` (Remotion oficial + motion design).
+# Se versiona skills-lock.json, no el arbol: son dependencias vendorizadas y
+# ademas el CLI las copia DOS veces (.agents/skills y .claude/skills).
+# Restaurar en otra maquina con:  npx skills install
+.agents/skills/
+.claude/skills/
