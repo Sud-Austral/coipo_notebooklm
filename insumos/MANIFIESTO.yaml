@@ -1,0 +1,243 @@
+# Manifiesto derivado del codigo. Los archivos ya estaban abiertos cuando se
+# escribio: documenta lo que hay y deja constancia de lo que falta declarar.
+# Este repositorio es publico, de modo que cada entrada se lee tambien como
+# pregunta sobre si el archivo debia quedar visible.
+
+archivos:
+
+  - ruta: requirements.txt
+    sha256: "ecee4e4aac1b7e2d8de2fa9353daa700dd0a1dc84638d984478b944a23e5b0b8"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara con version fija el cliente que conecta con el servicio externo
+
+  - ruta: .mcp.json
+    sha256: "90257951418817dc4621c0d2823a6619c1bceee30d84efa040ce2bf84112dc8f"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] es un archivo de conexion a un servidor de herramientas, categoria donde suelen aparecer rutas locales y credenciales; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara el servidor de herramientas que expone el servicio externo
+
+  - ruta: galeria-estado.json
+    sha256: "7e2e5101b63b942adaf5b9012e48d8ed58e23eeb061d198f6caf08edcf8e85bf"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] guarda el estado de los encargos hechos al servicio externo, incluidos identificadores de recursos remotos; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: memoria entre corridas del guion de generacion
+
+  - ruta: media/manifest.json
+    sha256: "33e86f2d2013dd3350528f8569dcea218f1bd65070b67533ffa016d9ae602e95"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] registra nombres de archivo, huellas y metadatos tecnicos; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: deja constancia de que archivo entro, con que huella y con que caracteristicas tecnicas
+
+  - ruta: media/.gitkeep
+    sha256: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] archivo vacio de marcador; conteo 0"
+    puede_versionarse: true
+    uso: mantiene el directorio donde se apartan los originales sin publicarlos
+
+  - ruta: skills-lock.json
+    sha256: "42fb7774da3e41a4db3f83fd2a96785875762924fdd78e72cb21b3ed086aaf20"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: fija las versiones de las capacidades usadas en el repositorio
+
+  - ruta: frontend/.env.example
+    sha256: "16b41ed76590cc70162cf2ab712c8f09388e9963a039966fe8dffb5f0840e392"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] es una plantilla de variables, no los valores reales; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: enumera las variables de entorno que el sitio espera
+
+  - ruta: frontend/package.json
+    sha256: "0598ea5986d38f2b4b44cc9d524d11cdb19aad8e7f3036260a245c54d765f94f"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara las dependencias y los comandos del sitio publicado
+
+  - ruta: frontend/package-lock.json
+    sha256: "f2560f0d820aba401a0f60320ca10c569dba61757158f3f4404bcf8ad962c2e2"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: fija las versiones exactas resueltas para el sitio
+
+  - ruta: frontend/vite.config.js
+    sha256: "fefe1a651b038402d764727b582a6a0cf9e3788bff8b72325123092e31da8f70"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: configura la construccion y toma la ruta base de publicacion del entorno
+
+  - ruta: frontend/.oxlintrc.json
+    sha256: "9a11085b48d1ea2c1cdd18c3438a669abcc635f5586019e5df87161369af70ef"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: configura la revision estatica del codigo del sitio
+
+  - ruta: frontend/scripts/check-publish.mjs
+    sha256: "a3a483e20af159dccf4600d44870030b254b7162df1f576534501a5c1c99b102"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: comprueba el material antes de publicar el sitio
+
+  - ruta: frontend/src/data/galeria.js
+    sha256: "ede2a5a7ace2fbb1099c50a85621cb50ccd36c06d7b8f547e33f22663701cb03"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] catalogo de piezas publicadas con sus titulos; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: alimenta las tres galerias del sitio
+
+  - ruta: frontend/src/data/artifacts.js
+    sha256: "b77f95b2b3051770d939e34de5bdb1da3a96cb9f12c79b72ace0a3cf73f13a46"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara los tipos de artefacto y los formatos de audio admitidos
+
+  - ruta: frontend/src/data/envVars.js
+    sha256: "42efde31f76175ae52747b89297242ae37982447d589f740c60cbe23f2414231"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] documenta nombres de variables, no valores; sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: alimenta la seccion del sitio que explica las variables de entorno
+
+  - ruta: frontend/src/data/mcpClients.js
+    sha256: "4412b1c4a05a95fc37f7ed27f070486c19dced9b9fa4f5c08e49ad3f79feaafd"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: alimenta la seccion del sitio que lista los clientes compatibles
+
+  - ruta: presentacion/creditos-imagenes-v2.csv
+    sha256: "edebb9687a50737a906ccaa3231900510e452e2e361eb020e9c44ae1137550a2"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] un archivo de creditos es, por definicion, una lista de atribuciones a autores; la evidencia no incluye su contenido y no hay conteo posible"
+    puede_versionarse: "[VERIFICAR] depende de lo anterior"
+    uso: registra la procedencia del material grafico
+
+  - ruta: presentacion/creditos-imagenes-v3.csv
+    sha256: "b204e8f8b415bbde9f2e77bf198b4b0a658f5af56e2f88ae098a7e7599dbf735"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] mismo caso que la version anterior; sin conteo disponible"
+    puede_versionarse: "[VERIFICAR] depende de lo anterior"
+    uso: registra la procedencia del material grafico
+
+  - ruta: presentacion/creditos-imagenes-v4.csv
+    sha256: "cf25af7b0b959372fefb7f1ec48e091170c16ab31c291562795f3c4858416163"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] mismo caso que la version anterior; sin conteo disponible"
+    puede_versionarse: "[VERIFICAR] depende de lo anterior"
+    uso: registra la procedencia del material grafico
+
+  - ruta: presentacion/creditos-imagenes-v5.csv
+    sha256: "9a92348fc512f0c7db062030129bab26c87ff1120f5df381dc214e8f206493eb"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] mismo caso que la version anterior; sin conteo disponible"
+    puede_versionarse: "[VERIFICAR] depende de lo anterior"
+    uso: registra la procedencia del material grafico
+
+  - ruta: video/package.json
+    sha256: "9aeda6a382fee4b913e378dcbc7ab1014d5716af0fdc5ce9b7b5bff16f126ef6"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara las dependencias y los comandos de produccion de video
+
+  - ruta: video/package-lock.json
+    sha256: "f221b58deeac2a72cadf6b0e93fc5ef21c1a26de32f9cb636e712771627a76c0"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: fija las versiones exactas resueltas para la produccion de video
+
+  - ruta: video/remotion.config.js
+    sha256: "4c54a8c28a89ee9fd81fecba4ac41aff680fb3fee9bf5cc0d1747b6cbb7f1668"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: configura la produccion de video
+
+  - ruta: video/src/catalogo.json
+    sha256: "8c2680c5575b65848bce685f077ad26f5e814117f8af815e41df044985f10224"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: catalogo de piezas que consumen las composiciones de video
+
+  - ruta: video/src/focos.json
+    sha256: "4b05192f9ed3c0c05da5d1d96f3a3446cd9690a9dbbc5b5b06353d62ff6b877b"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: parametros de encuadre para las composiciones de video
+
+  - ruta: video/pipeline/beats_catastro.json
+    sha256: "c58e96f02cda1af88072d21438e0bada224234b832fa961aa7f3305fa4c87fd7"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: tiempos de narracion para sincronizar una de las piezas
+
+  - ruta: video/pipeline/beats_contrato_pod.json
+    sha256: "a73e4c2847f415d451fbbdc3e59b210351af19bd71413cd9be9b6459538be583"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: tiempos de narracion para sincronizar una de las piezas
+
+  - ruta: video/pipeline/beats_ecosistema_pod.json
+    sha256: "ea8c63b0394e8459281ffc1e00300b22e820eb6ac0a7f7a3c38efe9bdd3c313c"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: tiempos de narracion para sincronizar una de las piezas
+
+  - ruta: video/diseno/canvas.json
+    sha256: "af06fc328f3635614bb362950a5c4f6addd0543c428fee099226873897756bba"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: material de direccion de arte de las piezas de video
+
+  - ruta: .github/workflows/deploy.yml
+    sha256: "abf7ce8ec42d9492cb378d9ad947068a30a659a8ef7c3fa4d8d5038887c42738"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: construye y publica el sitio de forma automatica
+
+  - ruta: .github/workflows/readme.yml
+    sha256: "5d032b817daff7ba20c405e93bade853918a6c36008a5cb1e1c55f4725bb0745"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: flujo automatico asociado a la documentacion del repositorio
+
+  - ruta: .gitignore
+    sha256: "e5d53babf77ba487424a73d89b01a033e5946cef90a7a68aba0b9dea483cbc9d"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: declara que queda fuera del control de versiones; es la pieza que separa lo publicable de lo que no
+
+  - ruta: generacion_optima.md
+    sha256: "f4a12df58df3e8a9e25bb10c2bd48312a097a5ea25ca5e7a5780561a68f5a492"
+    origen: "[PENDIENTE] quien lo entrego y cuando"
+    contiene_pii: "[VERIFICAR] sin coincidencias de patron RUT, correo ni telefono; conteo 0"
+    puede_versionarse: true
+    uso: notas propias sobre como afinar la generacion
+
+hallazgos:
+  - "El repositorio es publico y contiene material audiovisual y fotografico cuya licencia no esta declarada en ningun archivo de la evidencia. Los cuatro CSV de creditos son el unico registro de procedencia y su contenido no se pudo inspeccionar."
+  - "El guion que arma el documento privado consulta las reglas de exclusion del control de versiones antes de escribir. Ese mecanismo depende enteramente de que .gitignore este bien escrito, y este manifiesto no puede verificar que lo este. No se edito ese archivo."
+  - "El estado de los encargos al servicio externo se versiona en galeria-estado.json. Conviene confirmar que los identificadores que guarda pueden ser publicos."
+  - "[PENDIENTE] Ninguna de las rutas de arriba tiene declarado su origen."
