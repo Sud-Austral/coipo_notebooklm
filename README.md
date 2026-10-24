@@ -142,7 +142,27 @@ scripts/
   ingest_media.py       copia + metadata ffprobe + manifiesto
   optimizar_galeria.py  WebP + recodificación + manifiesto del sitio
 sources/          documentos fuente locales para subir a NotebookLM
+video/            vídeos explicativos con Remotion + pipeline en Python (ver «Vídeos explicativos»)
+forestin/         imagen de Forestín (portadillas de los vídeos)
+presentacion/     créditos de imágenes por versión (CSV)
+insumos/          problema, solución y manifiesto derivados del código
+generacion_optima.md   método para enriquecer presentaciones PPTX (notas de trabajo)
 ```
+
+## Vídeos explicativos (`video/`)
+
+Proyecto aparte, dentro del mismo repositorio, que produce vídeos explicativos de otros sistemas COIPO **por código** con [Remotion](https://www.remotion.dev/) (`video/package.json`: `remotion`, `@remotion/cli`, React 19). Las composiciones están en `video/src/Root.jsx`: `Explicativo`, `Contratos`, `Ecosistema`, `Contratos2`, `Ecosistema2`, `Catastro`, `ContratoPod` y `EcosistemaPod`.
+
+```powershell
+cd video
+npm install
+npm run studio                                   # vista previa
+npx remotion render src/index.jsx Catastro       # también ContratoPod, EcosistemaPod
+```
+
+El script `npm run render` de `video/package.json` sigue apuntando a la composición `Explicativo` (de otro vídeo anterior); para las piezas actuales usa el comando de arriba, que es el que documenta `video/.gitignore`.
+
+Los insumos se generan con scripts de Python en `video/pipeline/` (capturas con Chrome, guiones, locución con `edge-tts` por «latidos», música y medición de la imagen); `video/pipeline/rehacer.sh` encadena locución, comprobación de duraciones y copia de los latidos a `video/src/`. `video/pipeline/narrar.py` trae una ruta absoluta de la máquina del autor en `PUBLIC`: ajústala antes de correrlo en otro equipo. Los MP4 de entrega y `video/out/` no se versionan (se regeneran); sí el metraje de fondo `video/public/clips/`. Del `requirements.txt` de la raíz **no** salen las dependencias de este pipeline (no hay un `requirements` de Python propio para `video/`): no lo comprobé ejecutándolo.
 
 ## Renovar credenciales
 
