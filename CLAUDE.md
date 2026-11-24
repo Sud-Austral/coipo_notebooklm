@@ -21,7 +21,8 @@ El repositorio es **público**.
 - Sitio: `cd frontend && npm install && npm run dev | lint | build | check:publish` (`VITE_BASE=/coipo_notebooklm/` para Pages).
 - Galería: `scripts\gen_galeria.py --plan | --ciclo | --adoptar`, luego `scripts\optimizar_galeria.py`.
 - Vídeos: `cd video && npm install && npm run studio`; render con `npx remotion render src/index.jsx <Catastro|ContratoPod|EcosistemaPod>`.
-- No hay suite de pruebas. No ejecuté nada de esto al escribir el documento.
+- No hay suite de pruebas. Comprobado el 2026-11-24 en `frontend/`: `npm ci`, `npm run lint` (oxlint, salida 0), `npm run build` y `npm run check:publish` («Gate de publicación OK»). No comprobados: el entorno Python, `nlm`, los scripts de galería y los vídeos.
+- En Git Bash, `VITE_BASE=/coipo_notebooklm/` se convierte en ruta de Windows (el build sale verde con el sitio roto): usar `MSYS_NO_PATHCONV=1` o PowerShell, y mirar `dist/index.html`.
 
 ## Convenciones
 Español. Los scripts son reanudables y verifican lo generado; `media/manifest.json` guarda sha256, duración y códec.
