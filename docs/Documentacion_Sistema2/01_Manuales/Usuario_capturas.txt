@@ -1,0 +1,12 @@
+01_inicio.png
+10_troubleshooting.png
+07_instalacion_windows.png
+08_instalacion_unix.png
+09_copiar.png
+02_infografias.png
+03_infografias_filtro.png
+04_visor_infografia.png
+05_videos.png
+06_audios.png
+13_movil_menu.png
+12_tema_oscuro.png

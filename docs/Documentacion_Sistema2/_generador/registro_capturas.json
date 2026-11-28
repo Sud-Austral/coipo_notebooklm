@@ -1,0 +1,68 @@
+{
+ "copiar": "Selecciona y copia",
+ "pages_404": [
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/extra-infographic-00-extra-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-02-alerce-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-01-araucaria-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-00-parques-nacionales-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/extra-infographic-01-extra-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-03-bosque-valdiviano-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-05-torres-del-paine-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-04-bosque-esclerofilo-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-06-conguillio-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-07-conaf-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-09-fauna-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-08-amenazas-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-10-parques-nacionales-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-11-araucaria-thumb.webp"
+  ],
+  [
+   404,
+   "http://127.0.0.1:18101/galeria/infographic/info-12-alerce-thumb.webp"
+  ]
+ ],
+ "pages_imgs_rotas": 15,
+ "pages_imgs_total": 15,
+ "bloqueadas_externas": []
+}
